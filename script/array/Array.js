@@ -5,7 +5,8 @@ let arr = []
 let value = arr[index]
 
 // add item to at the end
-arr.push(item)
+arr.push(item) 
+let e = arr.push(item) //output: new length of arr
 
 // remove item from the end
 arr.pop() 
