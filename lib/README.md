@@ -7,6 +7,8 @@
 * three.js
 * Next.js
 * jquery
+* lodash.js
+* moment.js
 
 **frameworks** 
 * Reactjs
