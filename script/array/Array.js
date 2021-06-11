@@ -13,7 +13,7 @@ arr.pop()
 // remove item from beginning
 arr.shift()
 
-// remove item from beginning
+// add item from beginning
 arr.unshift()
 
 // find index of specific item in array
