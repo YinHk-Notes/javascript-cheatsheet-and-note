@@ -29,8 +29,11 @@ arr.indexOf(searchElement)
   *then the whole array will be searched. Default: 0 (entire array is searched). */
 arr.indexOf(searchElement, fromIndex)
 
-// 
-
+// test whether the each item fullfil the test function
+find(callbackFunction)
+find((element) => { ... } )
+find((element, index) => { ... } )
+find((element, index, array) => { ... } )
 
 
 
