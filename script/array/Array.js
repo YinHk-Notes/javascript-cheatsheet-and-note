@@ -30,13 +30,11 @@ arr.indexOf(searchElement)
 arr.indexOf(searchElement, fromIndex)
 
 // test whether the each item fullfil the test function, or undefined if not found
-arr.find(callbackFunction)
 arr.find((element) => { ... } )
 arr.find((element, index) => { ... } )
 arr.find((element, index, array) => { ... } )
 
 // returns the index of the first element in the array that satisfies the testing function
-arr.findIndex(callbackFunction)
 arr.findIndex((element) => { ... } )
 arr.findIndex((element, index) => { ... } )
 arr.findIndex((element, index, array) => { ... } )
