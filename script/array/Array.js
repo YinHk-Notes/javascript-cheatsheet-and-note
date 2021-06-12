@@ -1,5 +1,3 @@
-//array method
-
 // create an array
 let arr = []
 
