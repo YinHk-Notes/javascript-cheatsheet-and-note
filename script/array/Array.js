@@ -73,6 +73,45 @@ arr.fill(value, start, end)
 // create an new array with all elements that pass the test function
 arr.filter((element, index, array) => { ... } )
 
+// creates a new array with specifying how deep a nested array structure should be flattened
+arr.flat()
+arr.flat(depth) //optional, default depth = 1
+/*eg: arr=[1,2,[3,4,[5,6]]
+arr.flat() //output: [1,2,3,4,[5,6]]
+arr.flat(2) ////output: [1,2,3,4,5,6]
+*/
+                                       
+// create a new array by applying map(), and then flattening the result by one level.
+arr.flatmap() // It is identical to a map() followed by a flat() of depth 1
+
+// execute method once for each element in an array in order.
+arr.forEach((element, index, array) => { ... } ) // not create new array
+
+//  determines whether an array contains a specified element
+arr.includes(searchElement) //return boolean
+arr.includes(searchElement, fromIndex) //optional: fromIndex
+     
+//
+        
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
