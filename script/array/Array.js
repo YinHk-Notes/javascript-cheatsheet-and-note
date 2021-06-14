@@ -1,3 +1,6 @@
+// find length
+arr.length
+
 // create an array
 let arr = []
 
@@ -26,26 +29,28 @@ arr.indexOf(searchElement)
   *@param fromIndex: The index to start the search at. 
   *If the index is greater than or equal to the array's length, -1 is returned, 
   *which means the array will not be searched. If the provided index value is a negative number, 
-  *it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. If the provided index is 0, 
-  *then the whole array will be searched. Default: 0 (entire array is searched). 
+  *it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. 
+  *If the provided index is 0,then the whole array will be searched. Default: 0 (entire array is searched). 
   */
 arr.indexOf(searchElement, fromIndex)
 
 // test whether the each item fullfil the test function, or undefined if not found
-arr.find((element) => { ... } )
-arr.find((element, index) => { ... } )
 arr.find((element, index, array) => { ... } )
 
 // returns the index of the first element in the array that satisfies the testing function
-arr.findIndex((element) => { ... } )
-arr.findIndex((element, index) => { ... } )
 arr.findIndex((element, index, array) => { ... } )
 
 // Joins two or more arrays, and returns a copy of the joined arrays
-arr.concat(array1,array2....)
+arr.concat(array2,array3....)
 
-//
-
+// copies array elements to another position in the array, overwriting the existing values.
+/** 
+  *@param target The index position to copy the elements to, If negative, target will be counted from the end.
+  *@param start The index position to start copying elements from  (default is 0),If negative, start will be counted from the end.
+  *@param end The index position to stop copying elements from (default is array.length),copies up to but not including end
+  *If negative, start will be counted from the end.
+  */
+arr.copyWithin(target, start, end)
 
 
 
