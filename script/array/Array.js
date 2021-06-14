@@ -25,7 +25,7 @@ let e = arr.unshift() //output: new length of arr
 
 // find index of specific item in array
 /** 
-  *@param fromIndex: The index to start the search at. 
+  *@param fromIndex The index to start the search at. 
   *If the index is greater than or equal to the array's length, -1 is returned, 
   *which means the array will not be searched. If the provided index value is a negative number, 
   *it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. 
@@ -33,8 +33,11 @@ let e = arr.unshift() //output: new length of arr
   */
 arr.indexOf(searchElement, fromIndex)
 
-// test whether the each item fullfil the test function, or undefined if not found
+// test whether the first item fullfil the test function, or undefined if not found
 arr.find((element, index, array) => { ... } )
+/*eg: arr = [1,2,3,4,5]
+arr.find(currentValue => currentValue >= 3) //return 4
+*/
 
 // returns the index of the first element in the array that satisfies the testing function
 arr.findIndex((element, index, array) => { ... } )
@@ -52,8 +55,23 @@ arr.concat(array2,array3....)
   */
 arr.copyWithin(target, start, end)
 
+// checks whether all elements in an array pass a test function or not
+arr.every((element, index, array) => { ... } ) //only return boolean
+/*eg: arr = [1,2,3,4,5]
+arr.every(currentValue => currentValue >= 0) //return true
+arr.every(currentValue => currentValue < 0) //return false
+*/
 
+//  changes all elements in an array to a static value
+/** 
+  *@param value the value to be filled
+  *@param start Start index to fill, default 0.
+  *@param end The index to stop filling the array (default is array.length),fill up to but not including the end.
+  */
+arr.fill(value, start, end)
 
+// create an new array with all elements that pass the test function
+arr.filter((element, index, array) => { ... } )
 
 
 
