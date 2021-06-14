@@ -22,11 +22,13 @@ let e = arr.unshift() //output: new length of arr
 
 // find index of specific item in array
 arr.indexOf(searchElement)
-/** @fromIndex: The index to start the search at. 
+/** 
+  *@param fromIndex: The index to start the search at. 
   *If the index is greater than or equal to the array's length, -1 is returned, 
   *which means the array will not be searched. If the provided index value is a negative number, 
   *it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. If the provided index is 0, 
-  *then the whole array will be searched. Default: 0 (entire array is searched). */
+  *then the whole array will be searched. Default: 0 (entire array is searched). 
+  */
 arr.indexOf(searchElement, fromIndex)
 
 // test whether the each item fullfil the test function, or undefined if not found
@@ -39,7 +41,10 @@ arr.findIndex((element) => { ... } )
 arr.findIndex((element, index) => { ... } )
 arr.findIndex((element, index, array) => { ... } )
 
+// Joins two or more arrays, and returns a copy of the joined arrays
+arr.concat(array1,array2....)
 
+//
 
 
 
