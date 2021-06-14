@@ -24,7 +24,6 @@ arr.unshift()
 let e = arr.unshift() //output: new length of arr 
 
 // find index of specific item in array
-arr.indexOf(searchElement)
 /** 
   *@param fromIndex: The index to start the search at. 
   *If the index is greater than or equal to the array's length, -1 is returned, 
