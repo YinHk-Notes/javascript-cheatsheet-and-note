@@ -121,8 +121,12 @@ arr.of(element0, element1, ... , elementN)
 // reverse the elements in array  
 arr.reverse() //The first array element becomes the last, and the last array element becomes the first.
                       
-//                     
-
+//  returns the selected elements in an array, as a new array object. 
+/**
+  *selects the elements starting at the given start argument, 
+  *and ends at, but does not include, the given end argument.
+  */
+arr.slice(start, end)
 
 
 
