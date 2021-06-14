@@ -91,10 +91,37 @@ arr.forEach((element, index, array) => { ... } ) // not create new array
 arr.includes(searchElement) //return boolean
 arr.includes(searchElement, fromIndex) //optional: fromIndex
      
-//
-        
+//  determines whether an object is an array
+arr.isArray() //return boolean
                                         
+//  creates and returns a new string by concatenating all of the elements in an array 
+arr.join()                                       
+arr.join(separator) //optional, default separator is comma (,), specified separator string
+/* ed: arr=["a","b","c"] 
+arr.join() //output: "a,b,c"
+arr.join('/') //output: "a/b/c"
+arr.join('+') //output: "a+b+c"
+*/
+                                        
+// eturns the last index at which a given element can be found in the array,-1 if it is not present.
+arr.lastIndexOf(searchElement, fromIndex)// fromIndex is optional
+                                       
+//  creates a new array with the results of calling a function for every array element.
+/*The map() method creates a new array with the results of calling a function for every array element.
+ *The map() method calls the provided function once for each element in an array, in order.
+ *element in array passed as a parameter/argument in the callback function.
+ *Note: map() does not execute the function for array elements without values.
+ *Note: this method does not change the original array.
+ */
+arr.map((element) => { ... } )                                      
 
+// creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
+arr.of(element0, element1, ... , elementN)
+
+// reverse the elements in array  
+arr.reverse() //The first array element becomes the last, and the last array element becomes the first.
+                      
+//                     
 
 
 
