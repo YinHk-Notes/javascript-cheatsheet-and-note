@@ -14,5 +14,8 @@ expr1 === expr2
 expr1 && expr2
 
 
-// Operator precedence
+some_condition && some_action();
+
+if ( some_condition )
+  some_action();
 
