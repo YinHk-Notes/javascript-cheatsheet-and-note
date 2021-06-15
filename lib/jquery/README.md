@@ -1,1 +1,1 @@
-
+https://api.jquery.com/
