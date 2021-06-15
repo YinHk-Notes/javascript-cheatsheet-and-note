@@ -7,8 +7,9 @@ in
 // returns boolean to check if the specified object is an instance of the specified object.
 instanceof
   
-// check equal value and equal type
-=== 
+// equal value and equal type
+expr1 === expr2
 
-
+// 
+expr1 && expr2
 
