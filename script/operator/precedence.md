@@ -1,5 +1,5 @@
 
-
+The following table lists operators in order from highest precedence (21) to lowest precedence (1)
 
 <table>
   <tr>
