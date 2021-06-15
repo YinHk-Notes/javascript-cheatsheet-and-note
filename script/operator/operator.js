@@ -10,6 +10,6 @@ instanceof
 // equal value and equal type
 expr1 === expr2
 
-// 
+// Logical AND
 expr1 && expr2
 
