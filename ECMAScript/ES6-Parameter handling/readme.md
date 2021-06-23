@@ -40,3 +40,29 @@ function f(a, b, ...theArgs) {
 
 ```
 
+## spreading elements of array/string
+```js
+// spread the elements in array or even a string into both literal elements.
+
+var params = [ "three", "four", 5, true ];
+var other = [ 1, 2, ...params ] // [1, 2, "three", "four", 5, true]
+
+var params = [ "three", "four", [5, 6] ];
+var other = [ 1, 2, ...params ] // [1, 2, "three", "four", Array [5, 6]]
+
+var str = "foo"
+var chars = [ ...str ] // [ "f", "o", "o" ]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
