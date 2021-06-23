@@ -21,3 +21,10 @@ string text line 2`);
 // "string text line 1
 // string text line 2"
 ```
+
+### Raw string
+
+```js
+//use String.raw  method to create raw strings
+String.raw`on${ 2*3+1 }nine`
+//output: "on7nine"
