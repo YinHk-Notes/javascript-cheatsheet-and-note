@@ -1,4 +1,4 @@
-//arrow function
+arrow function
 ```js
 functionName = (parameters)  =>  return  or  (parameters) => return
 (parameters) => {  }  or   single parameter => {  }
