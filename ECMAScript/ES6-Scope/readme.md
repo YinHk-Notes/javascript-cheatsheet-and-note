@@ -28,7 +28,7 @@ function foo3(){
 ```
 
 ## function scope
-Whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function. var is the keyword to define variable for a function-scope accessibility.
+Whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function. var is the keyword to define variable for a function-scope accessibility. **var** is fuction scope
 
 ```js
 function foo(){
@@ -38,6 +38,29 @@ function foo(){
 
 foo();                    //inside function: apple
 console.log(fruit);       //error: fruit is not defined 
+```
+
+## block scope
+The area inside curly braces{} is block scope.const and let keywords allow developers to declare variables in the block scope, which means those variables exist only within the corresponding block.
+
+```js
+function foo(){
+    if(true){
+        var fruit1 = 'apple';        //exist in function scope
+        const fruit2 = 'banana';     //exist in block scope
+        let fruit3 = 'strawberry';   //exist in block scope
+
+    }
+    console.log(fruit1);
+    console.log(fruit2);
+    console.log(fruit3);
+}
+
+foo();
+//result:
+//apple
+//error: fruit2 is not defined
+//error: fruit3 is not defined
 ```
 
 ## block-scoped functions
