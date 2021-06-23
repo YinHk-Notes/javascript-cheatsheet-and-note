@@ -62,7 +62,29 @@ foo();
 //error: fruit2 is not defined
 //error: fruit3 is not defined
 ```
-scope2 and scope3 inside scope1, which means scope1 include scope 2&3, let & const declare in scope1 canbe called in scope2&3.
+## lexical scope
+Lexical scope means the children scope have the access to the variables defined in the parent scope. The children functions are lexically bound to the execution context of their parents.
+```js
+function foo1(){
+    var fruit1 = 'apple';        
+    const fruit2 = 'banana';     
+    let fruit3 = 'strawberry';
+    function foo2(){
+        console.log(fruit1);
+        console.log(fruit2);
+        console.log(fruit3);
+    }
+    foo2();
+}
+
+foo1();
+
+//result:
+//apple
+//banana
+//strawberry
+```
+scope2 and scope3 inside scope1, which means scope1 include scope 2&3, let & const declare in scope1 canbe assessed in scope2&3.
 ```js
 {
  //scope1
@@ -73,6 +95,7 @@ scope2 and scope3 inside scope1, which means scope1 include scope 2&3, let & con
     }
   }
 }
+```
 ```
 
 
