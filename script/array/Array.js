@@ -2,7 +2,8 @@
 arr.length
 
 // create an array
-let arr = []
+let arr = [a,b,c,...] //or
+let arr = new Array(a,b,c,...)        
 
 // assess an array item
 let value = arr[index]
