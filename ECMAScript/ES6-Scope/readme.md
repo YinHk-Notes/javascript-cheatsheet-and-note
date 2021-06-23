@@ -61,3 +61,7 @@ Variables declared inside the functions become Local to the function and are con
 ### global scope variable
 There's only one Global scope in the JavaScript document. The area outside all the functions is consider the global scope and the variables defined inside the global scope can be accessed and altered in any other scopes.
 
+
+ref
+
+https://dev.to/sandy8111112004/javascript-introduction-to-scope-function-scope-block-scope-d11
