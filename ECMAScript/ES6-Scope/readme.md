@@ -96,7 +96,7 @@ scope2 and scope3 inside scope1, which means scope1 include scope 2&3, let & con
   }
 }
 ```
-```
+
 
 
 ## block-scoped functions
