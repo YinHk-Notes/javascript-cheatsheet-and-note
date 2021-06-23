@@ -62,6 +62,19 @@ foo();
 //error: fruit2 is not defined
 //error: fruit3 is not defined
 ```
+scope2 and scope3 inside scope1, which means scope1 include scope 2&3
+```js
+{
+ //scope1
+  {
+   //scop2
+    {
+     //scope3
+    }
+  }
+}
+```
+
 
 ## block-scoped functions
 ```js
