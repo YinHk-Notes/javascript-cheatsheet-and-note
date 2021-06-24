@@ -15,7 +15,8 @@ let obj = { a:99, b:'hello', c:true }
  *@param propertiesObject An object whose keys represent the names of properties to be defined or modified and 
  *whose values are objects describing those properties
  */
-Object.defineProperties(obj,propertiesObject)
+Object.defineProperty(obj,propertiesObject) 
+Object.defineProperties(obj,propertiesObject) //for more than one
 /* 
 propertiesObject = {
   property1: {...},property2:{...},proerty3:{...},... }
@@ -23,12 +24,20 @@ desdcription of properties optionally contain the following keys:
 configurable: bool  //default false, determine this property descriptor may be changed and if the property may be deleted from the corresponding object.
 enumberable: bool   //default false, determine property shows up during enumeration of the properties on the corresponding object.
 value: any          //default undefined
-writable: bool      //default false
-get: function       //default undefined
-set: function       //default undefined
+writable: bool      //default false, determine associated with the property may be changed with an assignment operator.
+get: function       //default undefined, return value will be used as the value of the property.
+set: function       //default undefined, receive as its only argument the new value being assigned to the property.
 */
 
 
+//create an array of a given object's own enumerable string-keyed property [key, value] pairs
+Object.entries(obj) 
+/*
+return an array like [ ["key1","value1"], ["key2","value2"],... ]
+eg:
+let obj = { a:99, b:'hello', c:true }
+console.log( Object.entries(obj) )  // console: [ ["a", "somestring"], ["b", 42] ]
+*/
 
 
 //Merge一個或多個source object內的key & value到target object內 
