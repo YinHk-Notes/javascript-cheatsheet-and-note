@@ -6,6 +6,14 @@ obj.c=true   //or
 let obj = new Object(value)  //value can be any,   or
 let obj = { a:99, b:'hello', c:true }
 
+//defines new or modifies existing properties in an object
+/*
+ *@param obj The object on which to define or modify properties.
+ *@param propertiesObject An object whose keys represent the names of properties to be defined or modified and whose values are 
+ *objects describing those properties.
+ */
+Object.defineProperties(obj,propertiesObject)
+
 
 //Merge一個或多個source object內的key & value到target object內 
 Object.assign(target, ...sources)
@@ -38,7 +46,7 @@ console.log(obj)  // console: { 0: 123, 1: 9999, 2: "v", 3: "a", 4: "s", 5: "c",
 
 //creates a new object, using an existing object as the prototype
 let newObj = Object.create(obj)  //obj is prototype object
-let newObj = Object.create(obj,propertiesObject) //propertyObject is optional
+let newObj = Object.create(obj,propertiesObject) // optional: propertyObject
 /* the new object inherite the property of prototype object and inherited properties can be overwritten*/
 
 
