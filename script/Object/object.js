@@ -42,6 +42,10 @@ console.log(descriptor) // console: { value: 99, writable: true, enumerable: tru
 Object.getOwnPropertyDescriptors(obj)
 
 
+//returns an array of all properties name(string)
+Object.getOwnPropertyNames(obj)
+
+
 //freezes an object. A frozen object can no longer be changed
 Object.freeze(obj) // can not change values and change/add/remove properties in frozen object
 
