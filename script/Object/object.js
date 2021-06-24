@@ -114,7 +114,9 @@ let newObj = Object.create(obj,propertiesObject) // optional: propertyObject
 
 //returns the prototype object
 let obj = Object.getPrototypeOf(newObj)  // obj is the prototype object
-
+/*
+Object.getPrototypeOf(obj) // console: { }
+*/
 
 //create an array of a given object's own enumerable property names
 Object.keys(obj) //output: create an array  ["a", "b", "c"]
