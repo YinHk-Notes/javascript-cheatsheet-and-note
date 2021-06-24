@@ -30,13 +30,29 @@ set: function       //default undefined, receive as its only argument the new va
 */
 
 
-//create an array of a given object's own enumerable string-keyed property [key, value] pairs
+//freezes an object. A frozen object can no longer be changed
+Object.freeze(obj) // can not change values and change/add/remove properties in frozen object
+
+
+//create an array of a given object's own enumerable string-keyed property [key, value], list of key-value pairs.
 Object.entries(obj) 
 /*
 return an array like [ ["key1","value1"], ["key2","value2"],... ]
 eg:
 let obj = { a:99, b:'hello', c:true }
 console.log( Object.entries(obj) )  // console: [ ["a",99], ["b","hello"], ["c",true] ]
+*/
+
+
+//transforms a list of key-value pairs into an object.
+/* 
+ *performs the reverse of Object.entries().
+ *@param iterable An iterable such as Array or Map or other objects implementing the iterable protocol.
+ */
+Object.fromEntries(iterable)
+/*
+let obj = Object.fromEntries([ ["a",99], ["b","hello"], ["c",true] ])
+console.log(obj)  // console: { a:99, b:'hello', c:true }
 */
 
 
@@ -95,4 +111,15 @@ array-like object with random key ordering:
 const anObj = { 100: 'a', 2: 'b', 7: 'c' };
 console.log(Object.keys(anObj));  // console: ['2', '7', '100']
 */
+
+
+
+
+
+
+
+
+
+
+
 
