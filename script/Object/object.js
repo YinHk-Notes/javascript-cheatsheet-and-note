@@ -23,7 +23,7 @@ Clone an object:
 let obj = {a:99, b:'hello', c:false}
 let cloneObj = Object.assign({}, obj)   // cloneObj === obj
 
-assign enumerable properties:
+Assign enumerable properties:
 let a = 99
 let b = 'javascript'
 let c = false
