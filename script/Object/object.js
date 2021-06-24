@@ -31,7 +31,7 @@ set: function       //default undefined, receive as its only argument the new va
 
 
 // returns an object describing the configuration of a specific property on a given object 
-Object.getOwnPropertyDescriptor(obj, propertyName) // propertyName is string form
+Object.getOwnPropertyDescriptor(obj, propertyName) // propertyName is string name
 /*
 let obj = { a:99, b:'hello', c:true }
 const descriptor = Object.getOwnPropertyDescriptor(obj, 'a')
@@ -44,6 +44,10 @@ Object.getOwnPropertyDescriptors(obj)
 
 //returns an array of all properties name(string)
 Object.getOwnPropertyNames(obj)
+
+
+//checkt object has the specified property as its own property or not 
+obj.hasOwnProperty(propertyName)  // return boolean,  propertyName is string name
 
 
 //freezes an object. A frozen object can no longer be changed
