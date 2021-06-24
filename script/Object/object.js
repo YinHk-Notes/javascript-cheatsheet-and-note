@@ -36,7 +36,7 @@ Object.entries(obj)
 return an array like [ ["key1","value1"], ["key2","value2"],... ]
 eg:
 let obj = { a:99, b:'hello', c:true }
-console.log( Object.entries(obj) )  // console: [ ["a", "somestring"], ["b", 42] ]
+console.log( Object.entries(obj) )  // console: [ ["a",99], ["b","hello"], ["c",true] ]
 */
 
 
