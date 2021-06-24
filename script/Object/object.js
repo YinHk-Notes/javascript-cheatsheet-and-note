@@ -21,7 +21,19 @@ console.log(obj)  //console: { a: 0, b: 1, c: 4, d: 5 }
 
 Clone an object:
 let obj = {a:99, b:'hello', c:false}
-let cloneObj = Object.assign({}, obj)   //cloneObj === obj
+let cloneObj = Object.assign({}, obj)   // cloneObj === obj
+
+assign enumerable properties:
+let a = 99
+let b = 'javascript'
+let c = false
+let d = null
+let e = undefined
+let f = (param)=>param
+let g = new Array(123,9999)   
+let h = new Object() 
+let obj = Object.assign({},a,b,c,d,e,f,g,h)  // target: b, source: g
+console.log(obj)  // console: { 0: 123, 1: 9999, 2: "v", 3: "a", 4: "s", 5: "c", 6: "r", 7: "i", 8: "p", 9: "t" }
 */
 
 
