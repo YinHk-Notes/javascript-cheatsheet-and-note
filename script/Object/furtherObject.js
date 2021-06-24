@@ -21,7 +21,7 @@ obj.isPrototypeOf(newObj)  // return boolean
 //seals an object
 Object.seal(obj)
 /*
-- preventing new properties from being added.
+- preventing new properties from being added or delete
 - marke all existing properties as non-configurable.
 - values of present properties can still be changed as long as they are writable.
 */
@@ -30,8 +30,21 @@ Object.seal(obj)
 Object.isSealed(obj) // return boolean
 
 
+//add a property to an object
+obj.newPropertyName = value 
 
 //removes a property from an object
 delete obj.propertyName // use delete operator
+
+//change value of property 
+obj.propertyName = newValue
+
+//sets the prototype of a specified object to another object
+Object.setPrototypeOf(obj, prototype)
+/*
+obj: object which is to have its prototype set.
+prototype: object's new prototype
+*/
+
 
 
