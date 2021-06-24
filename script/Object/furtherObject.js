@@ -17,6 +17,8 @@ Object.isFrozen(obj)  //return boolean
 //checks if an object exists in another object's prototype chain.(check if it is prototype of other object or not)
 obj.isPrototypeOf(newObj)  // return boolean
 
+//whether the specified property is enumerable 
+obj.propertyIsEnumerable(propertyName) // propertyName is string name
 
 //seals an object
 Object.seal(obj)
@@ -45,6 +47,24 @@ Object.setPrototypeOf(obj, prototype)
 obj: object which is to have its prototype set.
 prototype: object's new prototype
 */
+
+
+//create an array of a given object's own enumerable property values,
+Object.values(obj)
+/*
+let obj = { a:99, b:'hello', c:true }
+console.log(Object.values(obj)) // console: [99, "hello", true]
+*/
+
+//returns a string representing the object.
+obj.prototype.toString()
+
+//returns the primitive value of the specified object.
+obj.prototype.valueOf()
+
+
+
+
 
 
 
