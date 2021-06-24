@@ -20,7 +20,7 @@ Object.defineProperties(obj,propertiesObject) //for more than one
 /* 
 propertiesObject = {
   property1: {...},property2:{...},proerty3:{...},... }
-desdcription of properties optionally contain the following keys:
+each property has descriptor, which is desdcription of properties optionally contain the following keys:
 configurable: bool  //default false, determine this property descriptor may be changed and if the property may be deleted from the corresponding object.
 enumberable: bool   //default false, determine property shows up during enumeration of the properties on the corresponding object.
 value: any          //default undefined
@@ -28,6 +28,18 @@ writable: bool      //default false, determine associated with the property may 
 get: function       //default undefined, return value will be used as the value of the property.
 set: function       //default undefined, receive as its only argument the new value being assigned to the property.
 */
+
+
+// returns an object describing the configuration of a specific property on a given object 
+Object.getOwnPropertyDescriptor(obj, propertyName) // propertyName is string form
+/*
+let obj = { a:99, b:'hello', c:true }
+const descriptor = Object.getOwnPropertyDescriptor(obj, 'a')
+console.log(descriptor) // console: { value: 99, writable: true, enumerable: true, configurable: true }
+*/
+
+//returns all own property descriptors of a given object.
+Object.getOwnPropertyDescriptors(obj)
 
 
 //freezes an object. A frozen object can no longer be changed
