@@ -15,6 +15,7 @@
 * Reactjs
 * Vuejs
 * Angularjs
+* Svelte
 
 
 **React vs Angular vs Vue** \
