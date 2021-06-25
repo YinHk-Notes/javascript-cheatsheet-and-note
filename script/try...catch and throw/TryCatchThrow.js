@@ -28,3 +28,40 @@ try...catch...finally
 
 Remarks:   cannot present try only, at least one catch-block, or a finally-block, must be present.
 */
+
+
+//throw statement throws a user-defined exception.
+throw expression
+/*
+expression:  The expression to throw.
+remarks: 
+- Execution of the current function will stop (the statements after throw won't be executed)
+- control will be passed to the first catch block 
+-  If no catch block exists among caller functions, the program will terminate.
+*/
+
+// throw an exception, expression specifies the value of the exception. eg:
+
+throw 'Error2'; // generates an exception with a string value
+throw 42;       // generates an exception with the value 42
+throw true;     // generates an exception with the value true
+throw new Error('Required');  // generates an error object with the message of Required
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
