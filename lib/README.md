@@ -5,10 +5,11 @@
 
 **useful libraries** 
 * three.js
+* Anime.js
 * Next.js
-* jquery
 * lodash.js
 * moment.js
+* jquery
 
 **frameworks** 
 * Reactjs
