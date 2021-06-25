@@ -8,7 +8,7 @@ JavaScript語言是一個沒有命名空間設計的程式語言，也沒有支�
 
 
 
-## 模組輸出與輸入(Import & Export)
+## 模組輸出與輸入(import & export)
 
 - Imported modules are in strict mode whether you declare them as such or not
 - a function-like dynamic import(), which does not require scripts of type="module".
@@ -18,7 +18,7 @@ JavaScript語言是一個沒有命名空間設計的程式語言，也沒有支�
 
 
 
-## 多個輸出
+## 多個export
 
 ```js
 export const aString = 'test'
@@ -27,6 +27,8 @@ export function aFunction(){...}
 
 export const aObject = {...}
 
+export const aArray = []
+
 export class aClass {
  ...
 }
@@ -34,12 +36,68 @@ export class aClass {
 對於多個export, 兩種方式可以進行import
 
 ```js
-import {aString, aObject, aFunction, aClass} from './location'
+import {aString, aObject, aArray, aFunction, aClass} from './location'
 ```
 ```js
 import  * as myModule from './location'
 ```
 
+## 單一export
+單一的export,通常會加上default關鍵詞
+```js
+export default moduleName
+```
+對單一輸出的模組就不需要用花括號，這代表只輸入以default值定義的輸出語句:
+```js
+import aFunction from './location'
+```
+## Syntax of export
+There are two types of exports:
+- Named Exports (Zero or more exports per module)
+- Default Exports (One per module)
+
+```js
+export var x = 42;                      // export a named variable
+export function foo() {};               // export a named function
+
+export default 42;                      // export the default export
+export default function foo() {};       // export the default export as a function
+
+export { encrypt };                     // export an existing variable
+export { decrypt as dec };              // export a variable as a new name
+export { encrypt as en } from 'crypto'; // export an export from another module
+export * from 'crypto';                 // export all exports from another module
+
+
+// Exporting individual features
+export let name1, name2, …, nameN; // also var, const
+export let name1 = …, name2 = …, …, nameN; // also var, const
+export function functionName(){...}
+export class ClassName {...}
+
+// Export list
+export { name1, name2, …, nameN };
+
+// Renaming exports
+export { variable1 as name1, variable2 as name2, …, nameN };
+
+// Exporting destructured assignments with renaming
+export const { name1, name2: bar } = o;
+
+// Default exports
+export default expression;
+export default function (…) { … } // also class, function*
+export default function name1(…) { … } // also class, function*
+export { name1 as default, … };
+
+// Aggregating modules
+export * from …; // does not set the default export
+export * as name1 from …; // Draft ECMAScript® 2O21
+export { name1, name2, …, nameN } from …;
+export { import1 as name1, import2 as name2, …, nameN } from …;
+export { default, … } from …;
+
+```
 
 
 
