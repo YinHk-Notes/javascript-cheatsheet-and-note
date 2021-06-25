@@ -99,6 +99,33 @@ export { default, … } from …;
 
 ```
 
+## Syntax of import
+```js
+import 'jquery';                        // import a module without any import bindings
+import $ from 'jquery';                 // import the default export of a module
+import { $ } from 'jquery';             // import a named export of a module
+import { $ as jQuery } from 'jquery';   // import a named export to a different name
+import * as crypto from 'crypto';    // import an entire module instance object
+
+
+import defaultExport from "module-name";
+import * as name from "module-name";
+import { export1 } from "module-name";
+import { export1 as alias1 } from "module-name";
+import { export1 , export2 } from "module-name";
+import { foo , bar } from "module-name/path/to/specific/un-exported/file";
+import { export1 , export2 as alias2 , [...] } from "module-name";
+import defaultExport, { export1 [ , [...] ] } from "module-name";
+import defaultExport, * as name from "module-name";
+import "module-name";
+var promise = import("module-name");
+```
+
+
+
+
+
+
 
 
 
