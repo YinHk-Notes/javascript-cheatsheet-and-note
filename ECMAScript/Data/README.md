@@ -8,6 +8,7 @@ use array, object, Map or Json.
 - arrays
 - objects
 - maps
+- json
 - undefined
 - null
 - empty values ""
