@@ -2,7 +2,7 @@
 ### var, let, and const – What's the Difference?
 1. **var** :   can be re-declared and updated
 2. **let** :  can be updated but not re-declared + blocked scope.
-3. **const**:   cannot be updated or re-declared + blocked scope + must be initialized at the time of declaration(read-only).
+3. **const**:   cannot be updated or re-declared + blocked scope + must be initialized at the time of declaration (read-only).
 
 
 
