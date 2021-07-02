@@ -106,7 +106,7 @@ import $ from 'jquery';                 // import the default export of a module
 import { $ } from 'jquery';             // import a named export of a module
 import { $ as jQuery } from 'jquery';   // import a named export to a different name
 import * as crypto from 'crypto';    // import an entire module instance object
-
+import ...from'@module-name'         //using @ instead of ./ or ../
 
 import defaultExport from "module-name";
 import * as name from "module-name";
