@@ -108,13 +108,17 @@ arr.join('+') //output: "a+b+c"
 arr.lastIndexOf(searchElement, fromIndex)// fromIndex is optional
                                        
 //  creates a new array with the results of calling a function for every array element.
-arr.map((element) => { ... } )                                      
+arr.map((element) =>  ...  )  // or
+arr.map((element) => { return ... })
 /*
 The map() method creates a new array with the results of calling a function for every array element.
 The map() method calls the provided function once for each element in an array, in order.
 element in array passed as a parameter/argument in the callback function.
 Note: map() does not execute the function for array elements without values.
 Note: this method does not change the original array.
+Note: If an arrow function body is a block, it doesn’t implicitly return anything,will return array of 'undefined'
+1.make the arrow function body an expression by removing { and } or 2.If you use {} inside an arrow function, you must also use a return statement.
+eg: arr.map((element) =>  {...}) return an array like this [undefined, undefined, ...]
 */
 
 // creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
