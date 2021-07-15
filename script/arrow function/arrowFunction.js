@@ -1,8 +1,9 @@
 functionName = (parameters)  => { return... }
 (parameters) => { return... }
-(parameters) => ...expression    
-single parameter => ...expression  
-( ) => ...expression  //no parameter
+(parameters) => {...expression }   
+single param => {...expression }
+single param => ...single expression  single param && return single line expression 
+( ) => ...single expression  //no parameter && return single line expression 
 ( ) => { return ... }  //no parameter
 
 
