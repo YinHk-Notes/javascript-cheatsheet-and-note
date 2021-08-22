@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/YinHk-Notes/javascript/blob/main/javascript%20logo.png" height="200px">
+  <img src="./src/javascript logo.png" height="200px">
 </p>
 
 # javascript
