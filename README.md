@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/javascript logo.png" height="200px">
+  <img src="./img/javascript logo.png" height="200px">
 </p>
 
 # javascript
