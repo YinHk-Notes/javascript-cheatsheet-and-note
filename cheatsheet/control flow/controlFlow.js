@@ -3,6 +3,8 @@ if(condition){
     // code
 }
 
+//inline if-else statement
+condition? expr1 : expr2;
 
 //if-else statement:
 if(condition){
