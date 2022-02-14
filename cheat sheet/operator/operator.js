@@ -13,7 +13,6 @@ expr1 === expr2
 // Logical AND
 expr1 && expr2
 
-
 some_condition && some_action();
 
 if ( some_condition )
