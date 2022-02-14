@@ -6,7 +6,6 @@ obj.c=true   //or
 let obj = new Object(value)  //value can be any,   or
 let obj = { a:99, b:'hello', c:true }
 
-
 //defines new or modifies existing properties in an object
 /*
  *@param obj The object on which to define or modify properties.
@@ -29,7 +28,6 @@ get: function       //default undefined, return value will be used as the value 
 set: function       //default undefined, receive as its only argument the new value being assigned to the property.
 */
 
-
 // returns an object describing the configuration of a specific property on a given object 
 Object.getOwnPropertyDescriptor(obj, propertyName) // propertyName is string name
 /*
@@ -41,10 +39,8 @@ console.log(descriptor) // console: { value: 99, writable: true, enumerable: tru
 //returns all own property descriptors of a given object.
 Object.getOwnPropertyDescriptors(obj)
 
-
 //returns an array of all properties name(string)
 Object.getOwnPropertyNames(obj)
-
 
 //checkt object has the specified property as its own property or not 
 obj.hasOwnProperty(propertyName)  // return boolean,  propertyName is string name
@@ -52,7 +48,6 @@ obj.hasOwnProperty(propertyName)  // return boolean,  propertyName is string nam
 
 //freezes an object. A frozen object can no longer be changed
 Object.freeze(obj) // can not change values and change/add/remove properties in frozen object
-
 
 //create an array of a given object's own enumerable string-keyed property [key, value], list of key-value pairs.
 Object.entries(obj) 
@@ -62,7 +57,6 @@ eg:
 let obj = { a:99, b:'hello', c:true }
 console.log( Object.entries(obj) )  // console: [ ["a",99], ["b","hello"], ["c",true] ]
 */
-
 
 //transforms a list of key-value pairs into an object.
 /* 
@@ -74,7 +68,6 @@ Object.fromEntries(iterable)
 let obj = Object.fromEntries([ ["a",99], ["b","hello"], ["c",true] ])
 console.log(obj)  // console: { a:99, b:'hello', c:true }
 */
-
 
 //Merge一個或多個source object內的key & value到target object內 
 Object.assign(target, ...sources)
@@ -105,7 +98,6 @@ let obj = Object.assign({},a,b,c,d,e,f,g,h)  // target: b, source: g
 console.log(obj)  // console: { 0: 123, 1: 9999, 2: "v", 3: "a", 4: "s", 5: "c", 6: "r", 7: "i", 8: "p", 9: "t" }
 */
 
-
 //creates a new object, using an existing object as the prototype
 let newObj = Object.create(obj)  //obj is prototype object
 let newObj = Object.create(obj,propertiesObject) // optional: propertyObject
@@ -114,7 +106,6 @@ let newObj = Object.create(obj,propertiesObject) // optional: propertyObject
 -propertiesObject is an object whose keys represent the names of properties to be defined or modified and 
  whose values are objects describing those properties.
 */
-
 
 //returns the prototype object
 let obj = Object.getPrototypeOf(newObj)  // obj is the prototype object
@@ -137,4 +128,5 @@ array-like object with random key ordering:
 const anObj = { 100: 'a', 2: 'b', 7: 'c' };
 console.log(Object.keys(anObj));  // console: ['2', '7', '100']
 */
+
 
