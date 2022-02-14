@@ -19,7 +19,7 @@ Object.defineProperty(obj,propertiesObject)
 Object.defineProperties(obj,propertiesObject) //for more than one
 /* 
 propertiesObject = {
-  property1: {...},property2:{...},proerty3:{...},... }
+property1: {...},property2:{...},proerty3:{...},... }
 each property has descriptor, which is desdcription of properties optionally contain the following keys:
 configurable: bool  //default false, determine this property descriptor may be changed and if the property may be deleted from the corresponding object.
 enumberable: bool   //default false, determine property shows up during enumeration of the properties on the corresponding object.
