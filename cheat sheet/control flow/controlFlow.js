@@ -16,14 +16,15 @@ if(condition){
 
 //switch statement:
 switch(condition){
-    case 'value1' :
+    case 'value1':
         //code
-        [break;]
-    case 'value2' :
+        break;
+    case 'value2':
         //code
-        [continue;]
-    .......
-    default :
+        continue;
+    ...
+    
+    default:
         //code
 }
 
