@@ -22,3 +22,4 @@ const mapIter = map[Symbol.iterator]();   //returns a new Iterator object that c
 const keyIter = map.keys();               //returns a new Iterator object that contains the keys for each element in the Map object in insertion order
 const valIter = map.values();             //returns a new Iterator object that contains the values for each element in the Map object in insertion order
 
+
