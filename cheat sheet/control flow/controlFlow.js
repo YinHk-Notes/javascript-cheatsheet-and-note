@@ -28,7 +28,3 @@ switch(condition){
         //code
 }
 
-
-  
-  
-  
