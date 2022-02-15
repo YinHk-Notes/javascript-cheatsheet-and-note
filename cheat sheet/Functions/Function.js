@@ -1,6 +1,13 @@
 /* Every JavaScript function is actually a Function object.
    This can be seen with the code (function(){}).constructor === Function, which returns true */
 
+//declare a function
+function Name(param1,param2,...param) {
+   //body
+}
+//or
+const fun = function(param1,param2,...param) {}
+
 //creates a new Function object, args and functionBody are all in string format
 const fun1 = new Function(functionBody)
 const fun2 = new Function(arg1, ... argN, functionBody)       
