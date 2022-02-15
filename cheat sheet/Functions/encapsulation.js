@@ -3,16 +3,16 @@
 
 
 let obj = {
-  v: 999,
+  val: 999,
   
   //getter, return data
   get prop() {
-    return this.v;
+    return this.val;
   },
   
   //setter, change data
   set prop(newValue) {
-    this.v = newValue;
+    this.val = newValue;
   }
   
 };
