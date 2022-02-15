@@ -43,7 +43,6 @@ obj: object which is to have its prototype set.
 prototype: object's new prototype
 */
 
-
 //create an array of a given object's own enumerable property values,
 Object.values(obj)
 /*
