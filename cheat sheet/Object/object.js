@@ -45,7 +45,6 @@ Object.getOwnPropertyNames(obj)
 //checkt object has the specified property as its own property or not 
 obj.hasOwnProperty(propertyName)  // return boolean,  propertyName is string name
 
-
 //freezes an object. A frozen object can no longer be changed
 Object.freeze(obj) // can not change values and change/add/remove properties in frozen object
 
