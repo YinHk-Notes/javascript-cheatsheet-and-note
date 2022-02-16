@@ -24,10 +24,28 @@ d.setFullYear(yearValue, monthValue, dateValue)
 d.setHours(hoursValue, minutesValue, secondsValue, msValue)
 d.setMilliseconds(millisecondsValue)
 d.setMinutes(minutesValue, secondsValue, msValue)
+d.setMonth(monthValue, dayValue)
+d.setSeconds(secondsValue, msValue)
+d.setTime(timeValue)                          //timeValue: an integer representing the number of milliseconds since 1 January 1970, 00:00:00 UTC
 
+d.valueOf()                                   //returns the primitive value of a Date object
 
+d.toLocaleTimeString(locales, options)
+d.toLocaleString(locales, options)
+d.toUTCString()
+d.toJSON()                                    //returns a string representation of the Date object
+d.toString()
+//eg
+var d = new Date(2000, 5, 28, 14, 39, 7);
+console.log(d.toString());                    //Mon Jun 28 2000 14:39:07 GMT-0600 (PDT)
+
+d.toDateString()                              //returns the date portion of a Date object in English     
+//eg
+console.log(d.toDateString());                //Mon Jun 28 2000
 
 //static method
-Date.now()     //returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
-Date.parse()   //parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or NaN
+Date.now()                                                      //returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC
+Date.parse(dateString)                                          //parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC or NaN
+Date.UTC(year, month, day, hour, minute, second, millisecond)   //accepts parameters similar to the Date constructor, but treats them as UTC
+
 
