@@ -12,7 +12,8 @@ function myFunction() {
 
 
 /* Note: The await keyword is only valid inside async functions within regular JavaScript code. If you use it outside of an 
-   async function's body, you will get a SyntaxError. 
+   async function's body, you will get a SyntaxError. If a Promise is passed to an await expression, it waits for the Promise 
+   to be fulfilled and returns the fulfilled value.
    "async" makes a function return a Promise  
    "await" before a function makes a function wait for a Promise, the await keyword can only be used inside an async function. 
    If the Promise is rejected, the await expression throws the rejected value.
@@ -33,7 +34,11 @@ function myPromise() {
 myPromise()
   .then()
   .catch()
-  
+
+
+//handling rejected promises
+let response = await promisedFunction().catch((err) => { console.error(err); });    // response will be undefined if the promise is rejected
+
 //If the Promise is rejected, the rejected value is thrown
 async function name() {
   try {
@@ -43,12 +48,20 @@ async function name() {
   }
 }
 
-//handling rejected promises
-let response = await promisedFunction().catch((err) => { console.error(err); });    // response will be undefined if the promise is rejected
+//dynamic dependency pathing
+const strings = await import(`/i18n/${navigator.language}`);   //allows for Modules to use runtime values in order to determine dependencies
+
+//use await in module
+export default await module         //any modules that include this will wait for this module
+//eg:
+const colors = fetch('../data/colors.json')     // fetch request
+  .then(response => response.json());
+export default await colors;
+
 
 //use await in fetching API
 let myAsyncFunction = async () => {
-  const response = await fetch(URI);
+  const response = await axios(URI);
   if (response.status !== 200) {
     throw new Error("error_message");
   }
@@ -65,8 +78,8 @@ myAsyncFunction()
 //example
 async function fetchMoviesAndCategories() {
   const [moviesResponse, categoriesResponse] = await Promise.all([
-    fetch('/movies'),
-    fetch('/categories')
+    axios('/movies'),
+    axios('/categories')
   ]);
   const movies = await moviesResponse.json();
   const categories = await categoriesResponse.json();
@@ -81,8 +94,20 @@ fetchMoviesAndCategories().then(([movies, categories]) => {
 });
 
 
-
-
-
+//nest
+async function a(){
+  await b();
+  .....       //wait to execute after b() finish
+  await c();
+  .....       //wait to execute after c() finish
+  await new Promise(resolve=>{
+    .....
+  });
+  .....       //execute after finish the promise above
+}
+a();
+a().then(()=>{
+  .....       //wait to execute after a() finish
+}).catch();
 
 
