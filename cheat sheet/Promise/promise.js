@@ -66,7 +66,7 @@ Promise.allSettled([p1, p2, p3])
            });
 
 //collecting suceesful results in fetching API
-onst promises = [fetch(url1), fetch(url2)];
+const promises = [fetch(url1), fetch(url2)];
 const results = await Promise.allSettled(promises);
 const successfulPromises = results.filter(p => p.status === 'fulfilled');
 
@@ -81,7 +81,30 @@ const errors = results
 //get the value of any first fulfilled promise, it returns a single promise that first resolves.
 Promise.any([p1,p2,p3]).then((value) => console.log(value));
    
-
-                        
+//returns a Promise. When the promise is finally either fulfilled or rejected, the specified callback function is executed
+myPromise.finally(function() {
+   //no matter fulfilled or rejected
+});  
+   
+//returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise 
+Promise.race([p1,p2,p3]).then((value) => console.log(value)).catch((reason) => console.log(reason));
+   
+   
+   
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−+
+| name               | description                                     |                 |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−+
+| Promise.allSettled | does not short-circuit                          | Added in ES2020 |
+| Promise.all        | short-circuits when an input value is rejected  | Added in ES2015 |
+| Promise.race       | short-circuits when an input value is settled   | Added in ES2015 |
+| Promise.any        | short-circuits when an input value is fulfilled | this proposal   |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−+
+   
+   
+   
+   
+ 
+   
+   
 
                            
