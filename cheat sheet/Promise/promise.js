@@ -8,7 +8,7 @@
    */
 
 //create promise object
-const myPromise = new Promise(executor)      
+const myPromise = new Promise( /* executor */ function(resolve, reject) { ... })      
 
 //executor is function with two parameters: resolve and reject for executing promise
 (resolve, reject) => { ... }
@@ -27,7 +27,7 @@ myPromise.then( (value) => {}, (reject) => { })
   */
                            
 //execute when myPromise is rejected
-myPromise.catch((error) => { ... })                           
+myPromise.catch((error) => { //...rejection })                           
                            
 //promises chain
 myPromise.then((value) => { return new Promise() })
@@ -36,6 +36,6 @@ myPromise.then((value) => { return new Promise() })
             .then((value) => { return new Promise() })
              .catch((error) => { })
              
-             
-
+//takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises   
+const [] = Promise.all([
                            
