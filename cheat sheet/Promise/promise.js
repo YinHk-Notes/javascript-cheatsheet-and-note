@@ -97,8 +97,7 @@ myPromise.finally(function() {
 //returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise 
 Promise.race([p1,p2,p3]).then((value) => console.log(value)).catch((reason) => console.log(reason));
    
-   
-   
+     
 +−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−+
 | name               | description                                     |                 |
 +−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−+
@@ -108,5 +107,3 @@ Promise.race([p1,p2,p3]).then((value) => console.log(value)).catch((reason) => c
 | Promise.any        | short-circuits when an input value is fulfilled | this proposal   |
 +−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−+
    
-   
-    
