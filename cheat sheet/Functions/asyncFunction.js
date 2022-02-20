@@ -76,8 +76,9 @@ myAsyncFunction()
   });
 
 //example
-async function fetchMoviesAndCategories() {
-  const [moviesResponse, categoriesResponse] = await Promise.all([
+async function fetchMoviesAndCategories() {   
+  //await Promise.all([...]) starts fetch requests in parallel, and waits until all of them are resolved.
+  const [moviesResponse, categoriesResponse] = await Promise.all([  
     axios('/movies'),
     axios('/categories')
   ]);
