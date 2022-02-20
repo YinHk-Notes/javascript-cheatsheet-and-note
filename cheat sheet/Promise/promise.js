@@ -2,9 +2,9 @@
 /* Promises are used to handle asynchronous operations in JavaScript.
    The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
    A Promise is in one of these states:
-    - pending:  initial state, neither fulfilled nor rejected.
-    - fulfilled:  meaning that the operation was completed successfully.
-    - rejected:   meaning that the operation failed.  
+    - pending:  initial state, neither fulfilled nor rejected. { <state>: "pending" }
+    - fulfilled:  meaning that the operation was completed successfully.  { <state>: "fulfilled", <value>: ... }
+    - rejected:   meaning that the operation failed.  { <state>: "rejected" } 
    */
 
 //create promise object
@@ -35,7 +35,50 @@ myPromise.then((value) => { return new Promise() })
            .then((value) => { return new Promise() })
             .then((value) => { return new Promise() })
              .catch((error) => { })
-             
+ 
+
 //takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises   
-const [] = Promise.all([
+Promise.all([promise1, promise2, promise3,...promise])
+
+//example:
+//p1,p2 and p3 are promises
+Promise.all([p1,p2,p3]).then(values => {
+  console.log(values);     //return an array of values
+});
+//use async/await
+async function P() {
+    const [P1,P2,P3] = await Promise.all([p1,p2,p3])
+    return [P1,P2,P3]      //return an array of the results of the promises
+}
+P().then(([P1,P2,P3])=>{
+      console.log(P1);
+      console.log(P2);
+      console.log(P3);
+   }).catch()
+                        
+                        
+//returns a promise that all of the given promises have either fulfilled or rejected, return result array of objects describes the outcome of each promise.
+//object: either {  status: "fulfilled", value: val } or { status: 'rejected', reason: error }
+Promise.allSettled([p1, p2, p3])
+         .then((result) => {
+            //...
+            console.log(result);       //an array of result objects
+           });
+
+//collecting suceesful results in fetching API
+onst promises = [fetch(url1), fetch(url2)];
+const results = await Promise.allSettled(promises);
+const successfulPromises = results.filter(p => p.status === 'fulfilled');
+
+//collecting errors in fetching API
+const promises = [fetch(url1), fetch(url2)];
+const results = await Promise.allSettled(promises);
+const errors = results
+  .filter(p => p.status === 'rejected')
+  .map(p => p.reason);
+                        
+                        
+                        
+                        
+
                            
