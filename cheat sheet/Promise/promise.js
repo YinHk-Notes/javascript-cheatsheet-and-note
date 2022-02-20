@@ -57,7 +57,7 @@ P().then(([P1,P2,P3])=>{
    }).catch()
                         
                         
-//returns a promise that all of the given promises have either fulfilled or rejected, return result array of objects describes the outcome of each promise.
+//takes an iterable of Promise objects whether promises have either fulfilled or rejected, return result array of objects describes the outcome of each promise.
 //object: either {  status: "fulfilled", value: val } or { status: 'rejected', reason: error }
 Promise.allSettled([p1, p2, p3])
          .then((result) => {
@@ -78,7 +78,10 @@ const errors = results
   .map(p => p.reason);
                         
                         
-                        
+//get the value of any first fulfilled promise, it returns a single promise that first resolves.
+Promise.any([p1,p2,p3]).then((value) => console.log(value));
+   
+
                         
 
                            
