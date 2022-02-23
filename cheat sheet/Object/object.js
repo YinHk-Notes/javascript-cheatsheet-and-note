@@ -8,11 +8,8 @@ let obj = { a:99, b:'hello', c:true }
 
 //defines new or modifies existing properties in an object
 /*
- *@param obj The object on which to define or modify properties.
- *@param propertiesObject An object whose keys represent the names of properties to be defined or modified and whose values are 
- *objects describing those properties.
- *@param propertiesObject An object whose keys represent the names of properties to be defined or modified and 
- *whose values are objects describing those properties
+  obj: The object on which to define or modify properties.
+  propertiesObject: An object whose keys represent the names of properties to be defined or modified and whose values are objects describing those properties
  */
 Object.defineProperty(obj,propertiesObject) 
 Object.defineProperties(obj,propertiesObject) //for more than one
@@ -59,8 +56,8 @@ console.log( Object.entries(obj) )  // console: [ ["a",99], ["b","hello"], ["c",
 
 //transforms a list of key-value pairs into an object.
 /* 
- *performs the reverse of Object.entries().
- *@param iterable An iterable such as Array or Map or other objects implementing the iterable protocol.
+ performs the reverse of Object.entries().
+ iterable: An iterable such as Array or Map or other objects implementing the iterable protocol.
  */
 Object.fromEntries(iterable)
 /*
