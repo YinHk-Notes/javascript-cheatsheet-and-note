@@ -51,9 +51,9 @@ console.log(Object.values(obj)) // console: [99, "hello", true]
 */
 
 //returns a string representing the object.
-obj.prototype.toString()
+obj.toString()
 
 //returns the primitive value of the specified object.
-obj.prototype.valueOf()
+obj.valueOf()
 
 
