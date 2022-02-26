@@ -193,6 +193,59 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
   remove item
   arr.splice(start)
  */
+                                           
+// groups the elements of the calling array according to the values returned by a provided testing function
+/* The returned object has separate properties for each group, containing arrays with the elements in the group. 
+   Note that the returned object references the same elements as the original array (not deep copies).
+   The groupBy() method executes the callbackFn function once for each index of the array, returning a string 
+   (or value that can be coerced to a string) indicating the group of the element. 
+
+   element:
+    - The value of the current element in the array.
+   index Optional:
+    - The index (position) of the current element in the array.
+   array Optional:
+    - The array that groupBy() was called on.
+   
+   The object returned from the callback indicates the group of the current element. It must be possible to coerce 
+   this returned callback value into a string (which will then be used as a property name in the final returned object). 
+  */                                           
+let result = arr.groupBy((element, index, array) => { })                                           
+//eg:
+const products = [
+  { name: 'apples', category: 'fruits' },
+  { name: 'oranges', category: 'fruits' },
+  { name: 'potatoes', category: 'vegetables' } ]
+
+const groupByCategory = products.groupBy(product => {
+  return product.category;
+});
+console.log(groupByCategory); 
+// {
+//   'fruits': [
+//     { name: 'apples', category: 'fruits' }, 
+//     { name: 'oranges', category: 'fruits' },
+//   ],
+//   'vegetables': [
+//     { name: 'potatoes', category: 'vegetables' }
+//   ]
+// }
+                                           
+let result = arr.groupBy((element, index, array) => { })                                           
+//eg:
+const groupByCategory = products.groupByToMap(product => {
+  return product.category;
+});
+console.log(groupByCategory); 
+// Map([
+//   ['fruits', [
+//     { name: 'apples', category: 'fruits' }, 
+//     { name: 'oranges', category: 'fruits' },
+//   ]],
+//   ['vegetables', [
+//     { name: 'potatoes', category: 'vegetables' }
+//   ]
+// ])
 
 // returns a string with all the array values, separated by commas.
 arr.toString()
