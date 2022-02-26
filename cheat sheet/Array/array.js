@@ -8,6 +8,12 @@ let arr = new Array(a,b,c,...)
 // assess an array item
 let value = arr[index]
 
+//iteration
+let iterArr = arr[Symbol.iterator]()
+console.log(iterArr.next().value); // a
+console.log(iterArr.next().value); // b
+console.log(iterArr.next().value); // c
+
 // add item to at the end
 arr.push(item) 
 let e = arr.push(item) //output: new length of arr 
