@@ -8,11 +8,28 @@ let arr = new Array(a,b,c,...)
 // assess an array item
 let value = arr[index]
 
+// returns the Array constructor
+Array[Symbol.species]  //function Array()
+
 // iteration
-let iterArr = arr[Symbol.iterator]()
-console.log(iterArr.next().value); // a
-console.log(iterArr.next().value); // b
-console.log(iterArr.next().value); // c
+const iterArr = arr[Symbol.iterator]()
+console.log(iterArr.next().value) // a
+console.log(iterArr.next().value) // b
+console.log(iterArr.next().value) // c
+
+// returns a new Array Iterator object that contains the keys for each index in the array
+const iteratorKeys = arr.keys()
+
+for (const key of iteratorKeys) {
+  console.log(key)     //key: 0, 1, 2, ...
+}
+
+// returns a new array iterator object that contains the values for each index in the array
+const iteratorValues = arr.values()
+
+for (const value of iteratorValues) {
+  console.log(value)   //value: a, b, c, ... 
+}
 
 // returns a new Array Iterator object that contains the key/value pairs for each index in the array
 const iteratorArr = arr.entries()
