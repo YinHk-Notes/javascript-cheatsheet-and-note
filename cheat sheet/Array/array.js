@@ -24,7 +24,6 @@ for (const [index, element] of iteratorArr)
 // 2 'c'
 // ...
 
-
 // add item to at the end
 arr.push(item) 
 let e = arr.push(item) //output: new length of arr 
