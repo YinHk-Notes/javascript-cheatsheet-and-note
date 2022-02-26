@@ -8,11 +8,22 @@ let arr = new Array(a,b,c,...)
 // assess an array item
 let value = arr[index]
 
-//iteration
+// iteration
 let iterArr = arr[Symbol.iterator]()
 console.log(iterArr.next().value); // a
 console.log(iterArr.next().value); // b
 console.log(iterArr.next().value); // c
+
+// returns a new Array Iterator object that contains the key/value pairs for each index in the array
+const iteratorArr = arr.entries()
+
+for (const [index, element] of iteratorArr)
+  console.log(index, element)
+// 0 'a'
+// 1 'b'
+// 2 'c'
+// ...
+
 
 // add item to at the end
 arr.push(item) 
