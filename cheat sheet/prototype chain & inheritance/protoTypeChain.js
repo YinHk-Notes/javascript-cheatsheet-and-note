@@ -33,7 +33,13 @@ newObj.__proto__ = baseObj  //newObj inherit from baseObj, by setting newObj pro
 Object.getPrototypeOf(obj)                //get method
 Object.setPrototypeOf(obj, prototype)     //set method
 
-
+//.prototype
 /* using prototype to add new feature:
    - add new properties (or methods) to all existing objects of a given type
    - add new properties (or methods) to an object constructor */
+
+
+
+
+
+
