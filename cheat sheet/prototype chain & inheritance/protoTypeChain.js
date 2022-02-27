@@ -7,6 +7,7 @@
 // This is a special hidden property that exists on every object in JavaScript, it holds a reference to the object’s prototype.
 // The value of this property is always either null or name of another object.
 // [[Prototype]] is null it means that the object doesn’t inherit from any other object.
+// Objects have a private property called [[Prototype]] that points to that object’s prototype.
 // The value is a name of another object it means that the object’s prototype references another object.
 // You only read it from this hidden property, and not allow to modify the value from this property.
 
@@ -33,13 +34,29 @@ newObj.__proto__ = baseObj  //newObj inherit from baseObj, by setting newObj pro
 Object.getPrototypeOf(obj)                //get method
 Object.setPrototypeOf(obj, prototype)     //set method
 
-//.prototype
-/* using prototype to add new feature:
+
+// .prototype
+// .prototype provides a blueprint for constructing an instance.
+// It is a special property that functions used when it used as a constructor function.
+// .prototype is used in constructor.
+/* .prototype let you add properties (or methods) to the constructor function and the instances will inherit those new features.
+   using prototype to add new feature:
    - add new properties (or methods) to all existing objects of a given type
    - add new properties (or methods) to an object constructor */
 
 
 
+// constructor
+// A constructor function is like an object factory that creates new objects which are instances of itself.
+// It likes a blueprint for creating many instances.
+// Any object instances created by a constructor function will inherit the properties of the object at [FunctionName].prototype.
 
 
+
+// prototype chain
+// Almost all objects inherit properties and methods from their prototypes.
+// 
+
+
+//example:
 
