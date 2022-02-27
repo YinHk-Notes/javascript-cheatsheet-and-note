@@ -17,7 +17,8 @@
 // It is a method that exposes the hidden [[Prototype]] property and allows you to modify it.
 // It is not the same thing to [[Prototype]], __proto__ is a setter and getter for [[Prototype]] property.
 // You can use them to change the prototype of an object.
-// .__proto__ must point to another prototype of object
+// __proto__ is in all object in JavaScript and must point to its prototype(constructor/the property of object it inherits form). 
+// The value of .__proto__ must be a prototype.
 
 // get the prototype of object
 let obj = {}
@@ -38,7 +39,7 @@ Object.setPrototypeOf(obj, prototype)     //set method
 // .prototype
 // .prototype provides a blueprint for constructing an instance.
 // It is a special property that functions used when it used as a constructor function.
-// .prototype is used in constructor.
+// .prototype point to the constructor itself.
 /* .prototype let you add properties (or methods) to the constructor function and the instances will inherit those new features.
    using prototype to add new feature:
    - add new properties (or methods) to all existing objects of a given type
@@ -48,7 +49,7 @@ Object.setPrototypeOf(obj, prototype)     //set method
 
 // constructor
 // A constructor function is like an object factory that creates new objects which are instances of itself.
-// It likes a blueprint for creating many instances.
+// It likes a blueprint for creating different instances.
 // Any object instances created by a constructor function will inherit the properties of the object at [FunctionName].prototype.
 
 
