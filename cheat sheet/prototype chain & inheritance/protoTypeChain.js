@@ -69,3 +69,20 @@ console.dir(Phone)     // prototype: {constructor: ƒ}
 
 //example:
 
+function Phone(brand, model, price){
+    this.brand = brand
+    this.model = model
+    this.price = price
+}
+console.dir(Phone)
+Phone.prototype.type = 'mobile'
+Phone.type //undefined
+Phone.hasOwnProperty('type')  //false
+let smartPhone = new Phone('Apple', 'iPhone13 Pro 128GB', 4500)
+smartPhone.hasOwnProperty('type')  //false
+smartPhone.type     //mobile
+
+
+
+
+
