@@ -47,6 +47,7 @@ Object.setPrototypeOf(obj, prototype)     //set method
 
 
 
+
 // constructor
 // A constructor function is like an object factory that creates new objects which are instances of itself.
 // It likes a blueprint for creating different instances.
