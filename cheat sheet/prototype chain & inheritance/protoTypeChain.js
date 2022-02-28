@@ -45,7 +45,14 @@ Object.setPrototypeOf(obj, prototype)     //set method
    - add new properties (or methods) to all existing objects of a given type
    - add new properties (or methods) to an object constructor */
 
-
+// 
+// eg:
+function Phone(brand, model, price){
+    this.brand = brand
+    this.model = model
+    this.price = price 
+}
+console.dir(Phone)     // prototype: {constructor: ƒ}
 
 
 // constructor
