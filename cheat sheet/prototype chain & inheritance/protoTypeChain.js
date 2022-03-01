@@ -74,13 +74,13 @@ function Phone(brand, model, price){
     this.model = model
     this.price = price
 }
-console.dir(Phone)
-Phone.prototype.type = 'mobile'
-Phone.type //undefined
-Phone.hasOwnProperty('type')  //false
-let smartPhone = new Phone('Apple', 'iPhone13 Pro 128GB', 4500)
-smartPhone.hasOwnProperty('type')  //false
-smartPhone.type     //mobile
+console.dir(Phone)                                             //
+Phone.prototype.type = 'smart phone'
+Phone.type                                                     //undefined
+Phone.hasOwnProperty('type')                                   //false
+const iPhone = new Phone('Apple', 'iPhone13 Pro 128GB', 4500)
+iPhone.hasOwnProperty('type')                                  //false
+iPhone.type                                                    //smart phone
 
 
 
