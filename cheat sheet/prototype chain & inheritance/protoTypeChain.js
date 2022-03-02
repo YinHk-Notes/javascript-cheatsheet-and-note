@@ -74,22 +74,22 @@ function Phone(brand, model, price){                           // constructor fu
     this.model = model
     this.price = price
 }                                                              
-console.dir(Phone)                                             // with the 'prototype' property in this constructor function
+console.dir(Phone)                                             // check with the 'prototype' property in this constructor function
 Phone.__proto__                                                // Function.prototype,  ƒ () { [native code] } 
 Function.prototype.isPrototypeOf(Phone)                        // true
-typeOf(Phone)                                                  // 'function'
+typeof(Phone)                                                  // 'function'
 Phone.prototype                                                // prototype of all instances of the Phone constructor
-console.dir(Phone.prototype)                                   // with the 'constructor' property points to the constructor function of all instances inherit from this 
+console.dir(Phone.prototype)                                   // check with the 'constructor' property which points to the constructor function of all instances inherit from this 
 Phone.prototype.__proto__                                      // Object.prototype
 Object.prototype.isPrototypeOf(Phone.prototype)                // true
 Phone.prototype.type = 'mobile'                                // add new property and all instances of its constructor inherit from this
 Phone.prototype.type = 'smart phone'                           // change the property and all instances also inherit from this change
-typeOf(Phone.prototype)                                        // 'object'
+typeof(Phone.prototype)                                        // 'object'
 Phone.type                                                     // undefined
 Phone.hasOwnProperty('type')                                   // false
 Phone.__proto__                                                // Object.prototype
 const iPhone = new Phone('Apple', 'iPhone13 Pro 128GB', 4500)  // an instance of the Phone contructor
-typeOf(iPhone)                                                 // 'object'
+typeof(iPhone)                                                 // 'object'
 iPhone.hasOwnProperty('brand')                                 // true
 iPhone.hasOwnProperty('model')                                 // true
 iPhone.hasOwnProperty('price')                                 // true
@@ -98,5 +98,30 @@ iPhone.type                                                    // smart phone
 Phone.isPrototypeOf(iPhone)                                    // false
 iPhone.__proto__                                               // Phone.prototype
 Phone.prototype.isPrototypeOf(iPhone)                          // true
+
+
+let arr = [1,2,3]                                              // object, an instance of Array
+arr instanceof Array                                           // true
+console.dir(Array)                                             // Array is a constructor function with the 'prototype' property, ƒ Array()
+typeof(Array)                                                  // 'function'
+arr.__proto__                                                  // Array.prototype
+Array.prototype                                                // prototype of all arrays 
+Array.prototype.isPrototypeOf(arr)                             // true
+console.dir(Array.prototype)                                   // check with the 'constructor' property which points to constructor function - Array,  ƒ Array()        
+typeof(Array.prototype)                                        // 'object'
+Array.prototype.__proto__                                      // Object.prototype
+typeof(Array.prototype.__proto__)                              // 'object'    
+Object.prototype.isPrototypeOf(Array.prototype)                // true
+
+
+function doSomething() {}                                      // simple function
+console.dir(doSomething)                                       // check with the 'prototype' property in this function
+typeof(doSomething.prototype)                                  // 'object'
+doSomething.__proto__                                          // Function.prototype, ƒ () { [native code] }
+Function.prototype.isPrototypeOf(doSomething)                  // true
+typeof(Function)                                               // 'function'
+typeof(Function.prototype)                                     // 'object'
+Function.prototype.__proto__                                   // Object.prototype
+Object.prototype.isPrototypeOf(Function.prototype)             // true
 
 
