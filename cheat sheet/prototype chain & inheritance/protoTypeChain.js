@@ -27,9 +27,9 @@ obj.__proto__              //Object.prototype
 obj.__proto__.__proto__    //null
 
 // set prototype to another object for inheritance 
-const baseObj = {}
+const baseObj = { //properties or methods }
 const newObj = {}
-newObj.__proto__ = baseObj  //newObj inherit from baseObj, by setting newObj prototype to baseObj
+newObj.__proto__ = baseObj  //newObj inherit properties(or methods) from baseObj, by setting newObj prototype to baseObj
 
 // Note: Object.prototype.__proto__ is deprecated and not a standard.
 // Try to use the following methods for get and set instead
@@ -38,34 +38,42 @@ Object.setPrototypeOf(obj, prototype)     //set method
 
 
 // .prototype
-// .prototype provides a blueprint for constructing an instance.
-// It is a special property that functions used when it used as a constructor function.
-// .prototype point to the constructor itself.
+// .prototype provides a blueprint for constructing an instance/object.
+// It is a special property that functions used when it used as a constructor function, use console.dir() can check that property in chrome console. 
+// .prototype is an object and it likes a blueprint for constructor function creating a new object which inherit additional properties from that blueprint.
 /* .prototype let you add properties (or methods) to the constructor function and the instances will inherit those new features.
    using prototype to add new feature:
-   - add new properties (or methods) to all existing objects of a given type
-   - add new properties (or methods) to an object constructor */
-
-// 
-// eg:
-function Phone(brand, model, price){
-    this.brand = brand
-    this.model = model
-    this.price = price 
-}
-console.dir(Phone)     // prototype: {constructor: ƒ}
+   - add new properties(or methods) to all existing objects of a given type
+   - add new properties(or methods) to an object constructor */
 
 
 // constructor
 // A constructor function is like an object factory that creates new objects which are instances of itself.
 // It likes a blueprint for creating different instances.
 // Any object instances created by a constructor function will inherit the properties of the object at [FunctionName].prototype.
+// JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype.
+// In a constructor function this does not have a value.
+
+// create an object with 'new' keyword, assign value to the constructor function.
+// eg
+const Android = new Phone('Samsung', 'Galaxy', 3000)     // an object
 
 
-
-// prototype chain
-// Almost all objects inherit properties and methods from their prototypes.
-// 
+// prototype chain 
+// Prototype is an object
+// A prototype chain is a finite chain of objects which is used to implement inheritance and shared properties.
+// Almost all objects inherit properties and methods from its prototype object.
+// Each object has its own prototype, the prototype object also has its prototype, and so on until prototype points to null, that is so called prototype chain.
+// Object is the built-in constructor function that almost all objects in JavaScript are instances of.
+// Object.prototype is the most basic prototype, and that all objects have by default, all objects inherit from the object referenced by its.
+// Object.prototype is an object at the top and prototype of Object.prototype is null, so it's at the end of the prototype chain.
+/*   
+     ...-> obj.__proto__ -> Object.prototype -> null 
+   
+     arr._proto__ -> Array.prototype -> Object.prototype -> null
+   
+     doSomething.__proto__ -> Function.prototype -> Object.prototype -> null
+ */
 
 
 //example:
