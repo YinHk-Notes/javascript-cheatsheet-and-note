@@ -29,7 +29,8 @@ obj.__proto__.__proto__    //null
 // set prototype to another object for inheritance 
 const baseObj = { //properties or methods }
 const newObj = {}
-newObj.__proto__ = baseObj  //newObj inherit properties(or methods) from baseObj, by setting newObj prototype to baseObj
+newObj.__proto__ = baseObj                //newObj inherit properties(or methods) from baseObj, by setting newObj prototype to baseObj
+baseObj.isPrototypeOf(newObj)             //true
 
 // Note: Object.prototype.__proto__ is deprecated and not a standard.
 // Try to use the following methods for get and set instead
@@ -41,6 +42,7 @@ Object.setPrototypeOf(obj, prototype)     //set method
 // .prototype provides a blueprint for constructing an instance/object.
 // It is a special property that functions used when it used as a constructor function, use console.dir() can check that property in chrome console. 
 // .prototype is an object and it likes a blueprint for constructor function creating a new object which inherit additional properties from that blueprint.
+// In .prototype object, it has constructor property which returns a reference to the Object constructor function.
 /* .prototype let you add properties (or methods) to the constructor function and the instances will inherit those new features.
    using prototype to add new feature:
    - add new properties(or methods) to all existing objects of a given type
@@ -61,7 +63,6 @@ myAccount.accountInfo()                                             // name:John
 // Any object instances created by a constructor function will inherit the properties of the object at [FunctionName].prototype.
 // JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype.
 // In a constructor function this does not have a value.
-
 // create an object with 'new' keyword, assign value to the constructor function.
 // eg
 const Android = new Phone('Samsung', 'Galaxy', 3000)             // an object
@@ -82,6 +83,13 @@ const Android = new Phone('Samsung', 'Galaxy', 3000)             // an object
    
      doSomething.__proto__ -> Function.prototype -> Object.prototype -> null
  */
+// When access the property(or method) of object, if that property does not exist in the object, it will search it from its prototype through prototype chain
+// and return it if found, otherwise return undefined.
+// eg:
+const parent = { x: "prop"  }
+const child = {}
+child.__proto__ = parent
+child.x                                                        // 'prop'
 
 
 //example:
