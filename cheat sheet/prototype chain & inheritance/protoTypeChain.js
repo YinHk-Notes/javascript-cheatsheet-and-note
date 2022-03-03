@@ -45,6 +45,14 @@ Object.setPrototypeOf(obj, prototype)     //set method
    using prototype to add new feature:
    - add new properties(or methods) to all existing objects of a given type
    - add new properties(or methods) to an object constructor */
+// eg
+function User(name, password) {
+    this.name = name
+    this.password = password
+}
+User.prototype.accountInfo = function() { onsole.log("name:" + this.name + " " + "password" + this.password) }
+const myAccount = new User('John', 'abc123#')
+myAccount.accountInfo()                                             // name:John password:abc123#
 
 
 // constructor
