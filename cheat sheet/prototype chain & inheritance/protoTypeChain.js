@@ -56,7 +56,7 @@ Object.setPrototypeOf(obj, prototype)     //set method
 
 // create an object with 'new' keyword, assign value to the constructor function.
 // eg
-const Android = new Phone('Samsung', 'Galaxy', 3000)     // an object
+const Android = new Phone('Samsung', 'Galaxy', 3000)             // an object
 
 
 // prototype chain 
