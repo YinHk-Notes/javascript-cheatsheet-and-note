@@ -141,3 +141,47 @@ Function.prototype.__proto__                                   // Object.prototy
 Object.prototype.isPrototypeOf(Function.prototype)             // true
 
 
+// prototype inheritance <--> ES6 class inheritance 
+
+// prototype inheritance
+function Engineer(name, skill) {
+  Person.call(this, name)
+  this.skill = skill
+}
+Engineer.prototype = Object.create(Person.prototype)
+Engineer.prototype.constructor  = Engineer
+
+let alice = new Engineer('Alice', 'JavaScript')
+alice.hello()     // Hello Alice
+
+Person.prototype.hello = function () {       // modify prototype
+  console.log(`Bye ${this.name}.`)
+}
+
+gary.hello() // Bye Gary
+alice.hello() // Bye Alice
+
+// change to ES6 class inheritance
+class Person {
+  constructor (name){
+    this.name = name
+  }
+  hello() {
+    console.log(`Hello ${this.name}.`)
+  }
+}
+
+class Engineer extends Person {
+  constructor (name, skill){
+    super(name)            // call Person constructor
+    this.skill = skill
+  }
+   hello() {
+    console.log(`Bye ${this.name}.`)
+  }
+}
+
+let alice = new Engineer('Alice', 'JavaScript')
+alice.hello()              // Bye Alice
+
+
