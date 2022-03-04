@@ -66,6 +66,7 @@ let e = arr.unshift() //output: new length of arr
     from front to back.If the provided index is 0,then the whole array will be searched. Default: 0 (entire array is searched). 
   */
 arr.indexOf(searchElement, fromIndex)
+arr.indexOf(searchElement)
 
 // test whether the first item fullfil the test function, or undefined if not found
 arr.find((element, index, array) => { } )
