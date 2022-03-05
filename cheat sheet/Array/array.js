@@ -125,8 +125,10 @@ arr.flat()
 arr.flat(depth) //optional, default depth = 1
 /*
   eg: arr=[1,2,[3,4,[5,6]]
-  arr.flat() //output: [1,2,3,4,[5,6]]
-  arr.flat(2) ////output: [1,2,3,4,5,6]
+  arr.flat()         //output: [1,2,3,4,[5,6]]
+  arr.flat(2)        //output: [1,2,3,4,5,6]
+  //equals to
+  arr.flat().flat()  //output: [1,2,3,4,5,6]
  */
                                        
 // create a new array by applying map(), and then flattening the result by one level.
