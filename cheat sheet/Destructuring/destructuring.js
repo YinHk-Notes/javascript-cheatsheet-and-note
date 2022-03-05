@@ -11,7 +11,7 @@ let a, b
 const [a, , b] = [1, 2, 3] // a=1, b=3
 
 //Rest parameter
-const [a, ...b] = [1, 2, 3] //a=1, b=[2,3]
+const [a, ...b] = [1, 2, 3] // a=1, b=[2,3]
 
 //Fail-safe
 const [, , , a, b] = [1, 2, 3] // a=undefined, b=undefined
@@ -21,11 +21,11 @@ const a = 1, b = 2;
 [b, a] = [a, b] //a=2, b=1
 
 //Multi-dimensional array
-const [a, [b, [c, d]]] = [1, [2, [[[3, 4], 5], 6]]]
+const [a, [b, [c, d]]] = [1, [2, [[[3, 4], 5], 6]]]  // a=1, b=2, c=[ [ 3, 4 ], 5 ], d=6
 
 //String
 const str = "hello";
-const [a, b, c, d, e] = str //a='h',b='e',c='l',d='l',e='o'
+const [a, b, c, d, e] = str // a='h',b='e',c='l',d='l',e='o'
 
 
 function f() {
