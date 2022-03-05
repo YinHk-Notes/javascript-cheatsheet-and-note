@@ -229,6 +229,18 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
   arr.splice(start)     //remove all items after start 
  */
                                            
+// executes a user-supplied "reducer" callback function on each element of the array, 
+// in order, passing in the return value from the calculation on the preceding element.                                          
+arr.reduce(reducer)
+arr.reduce((previousValue, currentValue) => {})
+arr.reduce((previousValue, currentValue, currentIndex)=>{}, initialValue)    
+/* 
+      const array = [1, 2, 3, 4]
+      const initialValue = 0;
+      const sum = array1.reduce((previousValue, currentValue) => previousValue + currentValue, initialValue)   //10
+ */                                          
+                                           
+                                           
 // groups the elements of the calling array according to the values returned by a provided testing function
 /* The returned object has separate properties for each group, containing arrays with the elements in the group. 
    Note that the returned object references the same elements as the original array (not deep copies).
