@@ -89,7 +89,9 @@ arr.concat(array2,array3....)
 /* 
    target: The index position to copy the elements to (the position start to place all the copies!) 
    If negative, target will be counted from the end.
+   
    start: The index position to start copying elements from  (default is 0),If negative, start will be counted from the end.
+   
    end: The index position to stop copying elements from (default is array.length),copies up to but not including end
    If negative, start will be counted from the end.
   */
