@@ -115,6 +115,10 @@ arr.fill(value, start, end)
 
 // create an new array with all elements that pass the test function
 arr.filter((element, index, array) => { } )
+/* 
+   let arr = [1,2,3,4,5]
+   arr.filter(value => value>=3)      // [3,4,5]
+ */
 
 // creates a new array with specifying how deep a nested array structure should be flattened
 arr.flat()
