@@ -145,7 +145,7 @@ arr.includes(searchElement) //return boolean
 arr.includes(searchElement, fromIndex) //optional: fromIndex
      
 //  determines whether an object is an array
-arr.isArray() //return boolean
+Array.isArray(arr) //return boolean
                                         
 //  creates and returns a new string by concatenating all of the elements in an array 
 arr.join()                                       
