@@ -134,6 +134,9 @@ arr.flatmap() // It is identical to a map() followed by a flat() of depth 1
 
 // execute method once for each element in an array in order.
 arr.forEach((element, index, array) => { } ) // not create new array
+/* 
+    arr.forEach(element => console.log(element)) 
+ */
 
 //  determines whether an array contains a specified element
 arr.includes(searchElement) //return boolean
