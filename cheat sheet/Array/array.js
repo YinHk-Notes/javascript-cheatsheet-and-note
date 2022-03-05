@@ -208,11 +208,14 @@ arr.sort((firstElement, secondElement) => { ... }) //optional: with compare func
 // insert or replace element in specific position
 /*
   This method changes the original array.
+  
   start: The position to add/remove items, Use negative values to specify the position from the end of the array.
   If greater than the length of the array, no element will be deleted but the method will behave as an adding function, 
   adding as many element as item[n*] provided.
+  
   deleteCount[Optional]: number of items at the start from left to right in array to be removed. 
   If set to 0, no items will be removed. If omitted, this method will remove all other elements in the array.
+  
   param (item1, item2,...) Optional, the new item(s) to be added to the array  beginning from index, 
   If you do not specify any elements, it only remove elements from the array.
  */
