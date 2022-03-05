@@ -131,11 +131,11 @@ arr.flat(depth) //optional, default depth = 1
   arr.flat().flat()  //output: [1,2,3,4,5,6]
  */
                                        
-// create a new array by applying map(), and then flattening the result by one level.
-arr.flatmap() // It is identical to a map() followed by a flat() of depth 1
+// returns a new array formed by applying a function to each element of the array, then flattening the result by one level.
+arr.flatMap((currentValue, index, array) => {})         // It is identical to a map() followed by a flat() of depth 1
 
 // execute method once for each element in an array in order.
-arr.forEach((element, index, array) => { } ) // not create new array
+arr.forEach((element, index, array) => { } )           // not create new array
 /* 
     arr.forEach(element => console.log(element)) 
  */
