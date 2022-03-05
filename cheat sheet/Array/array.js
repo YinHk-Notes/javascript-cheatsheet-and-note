@@ -105,6 +105,9 @@ arr.every((element, index, array) => { } ) //only return boolean
    arr.every(currentValue => currentValue < 0) //return false
  */
 
+// tests whether at least one element in the array passes the test implemented by the provided function.
+arr.some((element, index, array) => {})
+
 //  changes all elements in an array to a static value
 /* 
    value: the value to be filled
