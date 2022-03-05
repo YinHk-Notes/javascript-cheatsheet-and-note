@@ -58,7 +58,7 @@ const {a, b, ...rest} = {a:1, b:2, c:3, d:4} //a=1, b=2, rest={c:3, d:4}
 /* Order of variable is regardless in object destructuring */
 
 let props = {a: 1, b: 2, c:3};
-const {c, a, b} = props; a=1, b=2, c=3
+const {c, a, b} = props;   // a=1, b=2, c=3
 
 
 /* Default values */
