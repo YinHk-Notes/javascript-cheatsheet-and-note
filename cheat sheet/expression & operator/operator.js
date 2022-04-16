@@ -13,7 +13,14 @@ expr1 === expr2
 // Logical AND
 expr1 && expr2
 
-some_condition && some_action();
+some_condition && some_action();  //if 
+
+//Optional chaining (?.)
+obj.val?.prop
+obj.val?.[expr]
+obj.arr?.[index]
+obj.func?.(args)
+
 
 if ( some_condition )
   some_action();
