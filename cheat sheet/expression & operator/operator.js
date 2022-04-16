@@ -13,7 +13,7 @@ expr1 === expr2
 // Logical AND
 expr1 && expr2
 
-some_condition && some_action();  //if 
+some_condition && some_action();  //if some_condition is not null/fullfil, then call the function
 
 //Optional chaining (?.)
 obj.val?.prop
