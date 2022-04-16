@@ -1,3 +1,6 @@
+// Destructuring Assignment: Unpack values from arrays, or properties from objects, assign into distinct variables.
+
+
 /* Array destructuring */
 
 //Basic
