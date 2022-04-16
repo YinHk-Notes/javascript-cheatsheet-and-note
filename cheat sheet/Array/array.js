@@ -113,7 +113,7 @@ arr.every((element, index, array) => { } ) //only return boolean
 // tests whether at least one element in the array passes the test implemented by the provided function.
 arr.some((element, index, array) => {})
 
-//  changes all elements in an array to a static value
+// changes all elements in an array to a static value
 /* 
    value: the value to be filled
    start: Start index to fill, default 0.
