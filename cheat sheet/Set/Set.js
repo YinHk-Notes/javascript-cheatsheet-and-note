@@ -7,8 +7,8 @@ set.size;                                       //returns the number of (unique)
 
 set.add(value);                                 //add value
 set.clear();                                    //removes all elements 
-set.delete();                                   //removes a specified value
-set.has();                                      //returns a boolean indicating whether an element with the specified value exists
+set.delete(value);                              //removes a specified value
+set.has(value);                                 //returns a boolean indicating whether an element with the specified value exists
 
 //executes a provided function once for each value in the Set object, in insertion order
 set.forEach(() => { /* ... */ } );
