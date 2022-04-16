@@ -9,8 +9,9 @@ for(let i=0; i<=arr.length-1; i++){
 } 
 
 //for...of loop
-for(const element of array) {
+for(const i of array) {
   //...
+  // array[i] return its value
 }
 
 //for...in loop
