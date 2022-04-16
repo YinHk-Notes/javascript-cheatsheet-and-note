@@ -84,6 +84,11 @@ arr.findIndex((element, index, array) => { } )
 
 // Joins two or more arrays, and returns a copy of the joined arrays
 arr.concat(array2,array3....)
+/*
+   const array1 = ['a', 'b', 'c']
+   const array2 = ['d', 'e', 'f']
+   const array3 = array1.concat(array2)  //["a", "b", "c", "d", "e", "f"]
+ */
 
 // copies array elements to another position in the array, overwriting the existing values.
 /* 
