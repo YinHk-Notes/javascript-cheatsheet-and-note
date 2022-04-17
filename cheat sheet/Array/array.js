@@ -239,7 +239,7 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
   replace item:
   arr.splice(start, N, item1,item2,...itemN)
   remove item:
-  arr.splice(start)     //remove all items after start 
+  arr.splice(start) / arr.splice(start, arr.length)    //remove all items after start 
  */
                                            
 // executes a user-supplied "reducer" callback function on each element of the array, 
