@@ -36,6 +36,7 @@ if (Infinity)
 if (-Infinity)
   
 //The logical AND operator, &&
+//If the first object is truthy, the logical AND operator returns the second operand
 true && "dog"
 // returns "dog"
 
