@@ -38,7 +38,7 @@ let reg = new RegExp(regular_expression, flags)
 
 reg.dotAll        //indicates whether or not the "s" flag is used with the regular expression
 reg.global        //indicates whether or not the "g" flag is used with the regular expression
-reg..hasIndices   //indicates whether or not the "d" flag is used with the regular expression
+reg.hasIndices   //indicates whether or not the "d" flag is used with the regular expression
 reg.ignoreCase    //indicates whether or not the "i" flag is used with the regular expression
 reg.multiline     //indicates whether or not the "m" flag is used with the regular expression
 reg.unicode       //indicates whether or not the "u" flag is used with a regular expression
