@@ -101,6 +101,11 @@ arr.concat(array2,array3....)
    If negative, start will be counted from the end.
   */
 arr.copyWithin(target, start, end)
+/*
+  const array = ['a', 'b', 'c', 'd', 'e'];
+  //copy to index 1 all elements from index 3 to the end
+  array.copyWithin(1, 3);  //[ 'a', 'd', 'e', 'd', 'e' ]
+ */
 
 // checks whether all elements in an array pass a test function or not
 arr.every((element, index, array) => { } ) //only return boolean
