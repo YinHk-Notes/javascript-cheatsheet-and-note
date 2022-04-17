@@ -2,7 +2,8 @@
 
 //create a String object
 const str = new String(thing)
-str.length
+str.length.                                     //return length
+str[i]                                          //return character in the specific position
 
 const iterator = str[Symbol.iterator]()         //returns a new iterator object that iterates over the code points of a String value, returning each code point as a String value
 str.charAt(index)                               //retuens a character for specificed index
