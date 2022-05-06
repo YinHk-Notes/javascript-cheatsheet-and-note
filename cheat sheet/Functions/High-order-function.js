@@ -31,3 +31,12 @@ fn(); // logs 'Hi' in the console
 returnFunc()(); // logs 'Hi' in the console
 
 
+
+//example:
+
+const App = (param1) => (param2) => { 
+    console.log("param1:"+ param1);
+    console.log("param2:" + param2);
+}
+
+App("hello")("world");  // param1:hello, param1:hello
