@@ -1,6 +1,7 @@
 ## Class
 
-### Classes are a template for creating objects.
+- class is not an object.
+- class are a template for creating objects.
 
 ```js
 class className {
@@ -50,6 +51,18 @@ console.log(Point.displayName);      // "Point"
 console.log(Point.distance(p1, p2)); // 7.0710678118654755
 ```
 
+### Instance
 
+- The constructor method is called automatically when a new object is created.
+
+```js
+class Mobile {
+  constructor(model) {
+    this.name = model;
+  }
+	...
+}
+let mbl = new Mobile("iPhone"); // an instance created
+```
 
 
