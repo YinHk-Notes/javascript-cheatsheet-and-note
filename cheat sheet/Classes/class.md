@@ -95,6 +95,16 @@ let d = new Dog('Mitzie');
 d.speak(); // Mitzie barks.
 ```
 
+### Call super class with `super`
+- The super keyword is used to call corresponding methods of super class
+
+```js
+super(arguments);  // calls the parent constructor (only inside the constructor)
+```
+
+```js
+super.parentMethod(arguments);  // calls a parent method
+```
 
 
 
