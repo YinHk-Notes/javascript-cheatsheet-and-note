@@ -193,6 +193,10 @@ arr.map((element) => { return ... })
 
 // creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
 Array.of(element0, element1, ... , elementN)
+/*
+   Array.of(1, 2, 3); // [1, 2, 3]
+   Array.of(7); // [7]
+ */
 
 // reverse the elements in array  
 arr.reverse() //The first array element becomes the last, and the last array element becomes the first.
