@@ -214,6 +214,35 @@ delete object.property
 delete object['property']
 ```
 
+### yield
+- `yield` keyword is used to pause and resume a generator function.
+-  simply helps to pause and resume a function in any time asynchronously
+
+> You can think multiple yields are the breakpoints in a javascript debugger within a single function.  Until you tell to navigate next breakpoint it wont execute the code block
+
+//eg:
+```js
+function* countAppleSales () {
+  let saleList = [3, 7, 5]
+  for (let i = 0; i < saleList.length; i++) {
+    yield saleList[i]
+  }
+}
+```
+
+```js
+let appleStore = countAppleSales()  // Generator { }
+console.log(appleStore.next())      // { value: 3, done: false }
+console.log(appleStore.next())      // { value: 7, done: false }
+console.log(appleStore.next())      // { value: 5, done: false }
+console.log(appleStore.next())      // { value: undefined, done: true }
+```
+
+
+
+
+
+
 
 
 
