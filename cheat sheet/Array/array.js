@@ -68,7 +68,7 @@ let e = arr.unshift() //output: new length of arr
 arr.indexOf(searchElement, fromIndex)
 arr.indexOf(searchElement)
 
-// test whether the first item fullfil the test function, or undefined if not found
+// returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned
 arr.find((element, index, array) => { } )
 /*
    eg: arr = [1,2,3,4,5]
