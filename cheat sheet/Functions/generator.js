@@ -2,6 +2,12 @@
    ,an object of this form: {value: undefined, done: true}. A generator is a process that can be paused and resumed and can yield multiple 
    values. A generator in JavaScript consists of a generator function, which returns an iterable Generator object. */
 
+
+// You can think multiple yields are the breakpoints in a javascript debugger within a single function.  
+// Until you tell to navigate next breakpoint it wont execute the code block
+
+
+
 //syntax of Generator function declaration
 function* generatorFunction(param1, param2,...param) {
   //...body
@@ -84,4 +90,7 @@ const getUsers = asyncAlt(function*() {
 
 // Invoking the function
 getUsers().then(response => console.log(response))
-                                  
+      
+                                       
+                                       
+                                       
