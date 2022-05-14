@@ -123,8 +123,12 @@ arr.some((element, index, array) => {})
    value: the value to be filled
    start: Start index to fill, default 0.
    end: The index to stop filling the array (default is array.length),fill up to but not including the end.
-  */
+ */
 arr.fill(value, start, end)
+/*
+   const arr = [1, 2, 3, 4];
+   arr.fill(0, 2, 4);        // [1, 2, 0, 0]
+ */
 
 // create an new array with all elements that pass the test function
 arr.filter((element, index, array) => { } )
