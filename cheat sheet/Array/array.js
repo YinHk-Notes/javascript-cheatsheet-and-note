@@ -206,6 +206,11 @@ arr.slice(start, end)
 /*
   selects the elements starting at the given start argument,  and ends at, but does not include, the given end argument.
  */
+/*
+    const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+    animals.slice(2, 4) // ["camel", "duck"]
+    animals.slice(2)    // ["camel", "duck", "elephant"]
+ */
                       
 // sorts the elements of an array
 arr.sort() //functionless, 
