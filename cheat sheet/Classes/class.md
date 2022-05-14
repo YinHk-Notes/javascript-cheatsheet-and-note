@@ -1,7 +1,7 @@
 ## Class
 
 - class is not an object.
-- class are a template for creating objects.
+- class are a blueprint for creating objects.
 
 ```js
 class className {
@@ -23,6 +23,7 @@ The static keyword defines a static method or property for a class
 - Static members (properties and methods) are called **without instantiating their class and cannot be called through a class instance**.
 - Static methods are often used to create utility functions for an application
 - Static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+- You cannot call a static method on an object, only on an object class.
 
 ```js
 class Point {
@@ -54,15 +55,49 @@ console.log(Point.distance(p1, p2)); // 7.0710678118654755
 ### Instance
 
 - The constructor method is called automatically when a new object is created.
+- Create instance by calling the constructor with the new keyword and initialize it.
 
 ```js
 class Mobile {
   constructor(model) {
     this.name = model;
   }
-	...
+   //...
 }
 let mbl = new Mobile("iPhone"); // an instance created
 ```
+
+### inheritance
+
+- use `extends` keyword for class inheritance
+```js
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name); // call the super class constructor and pass in the name parameter
+  }
+
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+let d = new Dog('Mitzie');
+d.speak(); // Mitzie barks.
+```
+
+
+
+
+
 
 
