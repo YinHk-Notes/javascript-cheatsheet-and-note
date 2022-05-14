@@ -1,15 +1,15 @@
-### this
+## this
 - In a method, this refers to the owner object
 - Alone, this refers to the global object.
 - In a function, this refers to the global object
 - this within classes always refers to the class instance
 - In an event, this refers to the DOM element that received the event
 
-### static
+## static
 **Static member** (method or property) is defined on a class. 
 
 **Static member cannot be called on instance.**
-## JavaScript Static Methods
+### JavaScript Static Methods
 
 Static class methods are defined on the **class itself. Static methods are associated with a class, not the instances of that class.** Thus**, static methods** are useful for defining helper or utility methods. It is often utility functions, such as functions to create or clone objects.
 
@@ -64,7 +64,7 @@ person.getName(); //raise an error when calling it on an object/instance
 > Use the **className.staticMethodName()** or **this.constructor.staticMethodName()** to call a static method in a class constructor or an instance method.
 > 
 
-## JavaScript static properties
+### JavaScript static properties
 
 Static properties can be accessed only inside the class in which they are defined. They are invisible to instances of that class. If you try to access static property from class instance, JavaScript will return undefined.  
 
@@ -201,6 +201,26 @@ class D extends C {}
 console.log( D.staticProperty ); //console: static property in classB
 console.log( D.staticMethod() ); //console: static method in classB
 ```
+
+### new
+- `new` keyword is use to create a instance of class
+
+### delete
+- delete operator removes a property from an object
+- if no more references to the same property are held, it is eventually released automatically.
+
+```js
+delete object.property
+delete object['property']
+```
+
+
+
+
+
+
+
+
 
 
 
