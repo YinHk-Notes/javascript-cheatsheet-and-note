@@ -18,7 +18,7 @@
 // It is a method that exposes the hidden [[Prototype]] property and allows you to modify it.
 // It is not the same thing to [[Prototype]], __proto__ is a setter and getter for [[Prototype]] property.
 // You can use them to change the prototype of an object.
-// __proto__ is in all object in JavaScript and must point to its prototype(constructor/the property of object it inherits form). 
+// __proto__ is in all object in JavaScript and must point to its prototype(constructor.prototype/the property of object it inherits form). 
 // The value of .__proto__ must be a prototype.
 
 // get the prototype of object
