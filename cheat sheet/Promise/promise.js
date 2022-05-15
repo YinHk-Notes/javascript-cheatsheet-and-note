@@ -153,6 +153,7 @@ Promise.any([p1,p2,p3]).then((value) => console.log(value));
   
    
 //returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise 
+//depend on which promise faster, then return this result in promise
 Promise.race([p1,p2,p3]).then((value) => console.log(value)).catch((reason) => console.log(reason));
    
      
