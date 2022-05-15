@@ -22,6 +22,15 @@ myPromise.then(handleResolved, handleRejected)
 
 //executor is function with two parameters: resolve and reject for executing promise
 (resolve, reject) => { ... }
+//eg:
+const myPromise = new Promise((resolve, reject) => {
+    if(consition) {
+      resolve('Promise resolved');
+    } else {
+      reject(new Error('Promise rejected'));
+    }
+});
+myPromise.then(handleResolved, handleRejected)                    
 
 
 //execute when myPromise is resolved
