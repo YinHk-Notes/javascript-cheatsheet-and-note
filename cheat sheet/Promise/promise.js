@@ -39,12 +39,12 @@ myPromise.then( (value) => {}, (reject) => { })
 //execute when myPromise is rejected
 myPromise.catch((error) => { //...rejection })       
    
-//returns a Promise object that is resolved with a given value
+//This method returns a Promise object that is resolved with a given value
 //if the value is a promise, that promise is returned; if the value is a thenable (i.e. has a "then" method), the returned promise will "follow" that thenable, 
 //adopting its eventual state; otherwise the returned promise will be fulfilled with the value. Turn a given value to a promise and return its value.
 Promise.resolve(value);   
 
-//returns a Promise object that is rejected with a given reason
+//This method returns a Promise object that is rejected with a given reason
 Promise.reject(reason);
                            
 //promises chain
