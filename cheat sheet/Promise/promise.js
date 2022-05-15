@@ -24,11 +24,10 @@ myPromise.then(handleResolved, handleRejected)
 (resolve, reject) => { ... }
 
 
-
 //execute when myPromise is resolved
 Promise.prototype.then() 
                       
-myPromise.then(onFulfilled, onRejected)
+myPromise.then(handleResolved, handleRejected)
 myPromise.then( (value) => {}, (reject) => { }) 
 /* Once a Promise is fulfilled or rejected, the respective handler function (onFulfilled or onRejected) will be called 
    asynchronously.
