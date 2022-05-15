@@ -1,4 +1,5 @@
-/* A Promise which will be resolved with the value returned by the async function, or rejected with an exception thrown from, 
+/* An async function is a function declared with the async keyword, and the await keyword is permitted within it. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+   A Promise which will be resolved with the value returned by the async function, or rejected with an exception thrown from, 
    or uncaught within, the async function. */
 
 async function myFunction(param1,param2,...paramN) {
