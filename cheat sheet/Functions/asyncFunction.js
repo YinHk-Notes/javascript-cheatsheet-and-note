@@ -19,10 +19,9 @@ function myFunction() {
    "await" before a function makes a function wait for a Promise, the await keyword can only be used inside an async function. 
    If the Promise is rejected, the await expression throws the rejected value.
    If the value of the expression following the await operator is not a Promise, it's converted to a resolved Promise. 
-   
-   Note: async/await is syntacic sugar, wrap promise and wait for the result of promise.
    */
 
+//Note: async/await is syntacic sugar, wrap promise without using .then() to handle the result of promises
 
 function aPromiseObj() {
   return new Promise((resolve, reject) => {})
