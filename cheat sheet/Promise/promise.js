@@ -5,10 +5,16 @@
     - pending:  initial state, neither fulfilled nor rejected. { <state>: "pending" }
     - fulfilled:  meaning that the operation was completed successfully.  { <state>: "fulfilled", <value>: ... }
     - rejected:   meaning that the operation failed.  { <state>: "rejected" } 
-   */
+  
+   📌 The Promise object supports two properties: state and result.
+   📌 While a Promise object is "pending" (working), the result is undefined.
+   📌 When a Promise object is "fulfilled", the result is a value.
+   📌 When a Promise object is "rejected", the result is an error object.
+   
+ */
 
 //create promise object
-const myPromise = new Promise( /* executor */ function(resolve, reject) { ... })      
+const myPromise = new Promise( /* executor */ function(resolve, reject) { ... })   
 
 //executor is function with two parameters: resolve and reject for executing promise
 (resolve, reject) => { ... }
