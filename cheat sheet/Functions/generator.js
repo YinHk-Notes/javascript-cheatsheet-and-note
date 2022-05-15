@@ -55,6 +55,17 @@ function* func2() {
 generator.return()              //returns a value in a generator and finishes the generator
 generator.throw()               //throws an error and finishes the generator
 
+//eg:
+function* yieldAndReturn() {
+  yield "Y";
+  return "R";   // finishes the generator here
+  yield "unreachable";
+}
+
+var gen = yieldAndReturn()
+console.log(gen.next()); // { value: "Y", done: false }
+console.log(gen.next()); // { value: "R", done: true }
+console.log(gen.next()); // { value: undefined, done: true }
 
 
 /* example of generator */
@@ -74,6 +85,33 @@ counter.next()  //{value: 0, done: false}
 counter.next()  //{value: 1, done: false}
 counter.next()  //{value: 2, done: false}
 counter.next()  //{value: 3, done: false}
+
+const someObj = {
+  *generator () {
+    yield 'a';
+    yield 'b';
+  }
+}
+
+const gen = someObj.generator()
+
+console.log(gen.next()); // { value: 'a', done: false }
+console.log(gen.next()); // { value: 'b', done: false }
+console.log(gen.next()); // { value: undefined, done: true }                                       
+                                       
+function* idMaker() {
+  var index = 0;
+  while (true)
+    yield index++;
+}
+
+var gen = idMaker();
+
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+// ...
                                        
 
 /* Additionally, when used with Promises, generators can mimic the async/await functionality, which allows us to deal with asynchronous code in a more 
