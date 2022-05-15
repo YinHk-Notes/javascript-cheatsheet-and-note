@@ -65,7 +65,7 @@ let obj = Object.fromEntries([ ["a",99], ["b","hello"], ["c",true] ])
 console.log(obj)  // console: { a:99, b:'hello', c:true }
 */
 
-//Merge一個或多個source object內的key & value到target object內 
+//Merge key & value from one or more source to the target object
 Object.assign(target, ...sources)
 /*
 Merge multiple sources:
@@ -75,7 +75,7 @@ console.log(obj)  //console: { a: 0, b: 1, c: 2 }
 Merge and overwrite equal keys:
 let obj = Object.assign({a: 0}, {b: 1}, {c: 2}, {c: 3}, {c: 4}, {d: 5});
 console.log(obj)  //console: { a: 0, b: 1, c: 4, d: 5 }
-//如果有相同的keys則會merge最新的value,overwrite舊的value
+//if same keys, then merge with the new value and overwirte the old value.
 
 Clone an object:
 let obj = {a:99, b:'hello', c:false}
