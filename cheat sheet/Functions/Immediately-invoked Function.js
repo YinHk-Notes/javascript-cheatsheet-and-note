@@ -4,6 +4,7 @@
    invoke and execute a function immediately after its declaration, creating an anonymous function is the best way. */
 
 // Note: you can also pass the arguments in the function and invoke it too
+// An anonymous function is a function without a name. The following shows how to define an anonymous function:
 
 // syntax
 (function() {
