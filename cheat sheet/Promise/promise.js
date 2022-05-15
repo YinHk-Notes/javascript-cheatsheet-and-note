@@ -53,7 +53,33 @@ Promise.resolve(value);
 
 //This method returns a Promise object that is rejected with a given reason
 Promise.reject(reason);
-                           
+        
+
+//he promise is finally either fulfilled or rejected, the specified callback function is executed
+Promise.prototype.finally()
+
+function checkMail() {
+  return new Promise((resolve, reject) => {
+    if (Math.random() > 0.5) {
+      resolve('Mail has arrived');
+    } else {
+      reject(new Error('Failed to arrive'));
+    }
+  });
+}
+
+checkMail()
+  .then((mail) => {
+    console.log(mail);
+  })
+  .catch((err) => {
+    console.error(err);
+  })
+  .finally(() => {
+    console.log('Experiment completed');
+  });
+
+   
 //promises chain
 myPromise.then((value) => { return new Promise() })
           .then((value) => { return new Promise() })
