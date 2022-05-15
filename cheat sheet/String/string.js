@@ -50,7 +50,7 @@ str.startsWith(searchString, position)
 str.substring(indexStart)                       //returns the part of the string between the start and end indexes, or to the end of the string
 str.substring(indexStart, indexEnd)
 
-str.toLocaleLowerCase()
+str.toLowerCase()
 str.toUpperCase()
 str.toString()
 
