@@ -239,24 +239,49 @@ console.log(appleStore.next())      // { value: undefined, done: true }
 ```
 
 
+### getter and setter
+In JavaScript, there are two kinds of object properties:
+- Data properties
+- Accessor properties
 
+> **get** and **set** are special properties in object to get access and modify the data properties in object.
 
+getter methods are used to access the properties of an object.
+```js
+const student = {
 
+    // data property
+    firstName: 'Monica',
+    
+    // accessor property(getter)
+    get getName() {
+        return this.firstName;
+    }
+};
 
+// accessing getter methods
+console.log(student.getName); // Monica
 
+// trying to access as a method
+console.log(student.getName()); // error
+```
 
+setter methods are used to change the values of an object. 
+```js
+const student = {
+    firstName: 'Monica',
+    
+    //accessor property(setter)
+    set changeName(newName) {
+        this.firstName = newName;
+    }
+};
 
+console.log(student.firstName); // Monica
 
+// change(set) object property using a setter
+student.changeName = 'Sarah';
 
-
-
-
-
-
-
-
-
-
-
-
+console.log(student.firstName); // Sarah
+```
 
