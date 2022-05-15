@@ -23,7 +23,11 @@ myPromise.then(handleResolved, handleRejected)
 //executor is function with two parameters: resolve and reject for executing promise
 (resolve, reject) => { ... }
 
+
+
 //execute when myPromise is resolved
+Promise.prototype.then() 
+                      
 myPromise.then(onFulfilled, onRejected)
 myPromise.then( (value) => {}, (reject) => { }) 
 /* Once a Promise is fulfilled or rejected, the respective handler function (onFulfilled or onRejected) will be called 
@@ -35,8 +39,11 @@ myPromise.then( (value) => {}, (reject) => { })
    - returns an already rejected promise, the promise returned by then gets rejected with that promise's value as its value
    - returns another pending promise object
   */
-                           
+    
+                      
 //execute when myPromise is rejected
+Promise.prototype.catch()
+                      
 myPromise.catch((error) => { //...rejection })       
    
 //This method returns a Promise object that is resolved with a given value
