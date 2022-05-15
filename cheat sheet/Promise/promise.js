@@ -16,7 +16,9 @@
  */
 
 //create promise object
-const myPromise = new Promise( /* executor */ function(resolve, reject) { ... })   
+const myPromise = new Promise( /* executor */ function(resolve, reject) { ... });
+myPromise.then(handleResolved, handleRejected)
+                                                                        
 
 //executor is function with two parameters: resolve and reject for executing promise
 (resolve, reject) => { ... }
