@@ -122,7 +122,8 @@ myPromise.then((value) => { return new Promise( (resolve, reject) => {}) })
             .then((value) => { return new Promise( (resolve, reject) => {}) })
              .catch((error) => { })
 
-/*
+/* 
+   If continue followed by .then(), promises chain is formed.
    Processing continues to the next link of the chain even when a .then() lacks a callback function that returns a Promise object. 
    Therefore, a chain can safely omit every rejection callback function until the final .catch().
  */
