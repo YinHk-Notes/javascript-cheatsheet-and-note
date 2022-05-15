@@ -21,7 +21,31 @@ function myFunction() {
    If the value of the expression following the await operator is not a Promise, it's converted to a resolved Promise. 
    */
 
-//Note: async/await is syntacic sugar, wrap promise
+//example:
+function delayDouble(number) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve(2 * number), 1000);
+  });
+}
+delayDouble(5)
+  .then(value1 => {
+    console.log(value1); // logs 10
+    return new Promise((_, reject) => reject(new Error('Oops!')));
+  })
+  .then(value2 => {
+    console.log(value2); // Skipped...
+    return delayDouble(value2);
+  })
+  .then(value3 => {
+    console.log(value3); // Skipped...
+  })
+  .catch(error => {
+    console.log(error); // logs Error('Oops!')
+  });
+
+
+//Note: async/await is syntacic sugar, wrap promise without using .then()
+
 function aPromiseObj() {
   return new Promise((resolve, reject) => {})
 }
