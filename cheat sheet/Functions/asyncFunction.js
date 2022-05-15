@@ -18,7 +18,10 @@ function myFunction() {
    "async" makes a function return a Promise  
    "await" before a function makes a function wait for a Promise, the await keyword can only be used inside an async function. 
    If the Promise is rejected, the await expression throws the rejected value.
-   If the value of the expression following the await operator is not a Promise, it's converted to a resolved Promise. */
+   If the value of the expression following the await operator is not a Promise, it's converted to a resolved Promise. 
+   
+   Note: async/await is syntacic sugar, wrap promise and wait for the result of promise.
+   */
 
 async function myPromise() {
    let res = await aPromiseObj
@@ -35,6 +38,26 @@ function myPromise() {
 myPromise()
   .then()
   .catch()
+
+
+// example:
+function test(number) {
+    return new Promise((resolve, reject) => {
+        if (number === 1) {
+            resolve("Success")
+        } else {
+            reject("Failed")
+        }
+    })
+}
+//same as
+async function main() {
+    var result = await test(1)
+    // result === "Success"
+    console.log(result)
+}
+main()
+
 
 
 //handling rejected promises
