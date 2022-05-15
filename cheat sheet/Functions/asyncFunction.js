@@ -30,8 +30,8 @@ function aPromiseObj() {
 
 async function myPromise() {
    try{
-         let res = await aPromiseObj
-         return res;
+      let res = await aPromiseObj
+      return res;
    } catch(e) {}
 }
 myPromise();
