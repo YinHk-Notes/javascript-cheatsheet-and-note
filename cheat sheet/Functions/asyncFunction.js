@@ -23,13 +23,18 @@ function myFunction() {
    Note: async/await is syntacic sugar, wrap promise and wait for the result of promise.
    */
 
-async function myPromise() {
-   let res = await aPromiseObj
-   return res;
+
+function aPromiseObj() {
+  return new Promise((resolve, reject) => {})
 }
-myPromise()
-  .then()
-  .catch()
+
+async function myPromise() {
+   try{
+         let res = await aPromiseObj
+         return res;
+   } catch(e) {}
+}
+myPromise();
 
 //same as
 function myPromise() {
@@ -37,7 +42,9 @@ function myPromise() {
 }
 myPromise()
   .then()
-  .catch()
+   .then()
+     //...
+     .catch()
 
 
 // example:
@@ -50,14 +57,28 @@ function test(number) {
         }
     })
 }
-//same as
 async function main() {
-    var result = await test(1)
-    // result === "Success"
-    console.log(result)
+    let result = await test(1)   // result === "Success"
+    let result2 = await test(2)  // result === "Failed"
+    let result3 = await test(3)  // result === "Failed"
 }
-main()
+main();
 
+//same as
+function test(number) {
+    return new Promise((resolve, reject) => {
+        if (number === 1) {
+            resolve("Success")
+        } else {
+            reject("Failed")
+        }
+    })
+}
+function main() {
+    test(1).then((result) => {}).catch((error) => {})
+    test(2).then((result) => {}).catch((error) => {})
+    test(3).then((result) => {}).catch((error) => {})
+}
 
 
 //handling rejected promises
