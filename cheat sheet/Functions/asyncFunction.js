@@ -21,8 +21,7 @@ function myFunction() {
    If the value of the expression following the await operator is not a Promise, it's converted to a resolved Promise. 
    */
 
-//Note: async/await is syntacic sugar, wrap promise without using .then() to handle the result of promises
-
+//Note: async/await is syntacic sugar, wrap promise
 function aPromiseObj() {
   return new Promise((resolve, reject) => {})
 }
