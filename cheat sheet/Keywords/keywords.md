@@ -218,7 +218,7 @@ delete object['property']
 - `yield` keyword is used to pause and resume a generator function.
 -  simply helps to pause and resume a function in any time asynchronously
 
-> You can think multiple yields are the breakpoints in a javascript debugger within a single function.  Until you tell to navigate next breakpoint it wont execute the code block
+> You can think multiple yields are **the breakpoints in a javascript debugger within a single function**.  Until you tell to navigate next breakpoint it wont execute the code block
 
 //eg:
 ```js
