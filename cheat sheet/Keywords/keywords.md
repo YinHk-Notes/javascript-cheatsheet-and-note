@@ -220,7 +220,7 @@ delete object['property']
 
 > You can think multiple yields are **the breakpoints in a javascript debugger within a single function**.  Until you tell to navigate next breakpoint it wont execute the code block
 
-//eg:
+eg:
 ```js
 function* countAppleSales () {
   let saleList = [3, 7, 5]
