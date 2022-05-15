@@ -268,6 +268,18 @@ console.log(student.getName()); // error
 
 setter methods are used to change the values of an object. 
 ```js
+const language = {
+  set current(name) {
+    this.log.push(name);
+  },
+  log: []
+};
+
+language.current = 'EN';
+language.current = 'FA';
+console.log(language.log);  // ["EN", "FA"]
+```
+```js
 const student = {
     firstName: 'Monica',
     
@@ -283,5 +295,6 @@ console.log(student.firstName); // Monica
 student.changeName = 'Sarah';
 
 console.log(student.firstName); // Sarah
+
 ```
 
