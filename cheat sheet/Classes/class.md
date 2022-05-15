@@ -98,7 +98,7 @@ d.speak(); // Mitzie barks.
 ### Call super class with `super`
 - The super keyword is used to call corresponding methods of super class
 
-**Call parent constructor inside constructor
+**Call parent constructor inside constructor**
 ```js
 super([arguments]); // calls the parent constructor.(only inside the constructor)
 ```
