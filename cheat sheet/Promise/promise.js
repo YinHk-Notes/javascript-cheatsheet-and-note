@@ -53,7 +53,11 @@ myPromise.then((value) => { return new Promise() })
            .then((value) => { return new Promise() })
             .then((value) => { return new Promise() })
              .catch((error) => { })
- 
+
+/*
+   Processing continues to the next link of the chain even when a .then() lacks a callback function that returns a Promise object. 
+   Therefore, a chain can safely omit every rejection callback function until the final .catch().
+ */
 
 //takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises   
 Promise.all([promise1, promise2, promise3,...promise])
