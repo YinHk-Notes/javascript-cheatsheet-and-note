@@ -66,6 +66,7 @@ Promise.reject(reason);
 //he promise is finally either fulfilled or rejected, the specified callback function is executed
 Promise.prototype.finally()
 
+//example:
 function checkMail() {
   return new Promise((resolve, reject) => {
     if (Math.random() > 0.5) {
@@ -87,6 +88,31 @@ checkMail()
     console.log('Experiment completed');
   });
 
+   
+function test(number) {
+    return new Promise((resolve, reject) => {
+        if (number === 1) {
+            resolve("Success")
+        } else {
+            reject("Failed")
+        }
+    })
+}
+function main() {
+    test(1).then((result) => {
+        // result === "Success"
+        console.log(result)
+    }).catch((error) => {
+        // won't be executed, because of success
+    })
+    test(2).then((result) => {
+        // won't be executed, because of failure
+        console.log(result)
+    }).catch((error) => {
+        // error === "Failed"
+        console.log(error)
+    })
+}
    
 //promises chain
 //return promises
