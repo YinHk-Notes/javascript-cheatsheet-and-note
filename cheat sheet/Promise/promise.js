@@ -11,6 +11,8 @@
    📌 When a Promise object is "fulfilled", the result is a value.
    📌 When a Promise object is "rejected", the result is an error object.
    
+   Callbacks added with then() will never be invoked before the completion of the current run of the JavaScript event loop.
+   These callbacks will be invoked even if they were added *after* the success or failure of the asynchronous operation that the promise represents.
  */
 
 //create promise object
