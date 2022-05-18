@@ -5,10 +5,10 @@ const num = new Number(value)
 
 
 Number.MAX_SAFE_INTEGER                   //2^53 - 1
-Number.MAX_VALUE                          //represents the maximum numeric value representable in JavaScript
+Number.MAX_VALUE                          //represents the maximum numeric value representable in JavaScript. [ 1.7976931348623157e+308 ]
 
 Number.MIN_SAFE_INTEGER                   //-(2^53 - 1)
-Number.MIN_VALUE                          //represents the smallest positive numeric value representable in JavaScript
+Number.MIN_VALUE                          //represents the smallest positive numeric value representable in JavaScript. [ 5e-324 ]
 
 Number.NaN                                //Not-A-Number
 Number.NEGATIVE_INFINITY                  //same as the negative value of the global object's Infinity property. [ -Infinity ]
