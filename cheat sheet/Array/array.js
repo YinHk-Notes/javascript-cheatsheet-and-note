@@ -34,8 +34,8 @@ for (const value of iteratorValues) {
 // returns a new Array Iterator object that contains the key/value pairs for each index in the array
 const iteratorArr = arr.entries()
 
-for (const [index, element] of iteratorArr)
-  console.log(index, element)
+for (const [key, value] of iteratorArr)
+  console.log(key, value)
 // 0 'a'
 // 1 'b'
 // 2 'c'
