@@ -64,3 +64,25 @@ str.trimLeft()
 str.valueOf()                                   //returns the primitive value of a String object
 
 
+//Example
+str.charAt(3);
+str.concat(' ', 'world'); //'hello world''
+str.startsWith('ell'); //false
+str.endsWith('ell'); //false
+str.includes('ell'); //true
+str.indexOf('l'); //2
+str.lastIndexOf('l'); //3
+str.repeat(2); //'hellohello'
+str.toUpperCase(); //'HELLO'
+'WORLD'.toLowerCase(); //'world'
+str.substring(1); //'ello'
+str.substring(1, 4); //'ell'
+str.slice(1, 4); //'ell'
+str.split('l'); //[ 'he', '', 'o' ]
+str.split(''); //[ 'h', 'e', 'l', 'l', 'o' ]
+' Happy '.trim(); //'Happy'
+str.toString();
+str.valueOf();
+
+
+
