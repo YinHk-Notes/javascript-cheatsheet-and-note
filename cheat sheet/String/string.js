@@ -15,10 +15,10 @@ str.endsWith(searchString, length)
 str.includes(searchString)                      //determine whether one string may be found within another string, returning true or false
 str.includes(searchString, position)
 
-str.indexOf(searchString)                       
+str.indexOf(searchString)                       //return the index of character/string, if multiple fullfil, return the index of first one.
 str.indexOf(searchString, position)
 
-str.lastIndexOf(searchString)
+str.lastIndexOf(searchString)                   //return the index of character/string, if multiple fullfil, return the index of last one.
 str.lastIndexOf(searchString, position)
 
 str.match(regexp)                               //retrieves the result of matching a string against a regular expression
