@@ -23,11 +23,11 @@ Number.isSafeInteger(testValue)           //determines whether the provided valu
 Number.parseFloat(string)                 //parses an argument and returns a floating point number
 Number.parseInt(string)
 Number.parseInt(string, radix)            //parses a string argument and returns an integer of the specified radix or base
-Number.toExponential()                    //returns a string representing the Number object in exponential notation
-Number.toExponential(fractionDigits)  
+num.toExponential()                       //returns a string representing the Number object in exponential notation
+num.toExponential(fractionDigits)         //with number of digit after the decimal point.
 Number.toFixed(digits)                    //formats a number using fixed-point notation
 Number.toLocaleString(locales, options)   //returns a string with a language-sensitive representation of this number
-Number.toPrecision(precision)             //returns a string representing the Number object to the specified precision, precision Optional: an integer specifying the number of significant digits
+num.toPrecision(precision)                //returns a string representing the Number object to the specified precision, precision Optional: an integer specifying the number of significant digits
 
 num.toString()                            //returns a string representing the specified Number object
 num.valueOf()                             //returns the wrapped primitive value of a Number object
