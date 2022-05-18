@@ -81,8 +81,5 @@ str.slice(1, 4); //'ell'
 str.split('l'); //[ 'he', '', 'o' ]
 str.split(''); //[ 'h', 'e', 'l', 'l', 'o' ]
 ' Happy '.trim(); //'Happy'
-str.toString();
-str.valueOf();
-
 
 
