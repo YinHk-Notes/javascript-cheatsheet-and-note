@@ -13,9 +13,9 @@ Array[Symbol.species]  //function Array()
 
 // iteration
 const iterArr = arr[Symbol.iterator]()
-console.log(iterArr.next().value) // a
-console.log(iterArr.next().value) // b
-console.log(iterArr.next().value) // c
+console.log(iterArr.next().value) // a,  iterArr.next(): { value: 'a', done: false }
+console.log(iterArr.next().value) // b   iterArr.next(): { value: 'b', done: false }
+console.log(iterArr.next().value) // c   iterArr.next(): { value: 'c', done: false }
 
 // returns a new Array Iterator object that contains the keys for each index in the array
 const iteratorKeys = arr.keys()
