@@ -1,7 +1,7 @@
 /* The String object is used to represent and manipulate a sequence of characters */
 
 //create a String object
-const str = new String(thing)
+const str = new String(string)
 str.length.                                     //return length
 str[i]                                          //return character in the specific position
 
