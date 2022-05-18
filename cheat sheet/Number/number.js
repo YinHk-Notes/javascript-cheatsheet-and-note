@@ -21,12 +21,12 @@ Number.isInteger(value)                   //determines whether the passed value 
 Number.isNaN(value)                       //determines whether the passed value is NaN and its type is Number
 Number.isSafeInteger(testValue)           //determines whether the provided value is a number that is a safe integer
 Number.parseFloat(string)                 //parses an argument and returns a floating point number
-Number.parseInt(string)
+Number.parseInt(string)                   //parses an argument and returns a integer 
 Number.parseInt(string, radix)            //parses a string argument and returns an integer of the specified radix or base
 num.toExponential()                       //returns a string representing the Number object in exponential notation
 num.toExponential(fractionDigits)         //with number of digit after the decimal point.
-Number.toFixed(digits)                    //formats a number using fixed-point notation
-Number.toLocaleString(locales, options)   //returns a string with a language-sensitive representation of this number
+num.toFixed(digits)                       //formats a number to exactly digits after the decimal place. 
+num.toLocaleString(locales, options)      //returns a string with a language-sensitive representation of this number
 num.toPrecision(precision)                //returns a string representing the Number object to the specified precision, precision Optional: an integer specifying the number of significant digits
 
 num.toString()                            //returns a string representing the specified Number object
