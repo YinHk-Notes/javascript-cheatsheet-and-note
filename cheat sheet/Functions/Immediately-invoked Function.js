@@ -34,4 +34,34 @@
 })()
 
 
+//Example:
+
+//the following main function declared, but do not to be invoked immediately
+let x = 3;
+
+function main() { 
+   x=5;
+}
+
+console.log(x);   //x=3
+
+//you need to call the function
+let x = 3;
+
+function main() { 
+   x=5;
+}
+main();
+
+console.log(x);   //x=5
+
+//similar way you can do it by IIFEs
+let x = 3;
+
+(function main() {
+    x=5;
+})();               //function is invoked immediately after being declared
+
+console.log(x);  //x=5
+
 
