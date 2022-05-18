@@ -4,15 +4,15 @@
 const num = new Number(value)
 
 
-Number.MAX_SAFE_INTEGER       //2^53 - 1
-Number.MAX_VALUE              //represents the maximum numeric value representable in JavaScript
+Number.MAX_SAFE_INTEGER                   //2^53 - 1
+Number.MAX_VALUE                          //represents the maximum numeric value representable in JavaScript
 
-Number.MIN_SAFE_INTEGER       //-(2^53 - 1)
-Number.MIN_VALUE              //represents the smallest positive numeric value representable in JavaScript
+Number.MIN_SAFE_INTEGER                   //-(2^53 - 1)
+Number.MIN_VALUE                          //represents the smallest positive numeric value representable in JavaScript
 
-Number.NaN                    //Not-A-Number
-Number.NEGATIVE_INFINITY      //same as the negative value of the global object's Infinity property. [ -Infinity ]
-Number.POSITIVE_INFINITY      //same as the value of the global object's Infinity property. [ Infinity ]
+Number.NaN                                //Not-A-Number
+Number.NEGATIVE_INFINITY                  //same as the negative value of the global object's Infinity property. [ -Infinity ]
+Number.POSITIVE_INFINITY                  //same as the value of the global object's Infinity property. [ Infinity ]
 
 
 //methods
