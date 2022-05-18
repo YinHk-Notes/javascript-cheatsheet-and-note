@@ -90,7 +90,7 @@ arr.concat(array2,array3....)
    const array3 = array1.concat(array2)  //["a", "b", "c", "d", "e", "f"]
  */
 
-// copies array elements to another position in the array, overwriting the existing values.
+// copies array elements to another position in the array, overwriting the existing values.This methos changes the original array.
 /* 
    target: The index position to copy the elements to (the position start to place all the copies!) 
    If negative, target will be counted from the end.
