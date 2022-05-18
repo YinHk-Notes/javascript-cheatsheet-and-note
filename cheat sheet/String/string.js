@@ -39,7 +39,7 @@ str.replaceAll(substr, replacerFunction)
 str.search(regexp)                              //returns index of the first match between the regular expression and the given string, or -1 if no match was found
 
 str.slice(beginIndex)                           //returns new string containing the extracted section of the string
-str.slice(beginIndex, endIndex)
+str.slice(beginIndex, endIndex)                 //If start == stop, returns an empty string
 
 str.split(separator)                            //divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array
 str.split(separator, limit)
@@ -48,7 +48,7 @@ str.startsWith(searchString)                    //determines whether a string be
 str.startsWith(searchString, position)
 
 str.substring(indexStart)                       //returns the part of the string between the start and end indexes, or to the end of the string
-str.substring(indexStart, indexEnd)
+str.substring(indexStart, indexEnd)             //If start == stop, returns an empty string
 
 str.toLowerCase()
 str.toUpperCase()
