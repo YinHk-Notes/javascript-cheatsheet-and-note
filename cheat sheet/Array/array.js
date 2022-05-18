@@ -102,9 +102,13 @@ arr.concat(array2,array3....)
   */
 arr.copyWithin(target, start, end)
 /*
-  const array = ['a', 'b', 'c', 'd', 'e'];
+  let array = ['a', 'b', 'c', 'd', 'e'];
   //copy to index 1 all elements from index 3 to the end
   array.copyWithin(1, 3);  //[ 'a', 'd', 'e', 'd', 'e' ]
+  
+  let arr = [1,2,3,4,5,6]
+  arr.copyWithin(2, 0);  //[ 1, 2, 1, 2, 3, 4 ]
+  arr.copyWithin(2, 3, 5);  //[ 1, 2, 2, 3, 3, 4 ]
  */
 
 // checks whether all elements in an array pass a test function or not
