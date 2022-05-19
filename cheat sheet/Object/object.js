@@ -54,7 +54,7 @@ let obj = { a:99, b:'hello', c:true }
 console.log( Object.entries(obj) )  // console: [ ["a",99], ["b","hello"], ["c",true] ]
 */
 
-//transforms a list of key-value pairs into an object.
+//transforms a list of key-value pairs into an object. return that object
 /* 
  performs the reverse of Object.entries().
  iterable: An iterable such as Array or Map or other objects implementing the iterable protocol.
