@@ -3,7 +3,7 @@ let obj = new Object() //then assign property & value to it
 obj.a=99
 obj.b='hello'
 obj.c=true   //or
-let obj = new Object(value)  //value can be any,   or
+let obj = new Object(value)  //value can be any, object or primitive value.   Or
 let obj = { a:99, b:'hello', c:true }
 
 //defines new or modifies existing properties in an object
