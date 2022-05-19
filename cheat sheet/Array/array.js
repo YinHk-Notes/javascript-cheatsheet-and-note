@@ -174,6 +174,7 @@ arr.join(separator) //optional, default separator is comma (,), specified separa
 /* 
    ed: arr=["a","b","c"] 
    arr.join() //output: "a,b,c"
+   arr.join('') //output: "abc"
    arr.join('/') //output: "a/b/c"
    arr.join('+') //output: "a+b+c"
  */
