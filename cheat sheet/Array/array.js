@@ -204,7 +204,7 @@ Array.of(element0, element1, ... , elementN)
  */
 
 // reverse the elements in array  
-arr.reverse() //The first array element becomes the last, and the last array element becomes the first.
+arr.reverse() //The first array element becomes the last, and the last array element becomes the first. Change original array
                       
 //  returns the selected elements in an array, as a new array object. 
 arr.slice(start, end)
@@ -218,7 +218,7 @@ arr.slice(start, end)
  */
                       
 // sorts the elements of an array
-arr.sort() //functionless, 
+arr.sort() //functionless, change original array.
 arr.sort((firstElement, secondElement) => { ... }) //optional: with compare function                      
 /* 
    sort() method:
