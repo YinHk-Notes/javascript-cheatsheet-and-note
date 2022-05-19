@@ -92,6 +92,7 @@ arr.concat(array2,array3....)
 
 // copies array elements to another position in the array, overwriting the existing values.This methos changes the original array.
 /* 
+
    target: The index position to copy the elements to (the position start to place all the copies!) 
    If negative, target will be counted from the end.
    
@@ -99,7 +100,8 @@ arr.concat(array2,array3....)
    
    end: The index position to stop copying elements from (default is array.length),copies up to but not including end
    If negative, start will be counted from the end.
-  */
+   
+ */
 arr.copyWithin(target, start, end)
 /*
   let array = ['a', 'b', 'c', 'd', 'e'];
