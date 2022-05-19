@@ -94,7 +94,7 @@ let obj = Object.assign({},a,b,c,d,e,f,g,h)  // target: b, source: g
 console.log(obj)  // console: { 0: 123, 1: 9999, 2: "v", 3: "a", 4: "s", 5: "c", 6: "r", 7: "i", 8: "p", 9: "t" }
 */
 
-//creates a new object, using an existing object as the prototype
+//Using an existing object as the prototype to creates a new object
 let newObj = Object.create(obj)  //obj is prototype object
 let newObj = Object.create(obj,propertiesObject) // optional: propertyObject
 /* 
