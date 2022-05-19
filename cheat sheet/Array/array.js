@@ -242,7 +242,7 @@ arr.sort((firstElement, secondElement) => { ... }) //optional: with compare func
 /*
   This method changes the original array, and return an array with the removed items.
   
-  start: The position to add/remove items, Use negative values to specify the position from the end of the array.
+  start: The position(index) to add/remove items, Use negative values to specify the position from the end of the array.
   If greater than the length of the array, no element will be deleted but the method will behave as an adding function, 
   adding as many element as item[n*] provided.
   
@@ -256,10 +256,15 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
 /*
   insert item:
   arr.splice(start, 0, item1,item2,...itemN)
+  
   replace item:
-  arr.splice(start, N, item1,item2,...itemN)
+  arr.splice(start, 1, item)                           //replace one item
+  arr.splice(start, N, item1,item2,...itemN)           //replace N items
+  
   remove item:
-  arr.splice(start) / arr.splice(start, arr.length)    //remove all items after start 
+  arr.splice(start, N)                                 //remove N items starting from start
+  arr.splice(start) / arr.splice(start, arr.length)    //remove all items later than start 
+  arr.splice(0)                                        //remove all elments and empty the original array
  */
                                            
 // executes a user-supplied "reducer" callback function on each element of the array, 
