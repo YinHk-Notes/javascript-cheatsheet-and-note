@@ -264,7 +264,12 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
 // in order, passing in the return value from the calculation on the preceding element.
 // If initialValue is specified, that also causes currentValue to be initialized to the first value in the array.
 // If initialValue is not specified, previousValue is initialized to the first value in the array, 
-// and currentValue is initialized to the second value in the array.                                           
+// and currentValue is initialized to the second value in the array. 
+/*
+    - previousValue: the value resulting from the previous call to callbackFn. On first call, initialValue if specified, otherwise the value of array[0].
+    - currentValue: the value of the current element. On first call, the value of array[0] if an initialValue was specified, otherwise the value of array[1].
+    - currentIndex: the index position of currentValue in the array. On first call, 0 if initialValue was specified, otherwise 1.
+ */
 arr.reduce(reducer)
 arr.reduce((previousValue, currentValue) => {})
 arr.reduce((previousValue, currentValue, currentIndex)=>{}, initialValue)    
