@@ -261,7 +261,10 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
  */
                                            
 // executes a user-supplied "reducer" callback function on each element of the array, 
-// in order, passing in the return value from the calculation on the preceding element.                                          
+// in order, passing in the return value from the calculation on the preceding element.
+// If initialValue is specified, that also causes currentValue to be initialized to the first value in the array.
+// If initialValue is not specified, previousValue is initialized to the first value in the array, 
+// and currentValue is initialized to the second value in the array.                                           
 arr.reduce(reducer)
 arr.reduce((previousValue, currentValue) => {})
 arr.reduce((previousValue, currentValue, currentIndex)=>{}, initialValue)    
