@@ -34,7 +34,7 @@ class Stack {
   }
   
   // display stack
-  stack() {
+  show() {
     return this.dataStore;
   }
 
