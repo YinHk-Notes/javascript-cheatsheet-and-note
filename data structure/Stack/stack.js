@@ -28,7 +28,7 @@ class Stack {
   
   // check is empty stack
   isEmpty() {
-    if(size = 0)
+    if(this.size = 0)
       return true;
     else return false;
   }
