@@ -38,6 +38,39 @@ class LinkedList{
   }
   
   
+  // insert data into specific index
+  insert(data, index) {
+    // create a node object using the data passed in
+    let node = new Node(data);
+    let current, previous;
+   
+    if(index === 0) {
+     if(!this.head)
+       this.head = node;
+     else {
+       current = this.head;
+       node.next = current;
+       this.head = node;
+     }
+    } else {
+       let count = 1;
+       current = this.head;
+       // check if index is a positive number and index isn't too large
+       if(index > 0 && index <= this.size) {
+          while(count < index) {
+            count++;
+            current = current.next;
+            previous = current;
+          }
+          node.next = current;
+          previous.next = node;
+       }
+    
+    }
+    this.size++;
+  }
+  
+  
   // dalete all specific nodes
   delete(data) {
     let current = this.head;
@@ -51,10 +84,10 @@ class LinkedList{
       if(current.next.data == data){
         deletedNode = current.next;
         current.next = current.next.next;
+        this.size--;
       } else current = current.next;
     }
-    
-     return deletedNode;
+    return deletedNode;
   }
   
   
@@ -78,6 +111,7 @@ class LinkedList{
     if(index === 0) {
       deletedNode = this.head;
       this.head = null;
+      this.size = 0;
     } else {
         while (count < index) {
           count++;
@@ -87,9 +121,9 @@ class LinkedList{
         if(count == index && current.data == data) {
            deletedNode = current;
            previous.next = current.next;
+           this.size--;
         }
     }
-    
     return deletedNode;
   }
   
