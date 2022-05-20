@@ -128,6 +128,11 @@ class LinkedList{
   }
   
   
+  // clear all node in Linkedlist
+  clear() {
+     this.head = null;
+     this.size = 0;
+  }
   
 }
 
