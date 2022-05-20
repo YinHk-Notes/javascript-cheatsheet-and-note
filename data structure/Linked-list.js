@@ -38,7 +38,7 @@ class LinkedList{
   }
   
   
-  // dalete specific node
+  // dalete all specific nodes
   delete(data) {
     let current = this.head;
     
@@ -57,6 +57,41 @@ class LinkedList{
      return deletedNode;
   }
   
+  
+  // remove node at specific index
+  removeAt(data, index) {
+    let current = this.head;
+    let count = 0;
+    let deletedNode = null;
+    // keep a reference to the previous node
+    let previous = null;
+    
+    // check if index is a positive number and index isn't too large
+    if (index < 0 || index > this.size) {
+      return null;
+    }
+    
+    if(!this.head) {
+      return null;
+    }
+    
+    if(index === 0) {
+      deletedNode = this.head;
+      this.head = null;
+    } else {
+        while (count < index) {
+          count++;
+          previous = current;
+          current = current.next; 
+        }
+        if(count == index && current.data == data) {
+           deletedNode = current;
+           previous.next = current.next;
+        }
+    }
+    
+    return deletedNode;
+  }
   
   
   
