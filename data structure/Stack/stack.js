@@ -14,9 +14,9 @@ class Stack {
   
   // remove the top
   pop() {
-    if(size > 0) {
+    if(this.size > 0) {
       this.size--; 
-      this.top = this.dataStore[size-1];
+      this.top = this.dataStore[this.size-1];
       return this.dataStore.pop();
     } else return null;
   }
