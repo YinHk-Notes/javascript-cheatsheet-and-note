@@ -263,7 +263,7 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
   
   remove item:
   arr.splice(start, N)                                 //remove N items starting from start
-  arr.splice(start) / arr.splice(start, arr.length)    //remove all items later than start 
+  arr.splice(start) / arr.splice(start, arr.length)    //remove all items starting from start 
   arr.splice(0)                                        //remove all elments and empty the original array
  */
                                            
