@@ -46,7 +46,7 @@ str.slice(beginIndex, endIndex)                 //If start == stop, returns an e
 
 str.split(separator)                            //divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array
 str.split(separator, limit)                     //The pattern describing where each split should occur. The separator can be a simple string or it can be a regular expression.
-                                                //If separator is an empty string (""), str is converted to an array of each of its characters.
+                                                //If separator is an empty string (""), str is converted to an array of each of its characters. ---> string to array
 
 
 str.substring(indexStart)                       //returns the part of the string between the start and end indexes, or to the end of the string
