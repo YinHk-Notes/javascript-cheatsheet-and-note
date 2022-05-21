@@ -37,7 +37,7 @@ console.log(descriptor) // console: { value: 99, writable: true, enumerable: tru
 Object.getOwnPropertyDescriptors(obj)
 
 //returns an array of all properties name(string)
-Object.getOwnPropertyNames(obj)
+Object.getOwnPropertyNames(obj)                  //----> turn properties to an array
 
 //checkt object has the specified property as its own property or not 
 obj.hasOwnProperty(propertyName)  // return boolean,  propertyName is string name
