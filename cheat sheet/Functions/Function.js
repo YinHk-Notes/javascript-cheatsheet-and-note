@@ -1,6 +1,11 @@
 /* Every JavaScript function is actually a Function object.
    This can be seen with the code (function(){}).constructor === Function, which returns true */
 
+/*
+   The code inside a function is not executed when the function is defined.
+   The code inside a function is executed when the function is invoked.
+ */
+
 //declare a function
 function Name(param1,param2,...param) {
    //body
