@@ -298,3 +298,41 @@ console.log(student.firstName); // Sarah
 
 ```
 
+### label
+The labeled statement can be used with break or continue statements.
+```js
+label :
+  statement    //A JavaScript statement. break can be used with any labeled statement, and continue can be used with looping labeled statements.
+```
+
+Example:
+```js
+
+let i, j;
+
+loop1:
+for (i = 0; i < 3; i++) {      //The first for statement is labeled "loop1"
+   loop2:
+   for (j = 0; j < 3; j++) {   //The second for statement is labeled "loop2"
+      if (i === 1 && j === 1) {
+         break loop1;
+      }
+      console.log('i = ' + i + ', j = ' + j);
+   }
+}
+
+// Output is:
+//   "i = 0, j = 0"
+//   "i = 0, j = 1"
+//   "i = 0, j = 2"
+//   "i = 1, j = 0"
+```
+
+
+
+
+
+
+
+
+
