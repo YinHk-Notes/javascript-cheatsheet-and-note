@@ -8,13 +8,14 @@ for(let i=0; i<=arr.length-1; i++){
   //...  
 } 
 
-//for...of loop
-for(const i of array) {
+// for...of loop
+// iterating over iterable objects (including Array, Map, Set, arguments object and so on)
+for(const i of iterableObject) {
   //...
-  // array[i] return its value
 }
 
-//for...in loop
+// for...in loop
+// iterates a specified variable over all the enumerable properties of an object.
 for(const property in object) {
   //...
 }
