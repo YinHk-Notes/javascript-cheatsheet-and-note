@@ -16,6 +16,16 @@
  */
 
 //create promise object
+/*
+   const myPromise = new Promise((resolve, reject) => {
+      // do something asynchronous which eventually calls either:
+      //
+      //   resolve(someValue)        // fulfilled
+      // or
+      //   reject("failure reason")  // rejected
+   });
+
+ */
 const myPromise = new Promise( /* executor */ function(resolve, reject) { ... });
 myPromise.then(handleResolved, handleRejected)
                                                                         
