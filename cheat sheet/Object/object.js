@@ -112,6 +112,10 @@ Object.getPrototypeOf(obj) // console: { }
 //create an array of a given object's own enumerable property names
 Object.keys(obj) //output: create an array  ["a", "b", "c"]
 /*
+ 
+Difference with Object.getOwnPropertyNames(obj): keys() returns all enumerable properties.
+They provide the same result unless you set enumerable: false to any property.
+
 simple array:
 const arr = ['a', 'b', 'c'];
 console.log(Object.keys(arr));  // console: ['0', '1', '2']
