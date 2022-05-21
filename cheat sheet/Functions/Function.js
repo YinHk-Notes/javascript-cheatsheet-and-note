@@ -31,7 +31,7 @@ const boundFun = fun.bind(this)                         //creates a new bound fu
 const boundFun = fun.bind(this, arg1, ... , argN)      
 
 fun.call()                                              //allows for a function/method belonging to one object to be assigned and called for a different object
-fun.call(this)
+fun.call(this)                                          //With the call() method, you can write a method that can be used on different objects.
 fun.call(this, arg1, ... , argN)
 
 fun.toString()                                          //returns a string representing the source code of the function
