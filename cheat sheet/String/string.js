@@ -9,6 +9,9 @@ const iterator = str[Symbol.iterator]()         //returns a new iterator object 
 str.charAt(index)                               //retuens a character for specificed index
 str.concat(str1, str2, ... , strN)              //concatenates the string arguments to the calling string and returns a new string
 
+str.startsWith(searchString)                    //determines whether a string begins with the characters of a specified string, returning true or false
+str.startsWith(searchString, position)
+
 str.endsWith(searchString)                      //determines whether a string ends with the characters of a specified string, returning true or false
 str.endsWith(searchString, length)
 
@@ -21,10 +24,10 @@ str.indexOf(searchString, position)
 str.lastIndexOf(searchString)                   //return the index of character/string, if multiple fullfil, return the index of last one.
 str.lastIndexOf(searchString, position)
 
+str.repeat(count)                               //returns a new string which contains the specified number of copies of the string
+
 str.match(regexp)                               //retrieves the result of matching a string against a regular expression
 str.matchAll(regexp)
-
-str.repeat(count)                               //returns a new string which contains the specified number of copies of the string
 
 str.replace(regexp, newSubstr)
 str.replace(regexp, replacerFunction)
@@ -45,8 +48,6 @@ str.split(separator)                            //divides a String into an order
 str.split(separator, limit)                     //The pattern describing where each split should occur. The separator can be a simple string or it can be a regular expression.
                                                 //If separator is an empty string (""), str is converted to an array of each of its characters.
 
-str.startsWith(searchString)                    //determines whether a string begins with the characters of a specified string, returning true or false
-str.startsWith(searchString, position)
 
 str.substring(indexStart)                       //returns the part of the string between the start and end indexes, or to the end of the string
 str.substring(indexStart, indexEnd)             //If start == stop, returns an empty string
