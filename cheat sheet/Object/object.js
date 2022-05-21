@@ -98,9 +98,11 @@ console.log(obj)  // console: { 0: 123, 1: 9999, 2: "v", 3: "a", 4: "s", 5: "c",
 let newObj = Object.create(obj)  //obj is prototype object
 let newObj = Object.create(obj,propertiesObject) // optional: propertyObject
 /* 
--the new object inherite the property of prototype object and inherited properties can be overwritten.
--propertiesObject is an object whose keys represent the names of properties to be defined or modified and 
- whose values are objects describing those properties.
+ - the created new object does not have property in its prototype obj, when get the property from new obj, it 
+   search from its prototyp obj.
+ - the new object inherite the property of prototype object and inherited properties can be overwritten.
+ - propertiesObject is an object whose keys represent the names of properties to be defined or modified and 
+   whose values are objects describing those properties.
 */
 
 //returns the prototype object
