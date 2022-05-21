@@ -258,12 +258,12 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
   arr.splice(start, 0, item1,item2,...itemN)
   
   replace item:
-  arr.splice(start, 1, item)                           //replace one item
-  arr.splice(start, N, item1,item2,...itemN)           //replace N items
+  arr.splice(start, 1, item)                           //replace one item on start
+  arr.splice(start, N, item1,item2,...itemN)           //replace the following N items starting from start 
   
   remove item:
-  arr.splice(start, N)                                 //remove N items starting from start
-  arr.splice(start) / arr.splice(start, arr.length)    //remove all items starting from start 
+  arr.splice(start, N)                                 //remove the following N items starting from start
+  arr.splice(start) / arr.splice(start, arr.length)    //remove all the following items starting from start 
   arr.splice(0)                                        //remove all elments and empty the original array
  */
                                            
