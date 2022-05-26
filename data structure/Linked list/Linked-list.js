@@ -44,8 +44,8 @@ class LinkedList{
   */
   addFirst(value) {
     const node = new Node(value);
-    node.next = this.root;
-    this.root = node;
+    node.next = this.head;
+    this.head = node;
   }
 
   
@@ -143,10 +143,10 @@ class LinkedList{
   * Runtime: O(1)
   */
   removeFirst() {
-    const first = this.root;
+    const first = this.head;
 
     if (first) {
-      this.root = first.next;
+      this.head = first.next;
       return first.value;
     }
   }
