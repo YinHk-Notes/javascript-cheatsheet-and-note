@@ -17,6 +17,7 @@ const reverse = function(node) {
       currNode = nextNode;
     }
     
+    // After iteration, all node reversed, asign node(the head) to prevNode(start)
     node = prevNode;
 }
 
