@@ -37,6 +37,17 @@ class LinkedList{
     this.size++;
   }
   
+  /**
+  * Adds an element to the beginning of the list. Similar to Array.unshift
+  * Runtime: O(1)
+  * @param {any} value
+  */
+  addFirst(value) {
+    const node = new Node(value);
+    node.next = this.root;
+    this.root = node;
+  }
+
   
   // insert data into specific index
   insert(data, index) {
@@ -125,6 +136,19 @@ class LinkedList{
         }
     }
     return deletedNode;
+  }
+  
+  /**
+  * Removes element from the start of the list (head/root). It's Similar `Array.shift`
+  * Runtime: O(1)
+  */
+  removeFirst() {
+    const first = this.root;
+
+    if (first) {
+      this.root = first.next;
+      return first.value;
+    }
   }
   
   
