@@ -64,6 +64,11 @@ str.trimLeft()
 
 str.valueOf()                                   //returns the primitive value of a String object
 
+// Loop in string
+for(let s in str) {
+  //...
+}
+
 
 //Example
 str.charAt(3);
