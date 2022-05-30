@@ -54,8 +54,8 @@ arr.shift()
 let e = arr.shift() //output: the remove item
 
 // add item from beginning
-arr.unshift() 
-let e = arr.unshift() //output: new length of arr 
+arr.unshift(items) 
+let e = arr.unshift(items) //output: new length of arr 
 
 // find index of specific item in array
 /* 
