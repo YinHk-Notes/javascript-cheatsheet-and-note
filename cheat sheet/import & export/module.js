@@ -82,5 +82,7 @@ var promise = import("module-name");
 
 //ES5 import & export
 const name = require(path);
-module.exports = moduleName;
+const { name1, name2 } = require(path);
 
+module.exports = moduleName;
+module.exports = { name1, name2, …, nameN };
