@@ -80,4 +80,7 @@ import "module-name";
 var promise = import("module-name");  
 
 
+//ES5 import & export
+const name = require(path);
+module.exports = moduleName;
 
