@@ -164,7 +164,7 @@ arr.includes(searchElement, fromIndex) //optional: fromIndex
 //  determines whether an object is an array
 Array.isArray(arr) //return boolean
                                         
-//  creates and returns a new string by concatenating all of the elements in an array 
+//  creates and returns a new string by concatenating all of the elements in an array, turn array to a string 
 arr.join()                                       
 arr.join(separator) //optional, default separator is comma (,), specified separator string
 /* 
