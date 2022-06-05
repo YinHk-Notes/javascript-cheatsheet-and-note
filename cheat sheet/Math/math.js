@@ -15,6 +15,7 @@ Math.round(x)                         //returns the value of the number x rounde
 Math.trunc(x)                         //returns the integer portion of x, removing any fractional digits
 Math.sqrt(x)                          //returns the positive square root of x
 Math.max(val1, val2, ... , valN) 
+Math.max(array)
 Math.min(val1, val2, ... , valN)
-
+Math.min(array)
 
