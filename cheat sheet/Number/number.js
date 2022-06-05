@@ -25,11 +25,11 @@ Number.parseInt(string)                   //parses an argument and returns a int
 Number.parseInt(string, radix)            //parses a string argument and returns an integer of the specified radix or base
 num.toExponential()                       //returns a string representing the Number object in exponential notation
 num.toExponential(fractionDigits)         //with number of digit after the decimal point.
-num.toFixed(digits)                       //formats a number to exactly digits after the decimal place. 
+num.toFixed(digits)                       //returns a string that round and format a number to exactly digits after the decimal place. 
 num.toLocaleString(locales, options)      //returns a string with a language-sensitive representation of this number
 num.toPrecision(precision)                //returns a string representing the Number object to the specified precision, precision Optional: an integer specifying the number of significant digits
 
-num.toString()                            //returns a string representing the specified Number object
+num.toString()                            //returns a string representing the specified Number object, turn number to string
 num.valueOf()                             //returns the wrapped primitive value of a Number object
 
 
