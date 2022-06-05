@@ -12,18 +12,39 @@ for(let i=0; i<=arr.length-1; i++){
 // iterating over iterable objects (including Array, Map, Set, arguments object and so on)
 // for..of is a method, introduced in ES2015, for iterating over "iterable collections". 
 // These are objects that have a [Symbol.iterator] property.
+// The for..of syntax is essentially a wrapper around the [Symbol.iterator] to create loops.
+// The for..of loop doesn't work with Objects because they are not "iterable", 
+// and therefore don't have a [Symbol.iterator] property.
+// The for..of loop works well with Arrays and Strings, as they are iterable.
 for(const item of iterableObject) {
   //... do stuff
+  console.log(item)
 }
 
 // for...in loop
 // iterates a specified variable over all the enumerable properties of an object.
 // for..in is a method for iterating over "enumerable" properties of an object.
-// We can check if a property is enumerable by calling property.enumerable,
+// We can check if a property is enumerable by calling property.enumerable.
+// The indexes are enumerable properties, therefor it works for both array and string.
 for(const property in obj) {
   //... do stuff
   console.log(obj[property])
 }
+
+
+/* for...of loop vs for...in loop */
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−------------+
+|                    |             for..in            |            for..of          |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−------------+
+|    Applies to      |       Enumerable Properties    |     Iterable Collections    |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−------------−−+
+|  Use with Objects? |             Yes                |             No              |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−------------−−+
+|  Use with Arrays?  |             Yes                |             Yes             |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−------------−−+
+|  Use with Strings? |             Yes                |             Yes             |
++−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−+−−−−−−−−−−−−−−−------------−−+
+
 
 //for await...of loop
 /*a loop iterating over async iterable objects as well as on sync iterables, for await...of doesn't work 
