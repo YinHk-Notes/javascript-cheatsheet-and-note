@@ -86,3 +86,11 @@ const { name1, name2 } = require(path);
 
 module.exports = moduleName;
 module.exports = { name1, name2, …, nameN };
+//ou can also attach an object to module.exports, as shown below.
+module.exports = {
+    prop1: functtion(param1) {...},
+    prop2: functtion(param2) {...},
+    //...
+}
+
+
