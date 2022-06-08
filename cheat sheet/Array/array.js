@@ -221,7 +221,8 @@ arr.slice(start, end)
                       
 // sorts the elements of an array
 arr.sort() //functionless, change original array.
-arr.sort((firstElement, secondElement) => { ... }) //optional: with compare function                      
+arr.sort((firstElement, secondElement) => { ... }) //optional: with compare function 
+arr.sort(function compareFn(a, b) { /* ... */ })   //optional: with compare function 
 /* 
    sort() method:
    When sorting alphabetic, no need compareFunction, by default, the sort() method sorts the values as strings in 
