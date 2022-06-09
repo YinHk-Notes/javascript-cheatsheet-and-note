@@ -20,5 +20,5 @@ const options = {
  
 fetch('https://example.com', options)
   .then(response => response.json())
-  .then(console.log)
+    .then(data => console.log(data))
 
