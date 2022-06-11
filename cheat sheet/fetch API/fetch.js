@@ -15,7 +15,10 @@ const options = {
   headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json;charset=UTF-8'
-  }
+  },
+  mode: 'cors',
+  cache: 'default',
+  body: JSON.stringify({...})
 }
  
 fetch('https://example.com', options)
