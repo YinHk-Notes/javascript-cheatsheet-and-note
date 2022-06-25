@@ -49,6 +49,7 @@ str.substring(indexStart, indexEnd)             //If start == stop, returns an e
 
 str.split(separator)                            //divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array
 str.split(separator, limit)                     //The pattern describing where each split should occur. The separator can be a simple string or it can be a regular expression.
+                                                //limit - (optional) An integer that limits the number of splits.Items after the limit are excluded.
                                                 //If separator is an empty string (""), str is converted to an array of each of its characters. ---> string to array
 
 
