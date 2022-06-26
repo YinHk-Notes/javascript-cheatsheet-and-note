@@ -25,3 +25,36 @@ When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are
 | 0 & 1 | 0 |
 | 1 & 0 | 0 |
 | 1 & 1 | 1 |
+
+#### Bitwise OR
+When a bitwise OR is performed on a pair of bits, it returns 1 if one of the bits are 1:
+
+| Operation | Result |
+| --- | --- |
+| 0 | 0 | 0 |
+| 0 | 1 | 1  |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+| 1111 | 0000 | 1111 |
+| 1111 | 0001 | 1111 |
+| 1111 | 0010 | 1111 |
+| 1111 | 0100 | 1111 |
+
+
+#### Bitwise XOR
+When a bitwise XOR is performed on a pair of bits, it returns 1 if the bits are different:
+| Operation | Result |
+| --- | --- |
+| 0 ^ 0 | 0 |
+| 0 ^ 1 | 1  |
+| 1 ^ 0 | 1 |
+| 1 ^ 1 | 0  |
+| 1111 ^ 0000 | 1111 |
+| 1111 ^ 0001 | 1110 |
+| 1111 ^ 0010 | 1101 |
+| 1111 ^ 0100 | 1011 |
+
+
+
+
+
