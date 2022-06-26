@@ -77,11 +77,8 @@ let x = 5 | 1;  // x=4
   5|1 = 0100
 ```
 
-> this operator ^ can be used for minus, like add operator
-
-#### 
+#### Bitwise NOT (~)
 ```js
 ~ 5	10	 ~0101	 1010
 ```
-
 
