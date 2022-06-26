@@ -220,7 +220,7 @@ arr.slice(start, end)
  */
                       
 // sorts the elements of an array
-arr.sort() //functionless, change original array.
+arr.sort() //functionless, change original array, it sort by the first letter/first digit only
 arr.sort((firstElement, secondElement) => { ... }) //optional: with compare function 
 arr.sort(function compareFn(a, b) { /* ... */ })   //optional: with compare function 
 /* 
@@ -235,8 +235,8 @@ arr.sort(function compareFn(a, b) { /* ... */ })   //optional: with compare func
    The sort() method compares two values, it sends the values to the compare function, and sorts the values according to the 
    returned (negative, zero, positive) value. when result<0, sort first element before second element, 
    result>0, sort second element before first element.
-   ascending order: function(a, b){return a-b}
-   decending order: function(a, b){return b-a}
+   ascending order: function(a, b){return a-b}, eg: (a-b) => a-b
+   decending order: function(a, b){return b-a}, eg: (b-a) => b-a
  */
                       
 // insert or replace element in specific position
