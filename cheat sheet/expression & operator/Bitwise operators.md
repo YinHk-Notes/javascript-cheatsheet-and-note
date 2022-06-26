@@ -13,7 +13,7 @@ A bitwise operator treats their operands as a set of 32 bits (zeros and ones), r
 | Zero-fill right shift | a >>> b | Shifts a in binary representation b bits to the right, discarding bits shifted off, and shifting in zeros from the left. |
 
 
-#### Bitwise AND
+#### Bitwise AND(&)
 When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are 1.
 | Operation | Result |
 | --- | --- |
@@ -26,13 +26,21 @@ When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are
 | 1 & 0 | 0 |
 | 1 & 1 | 1 |
 
-#### Bitwise OR
+```js
+let x = 5 | 1;  // x=1
+/*
+  5 = 0101
+  1 = 0001
+  5|1 = 0001 
+```
+
+#### Bitwise OR(|)
 When a bitwise OR is performed on a pair of bits, it returns 1 if one of the bits are 1:
 
 | Operation | Result |
 | --- | --- |
 | 0 | 0 | 0 |
-| 0 | 1 | 1  |
+| 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 | 1111 | 0000 | 1111 |
@@ -40,8 +48,15 @@ When a bitwise OR is performed on a pair of bits, it returns 1 if one of the bit
 | 1111 | 0010 | 1111 |
 | 1111 | 0100 | 1111 |
 
+```js
+let x = 5 | 1;  // x=5
+/*
+  5 = 0101
+  1 = 0001
+  5|1 = 0101
+```
 
-#### Bitwise XOR
+#### Bitwise XOR(^)
 When a bitwise XOR is performed on a pair of bits, it returns 1 if the bits are different:
 | Operation | Result |
 | --- | --- |
@@ -54,7 +69,19 @@ When a bitwise XOR is performed on a pair of bits, it returns 1 if the bits are 
 | 1111 ^ 0010 | 1101 |
 | 1111 ^ 0100 | 1011 |
 
+```js
+let x = 5 | 1;  // x=4
+/*
+  5 = 0101
+  1 = 0001
+  5|1 = 0100
+```
 
+> this operator ^ can be used for minus, like add operator
 
+#### 
+```js
+~ 5	10	 ~0101	 1010
+```
 
 
