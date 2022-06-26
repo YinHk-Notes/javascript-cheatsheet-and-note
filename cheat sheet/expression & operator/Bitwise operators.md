@@ -11,3 +11,17 @@ A bitwise operator treats their operands as a set of 32 bits (zeros and ones), r
 | Left shift | a << b | Shifts a in binary representation b bits to the left, shifting in zeros from the right. |
 | Sign-propagating right shift | a >> b | Shifts a in binary representation b bits to the right, discarding bits shifted off. |
 | Zero-fill right shift | a >>> b | Shifts a in binary representation b bits to the right, discarding bits shifted off, and shifting in zeros from the left. |
+
+
+#### Bitwise AND
+When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are 1.
+| Operation | Result |
+| --- | --- |
+| 1111 & 0000 | 0000 |
+| 1111 & 0001 | 0001 |
+| 1111 & 0010 | 0010 |
+| 1111 & 0100 | 0100 |
+| 0 & 0 | 0 |
+| 0 & 1 | 0 |
+| 1 & 0 | 0 |
+| 1 & 1 | 1 |
