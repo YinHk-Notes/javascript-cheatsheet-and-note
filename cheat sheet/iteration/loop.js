@@ -1,5 +1,5 @@
 //for loop
-for(Initialization; Condition; Increment/decrement){  
+for(Initialization; Condition; Increment/decrement){  //setting condition for looping, eg some item want to be skipped
   //code  
 } 
 
