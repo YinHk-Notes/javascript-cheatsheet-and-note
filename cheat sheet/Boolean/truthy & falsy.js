@@ -18,6 +18,22 @@ false && "dog"
 0 && "dog"
 // ↪ 0
 
+//The logical OR operator, ||
+//if expr1 is truthy, returns expr1; else, returns expr2
+expr1 || expr2
+
+//eg:
+o1 = true  || true       // t || t returns true
+o2 = false || true       // f || t returns true
+o3 = true  || false      // t || f returns true
+o4 = false || (3 == 4)   // f || f returns false
+o5 = 'Cat' || 'Dog'      // t || t returns "Cat"
+o6 = false || 'Cat'      // f || t returns "Cat"
+o7 = 'Cat' || false      // t || f returns "Cat"
+o8 = ''    || false      // f || f returns false
+o9 = false || ''         // f || f returns ""
+o10 = false || varObject // f || object returns varObject
+
 
 //Truthy
 //truthy values in JavaScript 
