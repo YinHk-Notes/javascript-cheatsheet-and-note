@@ -208,6 +208,25 @@ Array.of(element0, element1, ... , elementN)
    Array.of(7); // [7]
  */
 
+// creates a new, shallow-copied Array instance from an iterable or array-like object.
+Array.from(arrayLikeObj)                      
+Array.from(arrayLikeObj, (element) => { /* ... */ } )
+Array.from(arrayLikeObj, (element, index) => { /* ... */ } )                      
+/*
+    arrayLikeObj:  An iterable or array-like object to convert to an array.
+    mapFn:         (optional)Map function to call on every element of the array.
+ */
+/*  
+    eg:
+    const map = new Map([[1, 2], [2, 4], [4, 8]]);
+    Array.from(map);
+    // [[1, 2], [2, 4], [4, 8]]
+    
+    Array.from('foo')  //["f", "o", "o"]
+    Array.from([1, 2, 3], x => x + x)
+    // Array [2, 4, 6]
+ */
+
 // reverse the elements in array  
 arr.reverse() //The first array element becomes the last, and the last array element becomes the first. Change original array
                       
