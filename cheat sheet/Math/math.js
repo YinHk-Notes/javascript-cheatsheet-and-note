@@ -15,7 +15,9 @@ Math.round(x)                         //returns the value of the number x rounde
 Math.trunc(x)                         //returns the integer portion of x, removing any fractional digits
 Math.sqrt(x)                          //returns the positive square root of x
 Math.max(val1, val2, ... , valN) 
-Math.max(...array)                    //if pass an array as an argument directly, Math.max(array) will get a NaN, since it's treated as a single element. 
+Math.max(...array)                    //if pass an array as an argument directly, Math.max(array) will get a NaN, 
+                                      //since it's treated as a single element, which can't be converted to a scalar value
 Math.min(val1, val2, ... , valN)
-Math.min(...array)                    //if pass an array as an argument directly, Math.min(array) will get a NaN, since it's treated as a single element. 
+Math.min(...array)                    //if pass an array as an argument directly, Math.min(array) will get a NaN, 
+                                      //since it's treated as a single element, which can't be converted to a scalar value
 
