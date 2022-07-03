@@ -1,3 +1,14 @@
+/*
+
+Looping in array
+
+- double for loop
+    - i, j
+    - i, j=i+1
+- loop from bothside,   i, length-i
+
+*/
+
 //for loop
 for(Initialization; Condition; Increment/decrement){  //setting condition for looping, eg some item want to be skipped
   //code  
