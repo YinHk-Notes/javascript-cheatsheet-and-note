@@ -36,4 +36,33 @@ fun.call(this, arg1, ... , argN)
 
 fun.toString()                                          //returns a string representing the source code of the function
 
+//return 
+//you can return any types,  integer, string, bool, object, array or even a callback function etc.
+//If you return multiple values, you can an array or an object. Because 
+//JavaScript doesn’t support functions that return multiple values. However, you can wrap multiple values into an array or 
+//an object and return the array or the object. 
+//Use destructuring assignment syntax to unpack values from the array, or properties from objects.
+
+//return an array
+function App() {
+    // function body
+
+    // return as an array
+    return [value1, value2,...];
+}
+
+//using destructuring assignment syntax to unpack values from an array to get each of them
+const [value1, value2,...] = App();
+
+//return an object
+function App() {
+    // function body
+
+    // return as an object
+    return {property1, property2,...};
+}
+
+//using destructuring assignment to unpack properties from an object to get each of them
+const {property1, property2,...} = App();
+
 
