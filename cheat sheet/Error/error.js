@@ -1,5 +1,7 @@
 /* Error objects are thrown when runtime errors occur. 
-   The Error object can also be used as a base object for user-defined exceptions
+   The Error object can also be used as a base object for user-defined exceptions.
+   The throw statement throws a user-defined exception. Execution of the current 
+   function will stop (the statements after throw won't be executed)
  */
 
 var e = new Error()
