@@ -1,4 +1,5 @@
 ## JavaScript Closures
+In JavaScript, closure provides access to the outer scope of a function from inside the inner function, even after the outer function has closed.
 
 ```js
 // javascript closure example
