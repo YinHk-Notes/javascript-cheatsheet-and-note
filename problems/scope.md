@@ -330,3 +330,22 @@ const z = 'baz';
   const z = 'baz';
 }
 ```
+```js
+function myFunction() {
+  	console.log(x);  
+  	console.log(y);  
+  	console.log(z);  
+}
+var x = 'foo';
+let y = 'bar';
+const z = 'baz';
+  
+myFunction()
+/* 
+output:  
+>"foo"
+> "bar"
+> "baz"
+
+*/
+```
