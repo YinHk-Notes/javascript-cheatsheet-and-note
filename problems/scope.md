@@ -31,10 +31,14 @@ function foo3(){
 //global scope
 
 ```
+- Variables declared within a JavaScript function, become **LOCAL** to the function.
+- Local variables have Function Scope: They can only be accessed from within the function.
+- Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+- Local variables are created when a function starts, and deleted when the function is completed.
 
 ## function scope
 
-Every Functions has its own scope, whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function.`var` is the keyword to define variable for a **function-scope** accessibility.`var` exit any inside fuction scope.
+Every Functions has its own scope, whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function, variables defined inside a function are not accessible (visible) from outside the function.`var` is the keyword to define variable for a **function-scope** accessibility.`var` exit any inside fuction scope.
 
 ```jsx
 function foo(){
@@ -44,7 +48,23 @@ function foo(){
 
 foo();                    //inside function: apple
 console.log(fruit);       //error: fruit is not defined
+```
 
+Variables declared with `var`, `let` and `const` are quite similar when declared inside a function.
+
+They all have Function Scope:
+```js
+function myFunction1() {
+  var name = "foo";   // Function Scope
+}
+
+function myFunction2() {
+  let name = "bar";   // Function Scope
+}
+
+function myFunction3() {
+  const name = "baz";   // Function Scope
+}
 ```
 
 ## block scope
