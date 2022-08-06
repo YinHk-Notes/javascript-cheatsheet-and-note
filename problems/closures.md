@@ -16,7 +16,7 @@
 ```js
 function outer() {
   
-  let state = 'world';  //
+  let state = 'world';  //outer state(lexical environment) for inner()
   
   function inner() {
     return `Hello ${state}`;
