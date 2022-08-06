@@ -29,7 +29,7 @@ function outerFunc() {
   }
   innerFunc();
 }
-outerFunc();
+outerFunc();  //console: "I am outside!"
 ```
 ```js
 // javascript closure example
