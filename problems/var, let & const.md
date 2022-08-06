@@ -1,5 +1,20 @@
 ## var, let & const 
 
+
+### Declare multiple variables in the same line
+example:
+```js
+var x
+    ,y
+    ,z;
+let x=value1
+    ,y=value2
+    ,z=value3;
+const x=value1
+    ,y=value2
+    ,z=value3;
+```
+
 ### var, let, and const – What's the Difference?
 ```
 👉🏼  var: can be re-declared and updated + global scope / global scope.
