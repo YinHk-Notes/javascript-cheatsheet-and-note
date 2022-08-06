@@ -209,10 +209,11 @@ It will declare a global variable, even if the value is assigned inside a functi
 ```js
 myFunction()
 
-console.log(window.word);
+console.log(word);         // foo
+console.log(window.word);  // foo
 
 function myFunction() {
-  word = 'foo';
+  word = 'foo';    //word become a global variable and belong to the window object
 }
 ```
 
