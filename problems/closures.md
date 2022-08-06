@@ -28,7 +28,7 @@ const g1 = greet();
 console.log(g1); // returns the function definition
 console.log(g1()); // returns the value
 ```
->** Note that the displayName() function has no local variables of its own. However, since inner functions have access to the variables of outer functions, displayName() can access the variable name declared in the parent function, greet().**
+> **Note: that the displayName() function has no local variables of its own. However, since inner functions have access to the variables of outer functions, displayName() can access the variable name declared in the parent function, greet().**
 
 
 
