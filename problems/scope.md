@@ -368,3 +368,18 @@ output:
     ReferenceError: z is not defined
 */
 ```
+```js
+myFunction()
+
+function myFunction() {
+  
+    {
+    	var x = 'foo';
+		let y = 'bar';
+		const z = 'baz';
+    }	
+    console.log(x);
+  	console.log(y);  
+  	console.log(z);  
+}
+```
