@@ -166,10 +166,10 @@ Variables declared inside the functions become Local to the function and are con
 
 ### global scope variable
 
-- There's only one Global scope in the JavaScript document. 
+- There's only one Global scope in the **JavaScript document**. 
 - The area outside all the functions is consider the global scope and the variables defined inside the global scope can be accessed and altered in any other scopes.
-- In HTML, the global scope is the window object.
-- Global variables defined with the `var`, `let` or `const` keyword belong to the window object.
+- In HTML, the global scope is the **window object**.
+- Global variables defined with the `var`, `let` or `const` keyword belong to the **window object**.
   ```js
   var name1 = "foo";
   let name2 = "bar";
