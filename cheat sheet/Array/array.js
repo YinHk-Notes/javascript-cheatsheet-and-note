@@ -68,7 +68,7 @@ let e = arr.unshift(items) //output: new length of arr
 arr.indexOf(searchElement, fromIndex)
 arr.indexOf(searchElement)
 
-// eturns the last index at which a given element can be found in the array,-1 if it is not present.
+// returns the last index at which a given element can be found in the array,-1 if it is not present.
 arr.lastIndexOf(searchElement, fromIndex)// fromIndex is optional
 
 // returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned
@@ -178,9 +178,6 @@ arr.join(separator) //optional, default separator is comma (,), specified separa
    arr.join('+') //output: "a+b+c"
  */
                                         
-// eturns the last index at which a given element can be found in the array,-1 if it is not present.
-arr.lastIndexOf(searchElement, fromIndex)// fromIndex is optional
-
 // execute method once for each element in an array in order.
 arr.forEach((element, index, array) => { } )           // not create new array
 /* 
