@@ -3,7 +3,7 @@
 
 - a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 - This environment consists of any local variables that were in-scope at the time the closure was created. 
-
+- functions in JavaScript form closures.
 
 ```js
 // javascript closure example
@@ -30,6 +30,8 @@ console.log(g1); // returns the function definition
 console.log(g1()); // returns the value
 ```
 > **Note: that the displayName() function has no local variables of its own. However, since inner functions have access to the variables of outer functions, displayName() can access the variable name declared in the parent function, greet().**
+
+> `g1` is a reference to the instance of the function displayName that is created when `greet()` is run. The instance of displayName **maintains a reference to its lexical environment**, within which the variable name exists. For this reason, when `greet()` is invoked, the variable name remains available for use, and name is passed to `displayName()`.
 
 
 
