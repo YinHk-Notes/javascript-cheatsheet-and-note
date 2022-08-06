@@ -7,6 +7,15 @@ The `let` and `const` keywords were added to JavaScript in 2015.
 
 If you want your code to run in older browser, you must use `var`.
 
+The `var` statement declares a **function-scoped / locally scoped** or **globally-scoped** variable, **optionally initializing it to a value**.
+because its global scope and function scope, it can be used inside the function body everywhere or inside the block everywhere.
+
+The scope is global when a `var` variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+
+`var` is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+
+In order to limit the use of variable to specific scope and protect the variable, `let` and `const` exist
+
 ### When to use let or const?
 If you want a general rule: always declare variables with `const`.
 
