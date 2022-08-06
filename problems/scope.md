@@ -59,17 +59,11 @@ function foo(){
         let fruit3 = 'strawberry';   //exist in block scope
 
     }
-    console.log(fruit1);
-    console.log(fruit2);
-    console.log(fruit3);
+    console.log(fruit1); //apple
+    console.log(fruit2); //error: fruit2 is not defined
+    console.log(fruit3); //error: fruit3 is not defined
 }
-
 foo();
-//result:
-//apple
-//error: fruit2 is not defined
-//error: fruit3 is not defined
-
 ```
 
 ## lexical scope
