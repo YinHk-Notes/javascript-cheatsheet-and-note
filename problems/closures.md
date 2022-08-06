@@ -25,6 +25,7 @@ add();
 function outerFunc() {
   let outerVar = 'I am outside!';
   function innerFunc() {
+  //Inside the innerFunc() scope, the variable outerVar is accessed from the lexical scope.
     console.log(outerVar); 
   }
   innerFunc();
