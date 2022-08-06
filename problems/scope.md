@@ -265,3 +265,10 @@ console.log(window.el);  //undefined
 }
 ```
 
+
+### Example scopes
+
+
+
+
+
