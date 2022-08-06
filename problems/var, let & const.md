@@ -1,5 +1,5 @@
 ## var, let & const 
-**var, let & const are used to declared variables**
+> **var, let & const are used to declared variables**
 
 Always declare JavaScript variables with `var`, `let`, or `const`.
 
