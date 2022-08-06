@@ -1,5 +1,6 @@
 ## Scope
 ## Global Scope & Local Scope
+A variable declared outside a function and outside any block, becomes **GLOBAL**.
 
 ```jsx
 //global scope
