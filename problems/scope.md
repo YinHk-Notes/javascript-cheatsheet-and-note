@@ -370,16 +370,14 @@ output:
 ```
 ```js
 myFunction()
-
 function myFunction() {
-  
     {
     	var x = 'foo';
-		let y = 'bar';
-		const z = 'baz';
+	let y = 'bar';
+	const z = 'baz';
     }	
-    console.log(x);
-  	console.log(y);  
-  	console.log(z);  
+    console.log(x);  //foo
+    console.log(y);  //ReferenceError: y is not defined
+    console.log(z);  //ReferenceError: z is not defined
 }
 ```
