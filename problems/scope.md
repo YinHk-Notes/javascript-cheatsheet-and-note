@@ -253,5 +253,11 @@ function myFunction() {
   const word3 = 'baz';
 }
 ```
+```js
+console.log(window.el);  //undefined
 
+{
+  el = 3;
+}
+```
 
