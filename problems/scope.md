@@ -143,7 +143,6 @@ foo1();
 ```
 
 ## block-scoped functions
-
 ```jsx
 {
     function foo () { return 1; }
@@ -154,14 +153,12 @@ foo1();
     }
     foo(); //foo() === 1
 }
-
 ```
 
 ### block-scoped variables
 `let` and `const` are block-scoped variables
 
 ### local scope varible
-
 Variables declared inside the functions become Local to the function and are considered in the corresponding local scope.
 
 ### global scope variable
@@ -178,6 +175,13 @@ Variables declared inside the functions become Local to the function and are con
   console.log(window.word1); // 'foo'
   console.log(window.word2); // undefined
   console.log(window.word3); // undefined
+  ```
+  ```js
+    console.log(window.el);  //3
+    {
+        el = 3;
+    }
+    var el; 
   ```
 > **Note: Do NOT create global variables unless you intend to. Your global variables (or functions) can overwrite window variables (or functions). Any function, including the window object, can overwrite your global variables and functions.**
 
