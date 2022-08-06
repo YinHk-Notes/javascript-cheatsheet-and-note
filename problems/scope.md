@@ -350,8 +350,7 @@ output:
 */
 ```
 ```js
-myFunction()
-
+myFunction();
 function myFunction() {
   	console.log(x);  
   	console.log(y);  
@@ -369,7 +368,7 @@ output:
 */
 ```
 ```js
-myFunction()
+myFunction();
 function myFunction() {
     {
     	var x = 'foo';
