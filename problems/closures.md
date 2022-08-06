@@ -7,9 +7,28 @@
 
 > The closure captures variables from the **lexical scope**.
 
+> Closure us a function** combined with its outer state or lexical environment**.
+
 - a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 - This environment consists of any local variables that were in-scope at the time the closure was created. 
 - functions in JavaScript form closures.
+
+```js
+function outer() {
+  
+  let state = 'world';  //
+  
+  function inner() {
+    return `Hello ${state}`;
+  }
+  
+  return inner;
+}
+
+outer();
+```
+
+
 
 ```js
 const add = (function () {
