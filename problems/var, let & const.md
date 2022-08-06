@@ -1,4 +1,6 @@
 ## var, let & const 
+**var, let & const are used to declared variables**
+
 Always declare JavaScript variables with `var`, `let`, or `const`.
 
 The `var` keyword is used in all JavaScript code from 1995 to 2015.
