@@ -1,5 +1,9 @@
 ## JavaScript Closures
-> In JavaScript, a closure is the combination of a function bundled together (enclosed) with references to its surrounding state (**the lexical environment**). A closure is **the combination of a function and the lexical environment** within which that function was declared. 
+> In JavaScript, a closure is the combination of a function bundled together (enclosed) with references to its surrounding state (**the lexical environment**). 
+
+> A closure is **the combination of a function and the lexical environment** within which that function was declared. 
+
+> A closure is a **function having access to the parent scope**, even after the parent function has closed.
 
 - a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 - This environment consists of any local variables that were in-scope at the time the closure was created. 
