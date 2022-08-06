@@ -7,7 +7,7 @@ let variable_name = initialization;
 const variable_name = initialization;
 ```
 
-> Note: after declaration, you can't modify or update the initial value in `const`, so it must be initialized in the same line with decalaration 
+> **Note: after declaration, you can't modify or update the initial value in `const`, so it must be initialized in the same line with decalaration** 
 
 ### declare multiple variables in the same line
 example:
