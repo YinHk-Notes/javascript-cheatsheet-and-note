@@ -201,5 +201,9 @@ document.getElementById("override").innerHTML = "The altered window name is " + 
 
 </body>
 </html>
-
 ```
+#### Automatically Global
+If you assign a value to a variable that has not been declared, it will automatically become a **GLOBAL** variable.
+
+
+
