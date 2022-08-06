@@ -282,7 +282,19 @@ console.log(x);  //foo
 console.log(y);  //ReferenceError: y is not defined
 console.log(z);  //ReferenceError: z is not defined
 ```
-
+```js
+console.log(x);  //ReferenceError: x is not defined
+console.log(y);  //ReferenceError: y is not defined
+console.log(z);  //ReferenceError: z is not defined
+function myFunction() {
+  var x = 'foo';
+  let y = 'bar';
+  const z = 'baz';
+}
+console.log(x);  //ReferenceError: x is not defined
+console.log(y);  //ReferenceError: y is not defined
+console.log(z);  //ReferenceError: z is not defined
+```
 
 
 
