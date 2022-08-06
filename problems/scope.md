@@ -267,7 +267,21 @@ console.log(window.el);  //undefined
 
 
 ### Example scopes
+```js
+console.log(x);  //ReferenceError: x is not defined
+console.log(y);  //ReferenceError: y is not defined
+console.log(z);  //ReferenceError: z is not defined
 
+{
+  var x = 'foo';
+  let y = 'bar';
+  const z = 'baz';
+}
+
+console.log(x);  //foo
+console.log(y);  //ReferenceError: y is not defined
+console.log(z);  //ReferenceError: z is not defined
+```
 
 
 
