@@ -22,7 +22,20 @@ function newFunction() {
     }
     console.log(hello); // error: hello is not defined
 ```
+```js
+var x = 1;
 
+if (x === 1) {
+  var x = 2;
+
+  console.log(x);
+  // expected output: 2
+}
+
+console.log(x);
+// expected output: 2
+
+```
 
 ### When to use let or const?
 If you want a general rule: always declare variables with `const`.
