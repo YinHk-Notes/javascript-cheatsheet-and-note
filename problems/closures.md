@@ -1,5 +1,5 @@
 ## JavaScript Closures
-> In JavaScript, a closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+> In JavaScript, a closure is the combination of a function bundled together (enclosed) with references to its surrounding state (**the lexical environment**). A closure is **the combination of a function and the lexical environment** within which that function was declared. 
 
 - closure provides access to the outer scope of a function from inside the inner function, even after the outer function has closed.
 -  a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
@@ -11,7 +11,7 @@
 function greet() {
 
     // variable defined outside the inner function
-    let name = 'John';
+    const name = 'John';
 
     // inner function
     function displayName() {
@@ -30,7 +30,8 @@ console.log(g1()); // returns the value
 ```
 > **Note: that the displayName() function has no local variables of its own. However, since inner functions have access to the variables of outer functions, displayName() can access the variable name declared in the parent function, greet().**
 
-
+- A closure is the combination of a function and the lexical environment within which that function was declared. 
+- 
 
 ```js
 // closure example
