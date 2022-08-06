@@ -1,7 +1,13 @@
 ## var, let & const 
 
+### decalre let & const 
+```js
+let variable_name;
+let variable_name = initialization;
+const variable_name = initialization;
+```
 
-### Declare multiple variables in the same line
+### declare multiple variables in the same line
 example:
 ```js
 var x
