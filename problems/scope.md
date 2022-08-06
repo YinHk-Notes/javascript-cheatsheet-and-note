@@ -216,7 +216,17 @@ function myFunction() {
   word = 'foo';    //word become a global variable and belong to the window object
 }
 ```
+or
+```js
+function myFunction() {
+  word = 'foo';
+}
 
+myFunction();
+
+console.log(word);         // foo
+console.log(window.word);  // foo
+```
 ```js
 console.log(word1); //undefined
 console.log(word2); //undefined
