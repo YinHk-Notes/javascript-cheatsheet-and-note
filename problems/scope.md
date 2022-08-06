@@ -48,6 +48,13 @@ console.log(fruit);       //error: fruit is not defined
 ```
 
 ## block scope
+Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+
+ES6 introduced two important new JavaScript keywords: `let` and `const`.
+
+These two keywords provide **Block Scope** in JavaScript.
+
+Variables declared inside a **{ } block cannot be accessed from outside the block**:
 
 The area inside **curly braces{}** is **block scope**. **const** and **let** keywords allow developers to declare variables in the block scope, which means those variables exist only within the corresponding **block{curly braces}**.
 
