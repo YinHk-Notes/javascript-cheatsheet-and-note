@@ -380,3 +380,17 @@ function myFunction() {
     console.log(z);  //ReferenceError: z is not defined
 }
 ```
+```js
+myFunction()
+function myFunction() {
+    function myFunction2() {
+    	var x = 'foo';
+		let y = 'bar';
+		const z = 'baz';
+    }
+    myFunction2();
+    console.log(x); //ReferenceError: x is not defined
+    console.log(y); //ReferenceError: y is not defined
+    console.log(z); //ReferenceError: z is not defined
+}
+```
