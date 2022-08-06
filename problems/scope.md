@@ -103,7 +103,7 @@ foo();
 
 ## lexical scope
 
-Lexical scope means the **children scope have the access to the variables defined in the parent scope**. The children functions are lexically bound to the execution context of their parents.
+Lexical scope means the **children scope have the access to the variables defined in the parent scope**. The children functions are lexically bound to the execution context of their parents. In **Lexical Scope**, the child scope accesses the variable defined in the parent scope lexically. 
 
 ```jsx
 function foo1(){
