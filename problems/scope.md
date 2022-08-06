@@ -180,3 +180,25 @@ Variables declared inside the functions become Local to the function and are con
   console.log(window.word3); // undefined
   ```
 > **Note: Do NOT create global variables unless you intend to. Your global variables (or functions) can overwrite window variables (or functions). Any function, including the window object, can overwrite your global variables and functions.**
+
+example:
+The `Window.name` property gets/sets the name of the window's browsing context. If you use `var` to declare **name** with 
+assigned value. Then it will override the **window variable**.
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="origin"></p>
+<p id="override"></p>
+
+<script>
+document.getElementById("origin").innerHTML = "The window name is " + window.name;
+
+var name = "foo";
+document.getElementById("override").innerHTML = "The altered window name is " + window.name;
+</script>
+
+</body>
+</html>
+
+```
