@@ -234,22 +234,22 @@ console.log(window.word);  // foo
 
 The following fail and won't automically become **global variable**
 ```js
-console.log(word);         // undefined
-console.log(window.word);  // undefined
+console.log(word);         //ReferenceError: word is not defined
+console.log(window.word);  //undefined
 
 function myFunction() {
   word = 'foo';
 }
 
-console.log(word);         // undefined
-console.log(window.word);  // undefined
+console.log(word);         //ReferenceError: word is not defined
+console.log(window.word);  //undefined
 ```
 ```js
 myFunction();
 
-console.log(word1); //undefined
-console.log(word2); //undefined
-console.log(word3); //undefined
+console.log(word1); //ReferenceError: word1 is not defined
+console.log(word2); //ReferenceError: word2 is not defined
+console.log(word3); //ReferenceError: word3 is not defined
 
 function myFunction() {
   var word1 = 'foo';
