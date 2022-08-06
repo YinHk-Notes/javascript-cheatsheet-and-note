@@ -204,6 +204,18 @@ document.getElementById("override").innerHTML = "The altered window name is " + 
 ```
 #### Automatically Global
 If you assign a value to a variable that has not been declared, it will automatically become a **GLOBAL** variable.
+It will declare a global variable, even if the value is assigned inside a function.
+
+```js
+myFunction()
+
+console.log(window.word);
+
+function myFunction() {
+  word = 'foo';
+}
+```
+
 ```js
 console.log(word1); //undefined
 console.log(word2); //undefined
