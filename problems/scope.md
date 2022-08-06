@@ -305,5 +305,17 @@ const z = 'baz';
   console.log(z);  //baz
 }
 ```
-
+```js
+{
+  var x = 'foo';
+  let y = 'bar';
+  const z = 'baz';
+  
+  {
+  	console.log(x);  //foo
+  	console.log(y);  //bar
+  	console.log(z);  //baz
+  }
+}
+```
 
