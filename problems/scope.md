@@ -3,6 +3,7 @@
 
 ### Global
 - A variable declared outside a function and outside any block, becomes **GLOBAL**.
+- With JavaScript, the global scope is the **JavaScript environment.**
 - Variables declared Globally (outside any function) have Global Scope.
 - Global variables can be accessed from anywhere in a JavaScript program.
 - Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.
@@ -156,7 +157,8 @@ foo1();
 
 ```
 
-## block-scoped variables
+### block-scoped variables
+`let` and `const` are block-scoped variables
 
 ### local scope varible
 
@@ -164,4 +166,11 @@ Variables declared inside the functions become Local to the function and are con
 
 ### global scope variable
 
-There's only one Global scope in the JavaScript document. The area outside all the functions is consider the global scope and the variables defined inside the global scope can be accessed and altered in any other scopes.
+- There's only one Global scope in the JavaScript document. 
+- The area outside all the functions is consider the global scope and the variables defined inside the global scope can be accessed and altered in any other scopes.
+- In HTML, the global scope is the window object.
+- Global variables defined with the `var`, `let` or `const` keyword belong to the window object.
+  ```js
+  
+  ```
+> **Note: Do NOT create global variables unless you intend to. Your global variables (or functions) can overwrite window variables (or functions). Any function, including the window object, can overwrite your global variables and functions.**
