@@ -54,7 +54,7 @@ console.log(multiply3()); // NaN
 console.log(multiply3(6)); // 18
 console.log(multiply4(2)); // 8
 ```
-
+same as:
 ```js
 function calculate(x) {
     function multiply(y) {
@@ -66,5 +66,13 @@ function calculate(x) {
 console.log(calculate(6)(3)); // 18
 console.log(calculate(2)(4)); // 8
 ```
+
+
+### Note
+- Closures are useful because they let you **associate data (the lexical environment) with a function** that operates on that data.
+- Consequently, you can use a closure anywhere that you might normally use an object with only a single method.
+
+
+
 
 
