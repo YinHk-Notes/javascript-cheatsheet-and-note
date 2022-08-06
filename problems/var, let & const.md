@@ -16,6 +16,14 @@ The scope is global when a `var` variable is declared outside a function. This m
 
 In order to limit the use of variable to specific scope and protect the variable, `let` and `const` exist
 
+```js
+function newFunction() {
+        var hello = "hello";
+    }
+    console.log(hello); // error: hello is not defined
+```
+
+
 ### When to use let or const?
 If you want a general rule: always declare variables with `const`.
 
