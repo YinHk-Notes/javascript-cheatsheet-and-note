@@ -349,3 +349,22 @@ output:
 
 */
 ```
+```js
+myFunction()
+
+function myFunction() {
+  	console.log(x);  
+  	console.log(y);  
+  	console.log(z);  
+}
+var x = 'foo';
+let y = 'bar';
+const z = 'baz';
+
+/* 
+output:  
+    undefined
+    ReferenceError: y is not defined
+    ReferenceError: z is not defined
+*/
+```
