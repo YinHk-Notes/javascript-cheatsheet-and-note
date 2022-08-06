@@ -22,6 +22,16 @@ add();
 // the counter is now 3
 ```
 ```js
+function outerFunc() {
+  let outerVar = 'I am outside!';
+  function innerFunc() {
+    console.log(outerVar); 
+  }
+  innerFunc();
+}
+outerFunc();
+```
+```js
 // javascript closure example
 
 // outer function
