@@ -230,6 +230,17 @@ console.log(window.word);  // foo
 
 The following fail and won't automically become **global variable**
 ```js
+console.log(word);         // undefined
+console.log(window.word);  // undefined
+
+function myFunction() {
+  word = 'foo';
+}
+
+console.log(word);         // undefined
+console.log(window.word);  // undefined
+```
+```js
 myFunction();
 
 console.log(word1); //undefined
