@@ -107,7 +107,7 @@ Lexical scope means the **children scope have the access to the variables define
 
 Lexical scoping means that the accessibility of variables is determined by the position of the variables inside the nested scopes.
 
-Simpler, the lexical scoping means that inside the inner scope you can access variables of outer scopes.
+Simpler, **the lexical scoping means that inside the inner scope you can access variables of outer scopes**.
 
 It's called lexical (or static) because the engine determines (at lexing time) the nesting of scopes just by looking at the JavaScript source code, without executing it.
 
