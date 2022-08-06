@@ -227,6 +227,8 @@ myFunction();
 console.log(word);         // foo
 console.log(window.word);  // foo
 ```
+
+The following fail and won't automically become **global variable**
 ```js
 console.log(word1); //undefined
 console.log(word2); //undefined
