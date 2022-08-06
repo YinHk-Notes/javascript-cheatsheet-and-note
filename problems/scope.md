@@ -385,8 +385,8 @@ myFunction()
 function myFunction() {
     function myFunction2() {
     	var x = 'foo';
-		let y = 'bar';
-		const z = 'baz';
+	let y = 'bar';
+        const z = 'baz';
     }
     myFunction2();
     console.log(x); //ReferenceError: x is not defined
