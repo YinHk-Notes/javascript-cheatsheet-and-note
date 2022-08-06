@@ -1,6 +1,11 @@
 # Scope
 ## Global Scope & Local Scope
-A variable declared outside a function and outside any block, becomes **GLOBAL**.
+
+### Global
+- A variable declared outside a function and outside any block, becomes **GLOBAL**.
+- Variables declared Globally (outside any function) have Global Scope.
+- Global variables can be accessed from anywhere in a JavaScript program.
+- Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.
 
 ```jsx
 //global scope
@@ -32,6 +37,7 @@ function foo3(){
 //global scope
 
 ```
+### Local
 - Variables declared within a JavaScript function, become **LOCAL** to the function.
 - Local variables have Function Scope: They can only be accessed from within the function.
 - Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
