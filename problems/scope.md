@@ -34,7 +34,7 @@ function foo3(){
 
 ## function scope
 
-Every Functions has its own scope, whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function. var is the keyword to define variable for a function-scope accessibility. **var** exit any inside fuction scope.
+Every Functions has its own scope, whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function.`var` is the keyword to define variable for a **function-scope** accessibility.`var` exit any inside fuction scope.
 
 ```jsx
 function foo(){
