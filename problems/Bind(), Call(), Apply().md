@@ -2,8 +2,14 @@
 > `call()`, `apply()`, and `bind()` methods to **tie a function into an object**, to bind **"this"** to an object. So that you can invoke the function **with a specified context**.
 
 ### Call
+```js
+fn.call(obj, .....arguments)    //arguments refer to the arguments in fn
+```
 
 ### Apply
+```js
+fn.apply(obj, arguments)    //arguments refer to the arguments in fn
+```
 
 ### Difference between Call() & Applay()
 The `Call()` method takes arguments seperately, while the `Apply()` takes arguments as an array
