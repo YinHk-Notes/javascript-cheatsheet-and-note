@@ -112,6 +112,18 @@ showMessage('World');
 ### Class hoisting
 > Classes defined using a **class declaration are hoisted**, which means that JavaScript has a reference to the class. However the class is not initialized by default, so any code that uses it before the line in which it is initialized is executed will **throw a ReferenceError**. 
 
+```js
+const obj = new Rectangle();
+
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+//ReferenceError: Cannot access 'Rectangle' before initialization
+```
+
 > In class expression, **the expression is its initialization**. So the **class expression is not hoisted**.
 
 ```js
@@ -124,11 +136,7 @@ let exp = class Rectangle {
     this.width = width;
   }
 };
-
 //ReferenceError: Cannot access 'exp' before initialization
-```
-```js
-
 ```
 
 ### Declare Your Variables At the Top !
