@@ -139,7 +139,65 @@ obj.func.bind(obj)(); // 20
 ```
 
 ### When to use these methods?
- 
- 
-### ref
-https://betterprogramming.pub/when-to-use-bind-call-and-apply-in-javascript-1ae9d7fa66d5
+**Use Call() to Chain Object Constructors**
+```js
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Food(name, price) {
+  Product.call(this, name, price);
+  this.category = 'food';
+}
+
+function Toy(name, price) {
+  Product.call(this, name, price);
+  this.category = 'toy';
+}
+
+const cheese = new Food('feta', 5);
+const fun = new Toy('robot', 40);
+```
+
+**Using call() to invoke a function and specifying the context for 'this'**
+```js
+function greet() {
+  const reply = [this.animal, 'typically sleep between', this.sleepDuration].join(' ');
+  console.log(reply);
+}
+
+const obj = {
+  animal: 'cats',
+  sleepDuration: '12 and 16 hours',
+};
+
+greet.call(obj);  // cats typically sleep between 12 and 16 hours
+```
+
+**Use Call() to Invoke an Anonymous Function**
+```js
+const animals = [
+  { species: 'Lion', name: 'King' },
+  { species: 'Whale', name: 'Fail' }
+];
+
+function assignPrintMethod(i) {
+  this.print = function () {
+    console.log(`#${i} ${this.species}: ${this.name}`);
+  }
+  this.print();
+}
+
+for (let i = 0; i < animals.length; i++) {
+  assignPrintMethod.call(animals[i], i);
+}
+```
+
+**Use Apply() to Append an Array to Another Array**
+```js
+const array = ['a', 'b'];
+const elements = [0, 1, 2];
+array.push.apply(array, elements);
+console.info(array); // ["a", "b", 0, 1, 2]
+```
