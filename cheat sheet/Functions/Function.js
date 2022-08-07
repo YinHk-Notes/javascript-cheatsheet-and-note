@@ -24,6 +24,13 @@ greet();
 (function(args1,args2,...,argsN) {}).length             //returns the number of formal parameters, excludes the 'rest parameter'.
 (function(...args) {}).name()                           //returns the function's name
 
+//constructor function
+function Ctor() {}                                      //A Function object's prototype property is used when
+//instance                                              //the function is used as a constructor with the new operator
+const inst = new Ctor();                                // It will become the new object's prototype
+Ctor.prototype                                          //define a prototype for its instance
+Object.getPrototypeOf(inst) === Ctor.prototype          //true
+
 (function(...args) {}).apply(argsArray)                 //calls a function with a given this value, and arguments provided as an array (or an array-like object)
 (function(...args) {}).apply(thisArg, argsArray)
 
