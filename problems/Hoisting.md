@@ -24,6 +24,15 @@ If not declared, it assume `var`
 x = 5;
 console.log(x);
 ```
+
+> Note: JavaScript **only hoists declarations, not initializations**. This means that **initialization doesn't be moved to the top of the scope**, prior to execution of the code.
+
+```js
+console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
+var num = 6; // Initialization and declaration.
+```
+
+
 ### Hoisting in `let` and `const`
 > Variables defined with let and const are hoisted to the top of the block, but not initialized.
 The block of code is aware of the variable, but it **cannot be used until it has been declared**. Variables declared with let and const are also hoisted but, unlike var, are not initialized with a default value. **An exception will be thrown if a variable declared with let or const is read before it is initialized.**
