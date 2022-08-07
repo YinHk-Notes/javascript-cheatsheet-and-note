@@ -1,5 +1,5 @@
 ## Using bind(), call() & apply()
-> `call()`, `apply()`, and `bind()` methods to **tie a function into an object**, to bind **"this"** to an object. So that you can invoke the function **with a specified context**.
+> `call()`, `apply()`, and `bind()` methods to **tie a function into an object**, or to bind **"this"** to an object. So that you can invoke the function **with a specified context**.
 
 ### Call
 ```js
@@ -52,6 +52,40 @@ display.call(); // throws TypeError: Cannot read the property of 'globProp' of u
 ### Apply
 ```js
 fn.apply(obj, arguments)    //arguments refer to the arguments in fn
+```
+```js
+function fn(a, b) {
+  console.log(a, b);
+}
+
+function boundFn() {
+  return fn.apply(this, arguments);
+}
+
+boundFn(1, 2);     // 1 2
+```
+```js
+var obj = { num: 2 };
+
+function add(a, b){
+  return this.num + a + b;
+}
+
+console.log(add.apply(obj, [3, 5]));
+```
+```js
+const numbers = [5, 6, 2, 3, 7];
+
+const max = Math.max.apply(null, numbers);
+
+console.log(max);
+// expected output: 7
+
+const min = Math.min.apply(null, numbers);
+
+console.log(min);
+// expected output: 2
+
 ```
 
 ### Difference between Call() & Applay()
