@@ -1,6 +1,10 @@
 ## Hoisting
-> **Hoisting** is JavaScript's default behavior of moving all declarations to the top of the current scope
+> **Hoisting** is JavaScript's default behavior of moving all declarations to the top of the current scope. 
+> 
+> JavaScript Hoisting refers to the process whereby the interpreter appears to move **the declaration of functions, variables or classes** to the top of their scope, prior to execution of the code.
 
+- Hoisting allows functions to be safely used in code before they are declared.
+- Function and class declarations are also hoisted.
 
 ```js
 x = 5; 
@@ -46,7 +50,8 @@ console.log(window.el);  // 3
 }
 ```
 
-> To avoid bugs, always declare all variables at the beginning of every scope. JavaScript in strict mode does not allow variables to be used if they are not declared.
+> To avoid bugs, always declare all variables at the beginning of every scope. JavaScript in strict mode does not allow variables to be used if they are not declared. Note that doing so can lead to unexpected errors, and is not generally recommended.
+
 
 
 
