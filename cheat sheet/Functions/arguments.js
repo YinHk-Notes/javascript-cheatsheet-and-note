@@ -4,6 +4,11 @@
 const argi = arguments[i];    //get access to the ith argument
 arguments.length              //returns the number of parameter actually passed to the function, include rest parameter
 
+function fn(arg1, arg2, arg3) {
+	console.log(arguments);
+}
+fn('a','b','c');              //Object { 0: "a", 1: "b", 2: "c" }
+
 /* The arguments object is not an Array. It is similar, but lacks all Array properties except length */
 
 
