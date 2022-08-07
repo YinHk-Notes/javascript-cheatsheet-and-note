@@ -38,9 +38,9 @@ function fn() {
    //with "this" key word                               //fn is function with "this" keyword to point to an unknown obj
 }
 
-fu.call()                                              //thisArg is not passed. If not in strict mode, then "this" is bound to the global object
-fu.call(thisArg)                                       //thisArg is a specific object, where the "this" binds to it when calling fn
-fu.call(thisArg, arg1, ... , argN)                     //arg1,...,argN are arguments for fn
+fn.call()                                              //thisArg is not passed. If not in strict mode, then "this" is bound to the global object
+fn.call(thisArg)                                       //thisArg is a specific object, where the "this" binds to it when calling fn
+fn.call(thisArg, arg1, ... , argN)                     //arg1,...,argN are arguments for fn
  
 fn.apply()
 fn.apply(thisArg)
