@@ -16,3 +16,11 @@ The purpose of `"use strict"` is to indicate that the code should be executed 
       // Uncaught ReferenceError: auntie is not defined
     })();
   ```
+  ```js
+    (function () {
+      'use strict';
+    })();
+    x = 99;
+    //No error catched
+  ```
+
