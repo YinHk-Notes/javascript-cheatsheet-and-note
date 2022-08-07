@@ -1,1 +1,2 @@
-## Context & "this" keyword
+## Understanding Context in JavaScript & "this" keyword
+
