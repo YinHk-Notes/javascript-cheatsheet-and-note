@@ -1,5 +1,5 @@
 ## Using Bind(), Call(), and Apply()
-
+> `call()`, `apply()`, and `bind()` methods to **tie a function into an object**, to bind **"this"** to an object. So that you can invoke the function **with a specified context**.
 
 ### Call
 
