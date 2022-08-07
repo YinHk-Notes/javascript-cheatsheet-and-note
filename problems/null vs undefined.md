@@ -13,6 +13,7 @@
 
 - means a variable has been declared but not defined yet
 - `undefined` is a variable that refers to something that **doesn't exist**, and the **variable isn't defined to be anything**
+-  **It's not assigned to anything**, and **don't know what it really is**
 - `undefined` is of type undefined
    ```js
    typeof undefined //'undefined'
