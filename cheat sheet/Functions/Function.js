@@ -10,7 +10,7 @@
 function Name(param1,param2,...param) {
    //body
 }
-//or function expression format
+//or use function expression format
 const fun = function(param1,param2,...param) {}
 
 //creates a new Function object, args and functionBody are all in string format
