@@ -46,8 +46,17 @@ fn.apply()
 fn.apply(thisArg)
 fn.apply(thisArg, argsArray)                           //argsArray is an array or an array-like object contains arguments of fn
 
-const boundFun = fun.bind(this)                        //creates a new bound function that wraps the original function object. Calling the bound function generally results in the execution of its wrapped function
-const boundFun = fun.bind(this, arg1, ... , argN)      
+//both call(), and apply() return the result of executing the bound function
+   
+//return a bound function for fn, which will be execute later
+const boundFun = fn.bind(thisArg)  
+boundFun(arg1, ... , argN)                              //execute the bound function
+const boundFun = fu.bind(this, arg1, ... , argN)  
+boundFun()                                              //execute the bound function
+
+//return a bound function and execute it immediately
+fn.bind(thisArg)(arg1, ... , argN)
+fu.bind(this, arg1, ... , argN)()
 
 
 //return 
