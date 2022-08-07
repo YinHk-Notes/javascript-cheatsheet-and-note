@@ -2,9 +2,8 @@
 
 `null`
 
-- is an assigned value. It means nothing
+- is an assignment value. It means nothing, a representation of no value.
 - `null` is a variable that is defined **but is missing a value**
-- variable has been **declared** but has **not yet been assigned a value**
 - `null` is an object
   ```js
    typeof null //'object'
@@ -15,6 +14,8 @@
 - means a variable has been declared but not defined yet
 - `undefined` is a variable that refers to something that **doesn't exist**, and the **variable isn't defined to be anything**
 -  **It's not assigned to anything**, and **don't know what it really is**
+-  variable has been **declared** but has **not yet been assigned a value**
+-  or  variable **has not been declared** at all
 - `undefined` is of type undefined
    ```js
    typeof undefined //'undefined'
