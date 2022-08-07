@@ -26,5 +26,8 @@ fn.bind(obj, .....arguments)
 - **call、apply** method return the result after execution the bound function.
 - **Bind** method return a bound function(bind "this" to an obj) that can be executed later by calling.
  
+### When to use these methods?
+ 
+ 
 ### ref
 https://betterprogramming.pub/when-to-use-bind-call-and-apply-in-javascript-1ae9d7fa66d5
