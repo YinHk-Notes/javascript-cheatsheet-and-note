@@ -6,7 +6,7 @@ The "use strict" directive was new in ECMAScript version 5.
 The purpose of `"use strict"` is to indicate that the code should be executed in "strict mode".
 
 ### Why strict mode?
-Strict mode changes previously accepted "bad syntax" into real errors.
+Strict mode changes previously accepted **"bad syntax" into real errors**.
 
 In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
 
