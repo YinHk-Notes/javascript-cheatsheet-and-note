@@ -145,4 +145,28 @@ class B extends A {
 }
 ```
 
+### Class expressions
+A class expression is another way to define a class. **Class expressions can be named or unnamed.**.
+
+eg:
+```js
+// unnamed
+let Rectangle = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+
+// named
+Rectangle = class Rectangle2 {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+```
+
+
+
 
