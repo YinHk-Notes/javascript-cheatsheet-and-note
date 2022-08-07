@@ -6,7 +6,9 @@
 - Hoisting allows functions to be safely used in code before they are declared.
 - Function and class declarations are also hoisted.
 
-### H
+### Variable hoisting
+You can use a variable in code before it is declared and/or initialized.
+
 ```js
 x = 5; 
 y = 7;
@@ -24,7 +26,12 @@ console.log(x);
 ```
 ### Hoisting in `let` and `const`
 > Variables defined with let and const are hoisted to the top of the block, but not initialized.
-The block of code is aware of the variable, but it **cannot be used until it has been declared**.
+The block of code is aware of the variable, but it **cannot be used until it has been declared**. Variables declared with let and const are also hoisted but, unlike var, are not initialized with a default value. An exception will be thrown if a variable declared with let or const is read before it is initialized.
+
+```js
+console.log(num); // Throws ReferenceError exception as the variable value is uninitialized
+let num = 6; // Initialization
+```
 
 Using a let variable before it is declared will result in a ReferenceError.
 ```js
