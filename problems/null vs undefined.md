@@ -4,6 +4,7 @@
 
 - is an assigned value. It means nothing
 - `null` is a variable that is defined **but is missing a value**
+- variable has been **declared** but has **not yet been assigned a value**
 - `null` is an object
   ```js
    typeof null //'object'
