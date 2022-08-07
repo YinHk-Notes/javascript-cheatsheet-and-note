@@ -12,6 +12,26 @@ var y;
 var x;
 ```
 
+If not declared, it assume `var`
+```js
+x = 5;
+console.log(x);
+```
+
+```js
+x = 5;
+console.log(x);
+let x;
+//ReferenceError: Cannot access 'x' before initialization
+```
+
+```js
+x = 5;
+console.log(x);
+const x;
+//SyntaxError: Missing initializer in const declaration.
+```
+
 ```js
 var el;
 
