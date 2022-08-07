@@ -24,3 +24,12 @@
 console.log(null == undefined) //true
 console.log(null !== undefined) //true
 ```
+
+
+```js
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+```
