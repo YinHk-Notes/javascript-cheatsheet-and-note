@@ -19,3 +19,8 @@
   ```
 
 > `null !== undefined` but `null == undefined`.
+
+```js
+console.log(null == undefined) //true
+console.log(null !== undefined) //true
+```
