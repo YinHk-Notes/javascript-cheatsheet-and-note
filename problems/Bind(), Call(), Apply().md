@@ -1,4 +1,4 @@
-## Using Bind(), Call() & Apply()
+## Using bind(), call() & apply()
 > `call()`, `apply()`, and `bind()` methods to **tie a function into an object**, to bind **"this"** to an object. So that you can invoke the function **with a specified context**.
 
 ### Call
@@ -15,6 +15,11 @@ fn.apply(obj, arguments)    //arguments refer to the arguments in fn
 The `Call()` method takes arguments seperately, while the `Apply()` takes arguments as an array
 
 ### Bind
+```js
+fn.bind(obj)   
+//or
+fn.bind(obj, .....arguments)   
+```
 
 
 ### Difference between Call()/Applay() and Bind()
