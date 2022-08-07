@@ -97,7 +97,22 @@ fn.bind(obj)
 //or
 fn.bind(obj, .....arguments)   
 ```
+```js
+const module = {
+  x: 42,
+  getX: function() {
+    return this.x;
+  }
+};
 
+const unboundGetX = module.getX;
+console.log(unboundGetX()); // The function gets invoked at the global scope
+// expected output: undefined
+
+const boundGetX = unboundGetX.bind(module);
+console.log(boundGetX());
+// expected output: 42
+```
 
 ### Difference between Call()/Applay() and Bind()
 - **call、apply** method return the result after execution the bound function.
