@@ -2,7 +2,7 @@
 
 `null`
 
-- is an assignment value. It means nothing, a representation of no value.
+- is an assignment value. It means nothing.
 - `null` is a variable that is defined **but is missing a value**
 - `null` is an object
   ```js
