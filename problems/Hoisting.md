@@ -26,7 +26,7 @@ console.log(x);
 ```
 ### Hoisting in `let` and `const`
 > Variables defined with let and const are hoisted to the top of the block, but not initialized.
-The block of code is aware of the variable, but it **cannot be used until it has been declared**. Variables declared with let and const are also hoisted but, unlike var, are not initialized with a default value. An exception will be thrown if a variable declared with let or const is read before it is initialized.
+The block of code is aware of the variable, but it **cannot be used until it has been declared**. Variables declared with let and const are also hoisted but, unlike var, are not initialized with a default value. **An exception will be thrown if a variable declared with let or const is read before it is initialized.**
 
 ```js
 console.log(num); // Throws ReferenceError exception as the variable value is uninitialized
