@@ -17,14 +17,19 @@ If not declared, it assume `var`
 x = 5;
 console.log(x);
 ```
+### hoisting in `let` and `const`
+Variables defined with let and const are hoisted to the top of the block, but not initialized.
 
+The block of code is aware of the variable, but it **cannot be used until it has been declared**.
+
+Using a let variable before it is declared will result in a ReferenceError.
 ```js
 x = 5;
 console.log(x);
 let x;
 //ReferenceError: Cannot access 'x' before initialization
 ```
-
+Using a const variable before it is declared, is a syntax errror.
 ```js
 x = 5;
 console.log(x);
