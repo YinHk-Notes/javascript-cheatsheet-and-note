@@ -41,11 +41,12 @@ function fn() {
 fu.call()                                              //thisArg is not passed. If not in strict mode, then "this" is bound to the global object
 fu.call(thisArg)                                       //thisArg is a specific object, where the "this" binds to it when calling fn
 fu.call(thisArg, arg1, ... , argN)                     //arg1,...,argN are arguments for fn
+ 
+fn.apply()
+fn.apply(thisArg)
+fn.apply(thisArg, argsArray)                           //argsArray is an array or an array-like object contains arguments of fn
 
-(function(...args) {}).apply(argsArray)                 //calls a function with a given this value, and arguments provided as an array (or an array-like object)
-(function(...args) {}).apply(thisArg, argsArray)
-
-const boundFun = fun.bind(this)                         //creates a new bound function that wraps the original function object. Calling the bound function generally results in the execution of its wrapped function
+const boundFun = fun.bind(this)                        //creates a new bound function that wraps the original function object. Calling the bound function generally results in the execution of its wrapped function
 const boundFun = fun.bind(this, arg1, ... , argN)      
 
 
