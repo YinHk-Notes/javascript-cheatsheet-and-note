@@ -109,6 +109,11 @@ showMessage('World');
 > The other reason is that the arrow function is anonymous or **function expression**.
 > In this case the variable declaration is hoisted and **the expression is its initialization**. Therefore **the expressions are not evaluated** until the relevant line is executed.
 
+### Class hoisting
+> Classes defined using a **class declaration are hoisted**, which means that JavaScript has a reference to the class. However the class is not initialized by default, so any code that uses it before the line in which it is initialized is executed will **throw a ReferenceError**. 
+
+> In class expression, **the expression is its initialization**. So the **expression is not being hoisted**.
+
 ### Declare Your Variables At the Top !
 > To avoid bugs, always declare all variables at the beginning of every scope. JavaScript in strict mode does not allow variables to be used if they are not declared. Note that doing so can lead to unexpected errors, and is not generally recommended.
 
