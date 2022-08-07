@@ -5,6 +5,49 @@
 ```js
 fn.call(obj, .....arguments)    //arguments refer to the arguments in fn
 ```
+```js
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Food(name, price) {
+  Product.call(this, name, price);
+  this.category = 'food';
+}
+
+console.log(new Food('cheese', 5).name);
+// expected output: "cheese"
+```
+
+```js
+var obj = { num: 2 };
+function add(a, b){
+  return this.num + a + b;
+}
+console.log(add.call(obj, 3, 5)); //10
+```
+**If it is not in strict mode, without passing obj or pass null to it, the value of "this" is bound to the global object.**
+```js
+// var creates a property on the global object
+var globProp = 'Wisen';
+
+function display() {
+  console.log(`globProp value is ${this.globProp}`);
+}
+display.call(); // logs "globProp value is Wisen"
+```
+**Under strict mode, without passing obj or pass null to it, the value of "this" is undefined.**
+```js
+'use strict';
+var globProp = 'Wisen';
+
+function display() {
+  console.log(`globProp value is ${this.globProp}`);
+}
+
+display.call(); // throws TypeError: Cannot read the property of 'globProp' of undefined
+```
 
 ### Apply
 ```js
