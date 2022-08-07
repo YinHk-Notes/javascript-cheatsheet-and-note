@@ -225,3 +225,13 @@ const bmw = new Car(carDetails);
 const fruitDetails = ["Apple", 2.99]
 const banana = new Fruit(fruitDetails);
 ```
+
+**Use Bind() to Make SetTimeout Work**
+```js
+setTimeout(
+      function() {
+       //body
+      }.bind(this), //bound to specific object
+      1000
+    );
+```
