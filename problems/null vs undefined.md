@@ -16,4 +16,4 @@
    typeof undefined //'undefined'
   ```
 
-> `null` !== `undefined` but `null` == `undefined`.
+> `null !== undefined` but `null == undefined`.
