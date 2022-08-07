@@ -1,5 +1,5 @@
 ## Hoisting
-Hoisting is JavaScript's default behavior of moving declarations to the top.
+> **Hoisting** is JavaScript's default behavior of moving all declarations to the top of the current scope
 
 
 ```js
