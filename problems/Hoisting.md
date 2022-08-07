@@ -30,8 +30,15 @@ console.log(x);
 ```js
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 6)
 var num = 6; // Initialization and declaration.
-```
 
+//num is undefined, because only the declaration (var num), not the initialization (=6) is hoisted to the top.
+//Because of hoisting, num has been declared before it is used, but because initializations are not hoisted, the value of num is undefined.
+```
+same as 
+```js
+var num;  // Declare num
+console.log(num);  // num is not initialized
+```
 
 ### Hoisting in `let` and `const`
 > Variables defined with let and const are hoisted to the top of the block, but not initialized.
