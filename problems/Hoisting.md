@@ -92,6 +92,12 @@ function showMessage(message) {
 //output: Hello World
 ```
 
+```js
+showMessage('World');
+var showMessage = (message) => console.log('Hello '+message);
+
+```
+
 ### Declare Your Variables At the Top !
 > To avoid bugs, always declare all variables at the beginning of every scope. JavaScript in strict mode does not allow variables to be used if they are not declared. Note that doing so can lead to unexpected errors, and is not generally recommended.
 
