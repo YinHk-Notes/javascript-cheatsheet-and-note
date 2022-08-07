@@ -15,3 +15,5 @@
    ```js
    typeof undefined //'undefined'
   ```
+
+> `null` !== `undefined` but `null` == `undefined`.
