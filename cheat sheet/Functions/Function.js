@@ -31,15 +31,15 @@ const inst = new Ctor();                                // It will become the ne
 Ctor.prototype                                          //define a prototype for its instance
 Object.getPrototypeOf(inst) === Ctor.prototype          //true
 
+fun.call()                                              //allows for a function/method belonging to one object to be assigned and called for a different object
+fun.call(this)                                          //With the call() method, you can write a method that can be used on different objects.
+fun.call(this, arg1, ... , argN)
+
 (function(...args) {}).apply(argsArray)                 //calls a function with a given this value, and arguments provided as an array (or an array-like object)
 (function(...args) {}).apply(thisArg, argsArray)
 
 const boundFun = fun.bind(this)                         //creates a new bound function that wraps the original function object. Calling the bound function generally results in the execution of its wrapped function
 const boundFun = fun.bind(this, arg1, ... , argN)      
-
-fun.call()                                              //allows for a function/method belonging to one object to be assigned and called for a different object
-fun.call(this)                                          //With the call() method, you can write a method that can be used on different objects.
-fun.call(this, arg1, ... , argN)
 
 fun.toString()                                          //returns a string representing the source code of the function
 
