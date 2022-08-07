@@ -103,6 +103,11 @@ same as:
 var showMessage;
 showMessage('World');
 ```
+> The arrow function is not hoisting the main reason that you cannot call them before initialization.
+> Because hoisting is the by-default action of moving all the declarations at the top of the scope before the execution of code.
+
+> The other reason is that the arrow function is anonymous or **function expression**.
+> In this case the variable declaration is hoisted and the expression is its initialization. Therefore the expressions are not evaluated until the relevant line is executed.
 
 ### Declare Your Variables At the Top !
 > To avoid bugs, always declare all variables at the beginning of every scope. JavaScript in strict mode does not allow variables to be used if they are not declared. Note that doing so can lead to unexpected errors, and is not generally recommended.
