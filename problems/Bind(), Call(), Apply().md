@@ -219,9 +219,9 @@ function Fruit(details) {
   // You can add other fruit specific fields here
 }
 
-const carDetails = ["BMW", 120000]
+const carDetails = ["tesla", 50000]
 const bmw = new Car(carDetails);
 
-const fruitDetails = ["Banana", 2]
+const fruitDetails = ["Apple", 2.99]
 const banana = new Fruit(fruitDetails);
 ```
