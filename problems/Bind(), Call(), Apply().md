@@ -1,8 +1,15 @@
 ## Using Bind(), Call(), and Apply()
 
 
+### Call
+
+### Apply
+
 ### Difference between Call() & Applay()
 The `Call()` method takes arguments seperately, while the `Apply()` takes arguments as an array
+
+### Bind
+
 
 ### Difference between Call()/Applay() and Bind()
 - **call、apply** method return the result after execution the bound function.
