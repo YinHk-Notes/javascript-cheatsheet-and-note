@@ -201,3 +201,27 @@ const elements = [0, 1, 2];
 array.push.apply(array, elements);
 console.info(array); // ["a", "b", 0, 1, 2]
 ```
+**Use Apply() to Chain Object Constructors**
+```js
+function Item(name, price) {
+  this.name = name;
+  this.price = price;
+  this.description = `${this.name}, ${this.price}€`;
+}
+
+function Car(details) {
+  Item.apply(this, details);
+  // You can add other car specific fields here
+}
+
+function Fruit(details) {
+  Item.apply(this, details);
+  // You can add other fruit specific fields here
+}
+
+const carDetails = ["BMW", 120000]
+const bmw = new Car(carDetails);
+
+const fruitDetails = ["Banana", 2]
+const banana = new Fruit(fruitDetails);
+```
