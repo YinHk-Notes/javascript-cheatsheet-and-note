@@ -69,6 +69,26 @@ fn.bind(obj, .....arguments)
 - **call、apply** method return the result after execution the bound function.
 - **Bind** method return a bound function(bind "this" to an obj) that can be executed later by calling.
  
+ 
+### Once function is bound, it can't update "this" to bind another object
+example:
+```js
+//window = global
+window.a = 20;
+
+function fn() {
+  console.log(this.a);
+}
+
+var fn_bind_window = fn.bind(window);
+var obj = { a: 1, func: fn_bind_window };
+
+obj.func();           // 20
+obj.func.call(obj);   // 20
+obj.func.apply(obj);  // 20
+obj.func.bind(obj)(); // 20
+```
+
 ### When to use these methods?
  
  
