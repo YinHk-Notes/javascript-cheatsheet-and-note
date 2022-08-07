@@ -12,7 +12,7 @@
 `undefined`
 
 - means a variable has been declared but not defined yet
-- undefined is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything
+- `undefined` is a variable that refers to something that **doesn't exist**, and the **variable isn't defined to be anything**
 - `undefined` is of type undefined
    ```js
    typeof undefined //'undefined'
