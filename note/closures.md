@@ -5,7 +5,7 @@
 
 > A closure is a **function having access to the parent scope**, even after the parent function has closed.
 
-> The closure **captures variables** from the **lexical scope**.
+> The closure is that inner function can **captures variables** from the **lexical scope**.
 
 > Closure is a function **combined with its outer state or lexical environment**.
 
