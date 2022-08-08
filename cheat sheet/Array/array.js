@@ -49,6 +49,9 @@ for (const [key, value] of iteratorArr)
 // 2 'c'
 // ...
 
+console.log(iteratorArr.next())       // { value: [ 0, 'a' ], done: false }
+console.log(iteratorArr.next())       // { value: [ 1, 'b' ], done: false }
+
 // add item to at the end
 arr.push(item)              //return length of array after element added
 let e = arr.push(item)      //output: new length of arr 
