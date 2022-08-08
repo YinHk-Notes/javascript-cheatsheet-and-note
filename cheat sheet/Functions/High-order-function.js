@@ -32,7 +32,7 @@ function returnFunc() {
 // Take the returned function in a variable.
 const fn = returnFunc();
 // Now invoke the returned function.
-fn(); // logs 'Hi' in the console
+fn()(); // logs 'Hi' in the console
 
 // Alternatively - A bit odd syntax but good to know
 returnFunc()(); // logs 'Hi' in the console
