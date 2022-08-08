@@ -3,8 +3,8 @@ functionName = (parameters)  => { return... }
 (parameters) => {...expression }   
 single param => {...expression }
 single param => ...single expression  single param && return single line expression 
-( ) => ...single expression  //no parameter && return single line expression 
-( ) => { return ... }  //no parameter
+() => ...single expression  //no parameter && return single line expression 
+() => { return ... }  //no parameter
 
 
 //Be carefull Arrow Function Return
