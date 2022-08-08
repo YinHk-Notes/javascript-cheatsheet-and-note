@@ -316,7 +316,7 @@ arr.splice(start, deleteCount, item1, item2,...itemN)
   arr.splice(0)                                        //remove all elments and empty the original array
  */
                                            
-// executes a user-supplied "reducer" callback function on each element of the array, 
+// executes a user-supplied "reducer" callback function on each element of the array, from left-to-right
 // in order, passing in the return value from the calculation on the preceding element.
 // If initialValue is specified, that also causes currentValue to be initialized to the first value in the array.
 // If initialValue is not specified, previousValue is initialized to the first value in the array, 
@@ -334,7 +334,11 @@ arr.reduce((previousValue, currentValue, currentIndex)=>{}, initialValue)
       const initialValue = 0;
       const sum = array1.reduce((previousValue, currentValue) => previousValue + currentValue, initialValue)   //10
  */                                          
-                                           
+
+// reduceRight is similar to resuce method, but from right-to-left                                        
+arr.reduceRight(reducer)
+arr.reduceRight((previousValue, currentValue) => {})
+arr.reduceRight((previousValue, currentValue, currentIndex)=>{}, initialValue)                                            
                                            
 // groups the elements of the calling array according to the values returned by a provided testing function
 /* The returned object has separate properties for each group, containing arrays with the elements in the group. 
