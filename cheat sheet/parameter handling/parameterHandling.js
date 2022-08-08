@@ -53,3 +53,10 @@ var str = "foo"
 var chars = [ ...str ] // [ "f", "o", "o" ]
 
 
+let initialChars = ['A', 'B'];
+let chars = [...initialChars, 'C', 'D']; // ["A", "B", "C", "D"]
+
+let arr = [1,2,3];
+let copyArr = [...arr];  // copy an array
+
+
