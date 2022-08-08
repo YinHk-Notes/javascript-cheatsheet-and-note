@@ -25,6 +25,10 @@ const person = {
   age: 50,
   eyeColor: "blue"
 };
+
+const user = {};
+user.name = "YinHk";
+user.password = 123456;
 ```
 
 
