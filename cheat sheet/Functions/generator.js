@@ -129,6 +129,4 @@ const getUsers = asyncAlt(function*() {
 // Invoking the function
 getUsers().then(response => console.log(response))
       
-                                       
-                                       
-                                       
+                                                                                                                  
