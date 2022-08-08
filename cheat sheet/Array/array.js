@@ -194,17 +194,17 @@ arr.includes(searchElement) //return boolean
 arr.includes(searchElement, fromIndex) //optional: fromIndex
      
 //  determines whether an object is an array
-Array.isArray(arr) //return boolean
+Array.isArray(arr)          //return boolean
                                         
 //  creates and returns a new string by concatenating all of the elements in an array, turn array to a string 
 arr.join()                                       
-arr.join(separator) //optional, default separator is comma (,), specified separator string
+arr.join(separator)         //optional, default separator is comma (,), specified separator string
 /* 
    ed: arr=["a","b","c"] 
-   arr.join() //output: "a,b,c"
-   arr.join('') //output: "abc", -------------> this method turns items in array into single string
-   arr.join('/') //output: "a/b/c"
-   arr.join('+') //output: "a+b+c"
+   arr.join()               //output: "a,b,c" ------------> if not sepecify, use default operator ','
+   arr.join('')             //output: "abc"   ------------> this method turns items in array into single string
+   arr.join('/')            //output: "a/b/c"
+   arr.join('+')            //output: "a+b+c"
  */
                                         
 // execute method once for each element in an array in order.
