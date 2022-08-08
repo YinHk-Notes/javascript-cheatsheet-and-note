@@ -43,7 +43,6 @@ const numbers = [1, 2, 3, 4, 5];
 const totalValue = numbers.reduce((sum, number) => sum + number);   //reduce() is HOF
 
 //example:
-
 const App = (param1) => (param2) => { 
     console.log("param1:"+ param1);
     console.log("param2:" + param2);
