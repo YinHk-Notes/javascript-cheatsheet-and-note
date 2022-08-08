@@ -7,7 +7,7 @@
 
 A variadic function is a function of indefinite arity, i.e., one which **accepts a variable number of arguments**.
 
-- rest parameter canbe any type,JavaScript does not care about the type in rest parameter.
+- rest parameter canbe any type, JavaScript does not care about the type in rest parameter.
 - A function definition can have only one ...restParam.
 - The rest parameter must be the last parameter in the function
 - The rest parameter is an indefinite number of arguments as **an array**,
