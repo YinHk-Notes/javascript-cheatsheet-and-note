@@ -92,7 +92,7 @@ arr.findIndex((element, index, array) => { } )
    arr.findIndex(currentValue => currentValue > 3) //return 3
  */
 
-// returns the index of the first element in the array that satisfies the testing function
+// returns the index of the last element in the array that satisfies the testing function
 arr.findLastIndex((element, index, array) => { } )
 /*
    eg: arr = [1,2,3,4,5]
