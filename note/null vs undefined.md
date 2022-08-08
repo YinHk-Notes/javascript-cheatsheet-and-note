@@ -38,6 +38,15 @@ let b = null;
 console.log(b); // null
 ```
 
+```js
+var x;
+console.log(x); //undefined
+```
+```js
+```js
+console.log(y); //ReferenceError: y is not defined
+```
+
 | null | undefined |
 | --- | --- |
 | It is an assignment value. It can be assigned to a variable which indicates that a variable does not point any object | It is not an assignment value. It means a variable has been declared but has not yet been assigned a value. |
