@@ -1,7 +1,7 @@
 //HOF
 
-//A Higher-Order Function is a regular function that takes one or more functions as arguments and/or returns 
-//a function as a value from it.
+//A Higher-Order Function is a regular function that takes one or more functions as arguments and/or returns a function as a value from it.
+//A Higher-Order function is a function that receives a function as an argument or returns the function as output.
 
 //eg:
 // Define a function that takes a function as an argument.
