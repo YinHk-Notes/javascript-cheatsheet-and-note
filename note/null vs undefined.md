@@ -12,7 +12,7 @@
 `undefined`
 
 - means a variable has been declared but not defined yet
-- `undefined` is a variable that refers to something that **doesn't exist**, and the **variable isn't defined to be anything**
+- `undefined` is a variable that **refers to something that doesn't exist**(doesn't refer to anything), and the **variable isn't defined to be anything**
 -  **It's not assigned to anything**, and **don't know what it really is**
 -  variable has been **declared** but has **not yet been assigned a value**
 -  or  variable **has not been declared** at all
