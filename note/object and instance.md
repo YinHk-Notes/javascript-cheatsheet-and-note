@@ -51,6 +51,11 @@ person.age = 20;
 ### Note
 > Objects are **mutable**, They are addressed by reference, not by value
 
+```js
+const user = [...};
+const obj = user;  // Will not create a copy of user.
+```
+> obj is not a copy of user. It is user. Both obj and user are the same object. Any changes to obj will also change user, because obj and obj are the same object.
 
 
 ### ref
