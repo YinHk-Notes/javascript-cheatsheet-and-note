@@ -31,6 +31,23 @@ user.name = "YinHk";
 user.password = 123456;
 ```
 
+### Using keyword `new`
+```js
+const person = new Object();
+person.firstName = "YinHk";
+person.sex = "M";
+person.age = 20;
+```
+This is same to 
+```js
+const person = {};
+person.firstName = "YinHk";
+person.sex = "M";
+person.age = 20;
+
+```
+> But there is no need to use `new Object()`.
+
 
 
 ### ref
