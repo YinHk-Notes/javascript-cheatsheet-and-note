@@ -24,12 +24,20 @@ for (const key of iteratorKeys) {
   console.log(key)     //key: 0, 1, 2, ...
 }
 
+console.log(iteratorKeys.next())   // { value: 0, done: false }
+console.log(iteratorKeys.next())   // { value: 1, done: false }
+...
+
 // returns a new array iterator object that contains the values for each index in the array
 const iteratorValues = arr.values()
 
 for (const value of iteratorValues) {
   console.log(value)   //value: a, b, c, ... 
 }
+
+console.log(iteratorValues.next())   // { value: 'a', done: false }
+console.log(iteratorValues.next())   // { value: 'b', done: false }
+...
 
 // returns a new Array Iterator object that contains the key/value pairs for each index in the array
 const iteratorArr = arr.entries()
