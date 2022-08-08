@@ -12,6 +12,54 @@ It refers to different objects depending on how it is used
 - In constructor function, `this` refers to the instance object created from constructor.
 - Methods like `call()`, `apply()`, and `bind()` can refer this to any object.
 
+**Examples:**
+```js
+x = 'foo';  //global variable
+
+var obj = {
+    x: "bar",
+    getX: function(){
+        return x;
+    }    
+};
+console.log( obj.getX() );  //foo
+```
+```js
+'use strict';
+x = 'foo';     //ReferenceError: x is not defined, in strict mode prompt this error
+
+var obj = {
+    x: "bar",
+    getX: function(){
+        return x;
+    }    
+};
+console.log( obj.getX() );  
+```
+```js
+'use strict';
+var x = 'foo'; 
+
+var obj = {
+    x: "bar",
+    getX: function(){
+        return x;
+    }    
+};
+console.log( obj.getX() );   // 'foo'
+```
+```js
+'use strict';
+var x = 'foo'; 
+
+var obj = {
+    x: "bar",
+    getX: function(){
+        return this.x;
+    }    
+};
+console.log( obj.getX() );   // 'bar'
+```
 
 ### ref
 https://blog.kevinchisholm.com/javascript/context-object-literals/
