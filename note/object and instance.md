@@ -9,6 +9,24 @@ There are different ways to create object:
 - Create an object using `Object.create()`.
 
 
+### Using an Object Literal
+The easiest way to create a JavaScript Object.
+
+Using an object literal, you can define and create an object in one statement.
+
+An object literal is **a list of name:value pairs inside curly braces {}**.
+
+```js
+const obj = {A:"a", B:"b", C:"c"};
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+```
+
 
 
 ### ref
