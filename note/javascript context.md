@@ -117,3 +117,26 @@ console.log( foo.getDrink() ); // beer
  
 console.log( foo.under21.getDrink() ); // wine
 ```
+```js
+drink = 'wine';
+
+var foo = {};
+
+foo.drink = "beer";
+
+foo.getDrink = function(){      
+        return this.drink; // 'this' refers to the object "foo"
+    };
+
+foo.under21 = {};
+
+foo.under21.drink = 'soda';
+
+foo.under21.getDrink = function(){
+       return foo.getDrink.call(this); // execute foo.getDrink()                
+    };
+
+console.log( foo.getDrink() ); // beer
+
+console.log( foo.under21.getDrink() ); // soda
+```
