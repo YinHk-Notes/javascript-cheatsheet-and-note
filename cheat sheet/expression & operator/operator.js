@@ -9,9 +9,17 @@ instanceof
   
 // equal value only, but not checking type
 expr1 == expr2
-  
+
+/*
+    3 == '3'  ------> true
+*/
+
 // equal value and equal type
 expr1 === expr2
+
+/*
+    3 == '3'  ------> false
+*/
 
 // Logical AND
 expr1 && expr2                    //if expr1 true, check for expr2
