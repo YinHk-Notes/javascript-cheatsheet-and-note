@@ -85,13 +85,13 @@ const x=value1
 
 ### var, let, and const – What's the Difference?
 ```
-👉🏼  var: can be re-declared and updated + global scope / global scope.
+👉🏼  var: can be re-declared and updated + function scope / global scoped.
 ```
 ```
-👉🏼  let: can be updated but not re-declared + blocked scope.
+👉🏼  let: can be updated but not re-declared + blocked scoped.
 ```
 ```
-👉🏼  const: cannot be updated or re-declared + blocked scope 
+👉🏼  const: cannot be updated or re-declared + blocked scoped 
     + must be initialized at the time of declaration (read-only).
 ```
 
