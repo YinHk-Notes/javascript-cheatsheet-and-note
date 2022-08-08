@@ -42,12 +42,12 @@ for (const [key, value] of iteratorArr)
 // ...
 
 // add item to at the end
-arr.push(item)             //return length of array after element added
-let e = arr.push(item)     //output: new length of arr 
+arr.push(item)              //return length of array after element added
+let e = arr.push(item)      //output: new length of arr 
 
 // remove item from the end
-arr.pop()                  //return the removed element from the array; undefined if the array is empty
-let e = arr.pop()          //output: the remove item
+arr.pop()                   //return the removed element from the array; undefined if the array is empty
+let e = arr.pop()           //output: the remove item
 
 // remove item from beginning
 arr.shift()                 //return the removed element from the array; undefined if the array is empty
