@@ -252,6 +252,7 @@ Array.from(arrayLikeObj, (element, index) => { /* ... */ } )
     Array.from('foo')  //["f", "o", "o"]  --------> one of methods to turn string to array
     Array.from([1, 2, 3], x => x + x)
     // Array [2, 4, 6]
+    const copy = Array.from(arr)          --------> make copy to arr
  */
 
 // reverse the elements in array  
