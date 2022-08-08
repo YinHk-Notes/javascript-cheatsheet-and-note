@@ -235,6 +235,7 @@ Array.of(element0, element1, ... , elementN)
  */
 
 // creates a new, shallow-copied Array instance from an iterable or array-like object.
+// create array from array-like object(eg: string, Map, Set...)                     
 Array.from(arrayLikeObj)                      
 Array.from(arrayLikeObj, (element) => { /* ... */ } )
 Array.from(arrayLikeObj, (element, index) => { /* ... */ } )                      
@@ -248,7 +249,7 @@ Array.from(arrayLikeObj, (element, index) => { /* ... */ } )
     Array.from(map);
     // [[1, 2], [2, 4], [4, 8]]
     
-    Array.from('foo')  //["f", "o", "o"]
+    Array.from('foo')  //["f", "o", "o"]  --------> one of methods to turn string to array
     Array.from([1, 2, 3], x => x + x)
     // Array [2, 4, 6]
  */
