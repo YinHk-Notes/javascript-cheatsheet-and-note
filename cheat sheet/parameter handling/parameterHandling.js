@@ -7,6 +7,8 @@ Add() //output:6
 Add(4,5,6) //output:15
 
 
+/* Spread Operator */
+
 // Rest parameter
 /*  
   A variadic function is a function of indefinite arity, i.e., one which accepts a variable number of arguments.
