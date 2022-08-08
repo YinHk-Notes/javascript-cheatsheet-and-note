@@ -31,20 +31,14 @@ console.log(null !== undefined)  //true
 
 
 ```js
-let a;
+var a;
 console.log(a); // undefined
 
-let b = null;
+var b = null;
 console.log(b); // null
 ```
-
 ```js
-var x;
-console.log(x); //undefined
-```
-```js
-```js
-console.log(y); //ReferenceError: y is not defined
+console.log(x); //ReferenceError: x is not defined
 ```
 
 | null | undefined |
