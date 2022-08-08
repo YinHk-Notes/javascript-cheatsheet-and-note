@@ -30,8 +30,8 @@ The static keyword defines a static method or property for a class
 
 ```js
 class Name {
-	constructor() {
-		...
+  constructor() {
+    ...
   }
 	static methodName ( ) { ... }
 }
@@ -100,12 +100,11 @@ console.log(Point.distance(p1, p2)); // 7.0710678118654755
 **Static properties** are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
 
 ```js
-
 class Name {
-	constructor() {
-		...
+  constructor() {
+    ...
   }
-	static propertyName = value;
+  static propertyName = value;
 }
 ```
 
@@ -138,13 +137,13 @@ this.constructor.STATIC_PROPERTY_NAME;
 
 ```js
 class Name {
-	constructor() {
-		...
+  constructor() {
+     ...
   }
-	static propertyName = value;
+  static propertyName = value;
   methodName() {
-		this.propertyName;
-	}
+    this.propertyName;
+  }
 }
 ```
 
@@ -183,7 +182,7 @@ class MyClass {
 }
 
 class A extends MyClass {
-	static staticProperty = 'static property in classA';
+  static staticProperty = 'static property in classA';
   static staticMethod() { return 'static method in classA'};
 }
 console.log( A.staticProperty ); //console: static property in classA
