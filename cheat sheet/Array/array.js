@@ -235,7 +235,7 @@ Array.of(element0, element1, ... , elementN)
  */
 
 // creates a new, shallow-copied Array instance from an iterable or array-like object.
-// create array from array-like object(eg: string, Map, Set...)                     
+// create array from array-like object(eg: string, Array, Map, Set...)                     
 Array.from(arrayLikeObj)                      
 Array.from(arrayLikeObj, (element) => { /* ... */ } )
 Array.from(arrayLikeObj, (element, index) => { /* ... */ } )                      
