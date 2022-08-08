@@ -3,7 +3,7 @@
 
 > A closure is **the combination of a function and the lexical environment** within which that function was declared. 
 
-> Closure provides a **function a access to the parent scope**, even after the parent function has closed.
+> Closure provides the inner **function a access to the parent scope**, even after the parent function has closed.
 
 > The closure is that inner function can **captures variables** from the **lexical scope**.
 
