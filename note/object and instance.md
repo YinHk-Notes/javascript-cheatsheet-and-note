@@ -1,4 +1,5 @@
 ## Objects & instance
+> In JavaScript, Object is at the top of the prototype chain. Everything is also an object.
 
 ### Creating a JavaScript Object
 
@@ -47,6 +48,16 @@ person.age = 20;
 
 ```
 > But there is no need to use `new Object()`.
+
+### Create object from constructor 
+```js
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+}
+const user = new Person("YinHk", "Ng", 20);
+```
 
 ### Note
 > Objects are **mutable**, They are addressed by reference, not by value
