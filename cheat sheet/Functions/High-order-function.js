@@ -38,6 +38,9 @@ fn(); // logs 'Hi' in the console
 returnFunc()(); // logs 'Hi' in the console
 
 
+//example of HOF take a function as input
+const numbers = [1, 2, 3, 4, 5];
+const totalValue = numbers.reduce((sum, number) => sum + number);   //reduce() is HOF
 
 //example:
 
