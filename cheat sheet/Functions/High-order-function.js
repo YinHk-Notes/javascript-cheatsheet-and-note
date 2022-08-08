@@ -49,3 +49,13 @@ const App = (param1) => (param2) => {
 }
 
 App("hello")("world");  // param1:hello, param1:hello
+
+const log = (a) => {
+    console.log(a);
+    return (b) => {
+        console.log(b);
+        return (c) => console.log(c);
+    }
+}
+log("A")("B")("C");  // 'A', 'B', 'C'
+
