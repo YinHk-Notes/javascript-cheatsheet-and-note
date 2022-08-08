@@ -20,7 +20,7 @@ for(let i=0; i<=arr.length-1; i++){
 } 
 
 // for...of loop
-// iterating over iterable objects (including Array, Map, Set, arguments object and so on)
+// iterating over iterable objects (including Array, Map, Set, arguments object, array-liked object and so on)
 // for..of is a method, introduced in ES2015, for iterating over "iterable collections". 
 // These are objects that have a [Symbol.iterator] property.
 // The for..of syntax is essentially a wrapper around the [Symbol.iterator] to create loops.
