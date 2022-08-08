@@ -133,7 +133,7 @@ console.log(result); //log 20
 
 > all of which have access to the outer functions' scope. In this context, we can say that **closures have access to all outer function scopes.**
 
-**Closures can capture variables in block scopes and module scopes as well.**
+**Closures can capture variables in block scopes and function scopes as well.**
 ```js
 function outer() {
   const x = 5;
