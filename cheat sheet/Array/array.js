@@ -92,6 +92,13 @@ arr.findIndex((element, index, array) => { } )
    arr.findIndex(currentValue => currentValue > 3) //return 3
  */
 
+// returns the index of the first element in the array that satisfies the testing function
+arr.findLastIndex((element, index, array) => { } )
+/*
+   eg: arr = [1,2,3,4,5]
+   arr.findLastIndex(currentValue => currentValue > 3) //return 4
+ */
+
 // Joins two or more arrays, and returns a copy of the joined arrays
 arr.concat(array2,array3....)
 /*
