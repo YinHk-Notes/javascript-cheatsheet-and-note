@@ -91,6 +91,10 @@ arr.concat(array2,array3....)
    const array1 = ['a', 'b', 'c']
    const array2 = ['d', 'e', 'f']
    const array3 = array1.concat(array2)  //["a", "b", "c", "d", "e", "f"]
+   
+   other similar methods: 
+              arr1.push.apply(arr1, arr2);
+              arr1.push(...arr2);
  */
 
 // copies array elements to another position in the array, overwriting the existing values.This methos changes the original array.
