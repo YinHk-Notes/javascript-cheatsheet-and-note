@@ -60,7 +60,18 @@ var obj = {
 };
 console.log( obj.getX() );   // 'bar'
 ```
+```js
+var drink = 'wine';
 
-### ref
-https://blog.kevinchisholm.com/javascript/context-object-literals/
+var foo = {};
+
+foo.drink = "beer";
+
+foo.getDrink = function(){
+        return this.drink; // 'this' refers to the object "foo"
+    };
+
+console.log( foo.getDrink() ); // beer
+```
+
 
