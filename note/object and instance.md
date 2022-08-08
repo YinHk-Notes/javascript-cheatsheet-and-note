@@ -48,6 +48,9 @@ person.age = 20;
 ```
 > But there is no need to use `new Object()`.
 
+### Note
+> Objects are **mutable**, They are addressed by reference, not by value
+
 
 
 ### ref
