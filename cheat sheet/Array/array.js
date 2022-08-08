@@ -78,6 +78,13 @@ arr.find((element, index, array) => { } )
    arr.find(currentValue => currentValue > 3) //return 4
  */
 
+// returns the last element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned
+arr.findLast((element, index, array) => { } )
+/*
+   eg: arr = [1,2,3,4,5]
+   arr.findLast(currentValue => currentValue > 3) //return 5
+ */
+
 // returns the index of the first element in the array that satisfies the testing function
 arr.findIndex((element, index, array) => { } )
 /*
