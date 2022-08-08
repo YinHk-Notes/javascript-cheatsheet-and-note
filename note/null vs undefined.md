@@ -37,6 +37,7 @@ var b = null;
 console.log(b); // null
 ```
 ```js
+//x is not declared
 console.log(x); //ReferenceError: x is not defined
 ```
 
