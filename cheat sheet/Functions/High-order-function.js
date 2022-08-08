@@ -6,8 +6,8 @@
 /*  
     In mathematics and computer science, a higher-order function (HOF) is a function that does at least one of the following:
     
-      1. takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
-      2. returns a function as its result.
+      1. takes one or more functions as arguments (input),
+      2. returns a function as its result (output).
 */
 
 //eg:
