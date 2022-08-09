@@ -12,6 +12,7 @@ expr1 == expr2
 
 /*
     3 == '3'  ------> true
+    {} == {}  ------> false
 */
 
 // equal value and equal type
@@ -19,6 +20,10 @@ expr1 === expr2
 
 /*
     3 == '3'  ------> false
+    {} === {} ------> false, because they are independent object, not same reference
+    let obj = {}
+    let obj2 = obj
+    obj === obj2  ------> true, because they point to same reference
 */
 
 // Logical AND
