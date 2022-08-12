@@ -51,12 +51,12 @@ fn.apply(thisArg, argsArray)                           //argsArray is an array o
 //return a bound function for fn, which will be execute later
 const boundFun = fn.bind(thisArg)  
 boundFun(arg1, ... , argN)                              //execute the bound function
-const boundFun = fu.bind(this, arg1, ... , argN)  
+const boundFun = fn.bind(this, arg1, ... , argN)  
 boundFun()                                              //execute the bound function
 
 //return a bound function and execute it immediately
 fn.bind(thisArg)(arg1, ... , argN)
-fu.bind(this, arg1, ... , argN)()
+fn.bind(this, arg1, ... , argN)()
 
 
 //return 
