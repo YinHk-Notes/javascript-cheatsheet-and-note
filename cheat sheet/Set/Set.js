@@ -21,7 +21,7 @@ set.forEach((value) => { /* ... */ } );
 set.forEach((value, key) => { /* ... */ } );
 set.forEach((value, key, set) => { /* ... */ } );
 
-const setIter = set[Symbol.iterator]();        //returns a new Iterator object that contains the values for each element in the Set object in insertion order
+const setIter = set[Symbol.iterator]();         //returns a new Iterator object that contains the values for each element in the Set object in insertion order
 const valIter = set.values();                   //returns a new Iterator object that contains the values for each element in the Set object in insertion order
 const entryIter = set.entries();                //returns a new Iterator object that contains an array of [value, value] for each element in the Set object, in insertion order
 
