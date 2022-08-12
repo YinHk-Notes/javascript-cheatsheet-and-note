@@ -21,7 +21,7 @@ let args = Array.from(arguments);
 // or
 let args = [...arguments];
 
-typeof arguments                              //returns data tyope
+typeof arguments                              //returns data type is an object
 arguments.callee                              //reference to the currently executing function that the arguments belong to. Forbidden in strict mode
 const argIter = arguments[Symbol.iterator]()  //return an iteractor object
 
