@@ -6,7 +6,7 @@
 
 var e = new Error()
 var e = new Error(message)
-var e = new new Error(message, options)               //options is object with 'cause' as property
+var e = new Error(message, options)               //options is object with 'cause' as property
 
 
 e.message                                             //a human-readable description of the error
