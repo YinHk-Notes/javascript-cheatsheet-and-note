@@ -39,7 +39,7 @@ Object.getOwnPropertyDescriptors(obj)
 //returns an array of all properties name(string)
 Object.getOwnPropertyNames(obj)                  //----> turn properties to an array
 
-//checkt object has the specified property as its own property or not 
+//check object has the specified property as its own property or not 
 obj.hasOwnProperty(propertyName)  // return boolean,  propertyName is string name
 
 //freezes an object. A frozen object can no longer be changed
