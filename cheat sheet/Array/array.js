@@ -168,7 +168,7 @@ arr.fill(value, start, end)
    arr.fill(0, 2, 4);        // [1, 2, 0, 0]
  */
 
-// create an new array with all elements that pass the test function
+// return an new array with all elements that pass the test function
 arr.filter((element, index, array) => { } )
 /* 
    let arr = [1,2,3,4,5]
@@ -190,7 +190,7 @@ arr.flat(depth) //optional, default depth = 1
 arr.flatMap((currentValue, index, array) => {})         // It is identical to a map() followed by a flat() of depth 1
 
 //  determines whether an array contains a specified element
-arr.includes(searchElement) //return boolean
+arr.includes(searchElement)            //return boolean
 arr.includes(searchElement, fromIndex) //optional: fromIndex
      
 //  determines whether an object is an array
