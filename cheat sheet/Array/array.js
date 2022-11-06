@@ -168,7 +168,7 @@ arr.fill(value, start, end)
    arr.fill(0, 2, 4);        // [1, 2, 0, 0]
  */
 
-// return an new array with all elements that pass the test function
+// return a new array with all elements that pass the test function
 arr.filter((element, index, array) => { } )
 /* 
    let arr = [1,2,3,4,5]
