@@ -222,7 +222,7 @@ arr.map((element) => { return ... })
   element in array passed as a parameter/argument in the callback function.
   Note: map() does not execute the function for array elements without values.
   Note: this method does not change the original array.
-  Note: If an arrow function body is a block, it doesn’t implicitly return anything,will return array of 'undefined'
+  Note: If an arrow function body is a block, it doesn’t implicitly return anything, will return array of 'undefined'
   1.make the arrow function body an expression by removing { and } or 2.If you use {} inside an arrow function, you must also use a return statement.
   eg: arr.map((element) =>  {...}) return an array like this [undefined, undefined, ...]
  */
