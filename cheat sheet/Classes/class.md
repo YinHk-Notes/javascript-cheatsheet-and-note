@@ -3,7 +3,7 @@
 - class is not an object.
 - class are a blueprint for creating objects.
 
-| No `let`, `var`, `const` allowed inside class
+> No **`let`**, **`var`**, **`const`** allowed inside class
 
 ```js
 class className {
