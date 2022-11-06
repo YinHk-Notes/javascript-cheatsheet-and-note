@@ -86,28 +86,28 @@ arr.lastIndexOf(searchElement, fromIndex)// fromIndex is optional
 arr.find((element, index, array) => { } )
 /*
    eg: arr = [1,2,3,4,5]
-   arr.find(currentValue => currentValue > 3) //return 4
+   arr.find(x => x > 3)           //return 4
  */
 
 // returns the last element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned
 arr.findLast((element, index, array) => { } )
 /*
    eg: arr = [1,2,3,4,5]
-   arr.findLast(currentValue => currentValue > 3) //return 5
+   arr.findLast(x => x > 3)       //return 5
  */
 
 // returns the index of the first element in the array that satisfies the testing function
 arr.findIndex((element, index, array) => { } )
 /*
    eg: arr = [1,2,3,4,5]
-   arr.findIndex(currentValue => currentValue > 3) //return 3
+   arr.findIndex(x => x > 3)      //return 3
  */
 
 // returns the index of the last element in the array that satisfies the testing function
 arr.findLastIndex((element, index, array) => { } )
 /*
    eg: arr = [1,2,3,4,5]
-   arr.findLastIndex(currentValue => currentValue > 3) //return 4
+   arr.findLastIndex(x => x > 3)  //return 4
  */
 
 // Joins two or more arrays, and returns a copy of the joined arrays
