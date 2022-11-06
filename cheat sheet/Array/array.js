@@ -149,8 +149,8 @@ arr.copyWithin(target, start, end)
 arr.every((element, index, array) => { } ) //only return boolean
 /*
    eg: arr = [1,2,3,4,5]
-   arr.every(currentValue => currentValue >= 0) //return true
-   arr.every(currentValue => currentValue < 0) //return false
+   arr.every(x => x >= 0)   //return true
+   arr.every(x => x < 0)    //return false
  */
 
 // tests whether at least one element in the array passes the test implemented by the provided function.
@@ -160,7 +160,7 @@ arr.some((element, index, array) => {})
 /* 
    value: the value to be filled
    start: Start index to fill, default 0.
-   end: The index to stop filling the array (default is array.length),fill up to but not including the end.
+   end: The index to stop filling the array (default is array.length), fill up to but not including the end.
  */
 arr.fill(value, start, end)
 /*
