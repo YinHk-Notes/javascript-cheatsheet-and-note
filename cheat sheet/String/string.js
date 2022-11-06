@@ -72,6 +72,7 @@ for(let item in str) {
 
 
 //Example
+const str = 'hello';
 str.charAt(3);
 str.concat(' ', 'world'); //'hello world''
 str.startsWith('ell'); //false
