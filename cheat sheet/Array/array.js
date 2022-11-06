@@ -274,19 +274,34 @@ arr.sort() //functionless, change original array, it sort by the first letter/fi
 arr.sort((firstElement, secondElement) => { ... }) //optional: with compare function 
 arr.sort(function compareFn(a, b) { /* ... */ })   //optional: with compare function 
 /* 
-   sort() method:
-   When sorting alphabetic, no need compareFunction, by default, the sort() method sorts the values as strings in 
-   alphabetical and ascending order. If descending order, use sort().reverse(). 
-   Alphabet is sorted by comparing first alphabetical chracter.
-   compareFunction: 
-   Defines an alternative sort order, compareFunction is used when sorting numbers. The function should return 
+   With no compareFunction:
+   When sorting alphabetic, no need compareFunction. Note: alphabet is sorted by comparing first alphabetical chracter.
+   - By default, the sort() method sorts the values as strings in alphabetical and ascending order. 
+   - If descending order, use sort().reverse(). 
+   
+   With a compareFunction: 
+   Defines an alternative sort order, compareFunction is used when sorting numbers / arrays. The function should return 
    a negative, zero, or positive value, depending on the two arguments, 
    eg: function(a, b){return a-b}, function(a, b){return b-a}, function(a, b){return a-b*b},...
    The sort() method compares two values, it sends the values to the compare function, and sorts the values according to the 
-   returned (negative, zero, positive) value. when result<0, sort first element before second element, 
-   result>0, sort second element before first element.
+   returned (negative, zero, positive) value. 
+   - when result < 0, sort first element before second element, 
+   - result > 0, sort second element before first element.
+   
    ascending order: function(a, b){return a-b}, eg: (a-b) => a-b
    decending order: function(a, b){return b-a}, eg: (b-a) => b-a
+   
+   Sort an Array by Date:
+   eg: 
+        const d1 = new Date('2019-06-01');
+        const d2 = new Date('2018-06-01');
+        const d3 = new Date('2019-06-01');
+        const objects = [
+          { createdAt: d1, name: 'Test 1' },
+          { createdAt: d2, name: 'Test 2' },
+          { createdAt: d3, name: 'Test 3' } ];
+        objects.sort((a, b) => a.createdAt - b.createdAt);
+        console.log(objects.map(o => o.name)); // [ 'Test 2', 'Test 1', 'Test 3' ]
  */
                       
 // insert or replace element in specific position
