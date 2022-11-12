@@ -110,16 +110,22 @@ arr.findLastIndex((element, index, array) => { } )
    arr.findLastIndex(x => x > 3)  //return 4
  */
 
-// Joins two or more arrays, and returns a copy of the joined arrays
-arr.concat(array2,array3....)
+// Joins two or more arrays and/or values, and returns a copy of the joined arrays
+arr.concat(array2, array3...)
+arr.concat(value1, value2...)
 /*
    const array1 = ['a', 'b', 'c']
    const array2 = ['d', 'e', 'f']
-   const array3 = array1.concat(array2)  //["a", "b", "c", "d", "e", "f"]
+   const array3 = array1.concat(array2)     //["a", "b", "c", "d", "e", "f"]
    
    other similar methods: 
               arr1.push.apply(arr1, arr2);
               arr1.push(...arr2);
+              
+   [1, , 3].concat([4, 5]))                 //[1, empty, 3, 4, 5]
+   [1, 2].concat([3, , 5]))                 //[1, 2, 3, empty, 5]
+   
+   let res = arr.concat(1, 'hello')         //['a', 'b', 'c', 1, 'hello'] 
  */
 
 // copies array elements to another position in the array, overwriting the existing values.This methos changes the original array.
