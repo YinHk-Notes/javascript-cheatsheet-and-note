@@ -294,8 +294,8 @@ arr.sort(function compareFn(a, b) { /* ... */ })   //optional: with compare func
    - when result < 0, sort first element before second element, 
    - result > 0, sort second element before first element.
    
-   ascending order: function(a, b){return a-b}, eg: (a-b) => a-b
-   decending order: function(a, b){return b-a}, eg: (b-a) => b-a
+   ascending order: function(a, b){return a-b}, eg: (a, b) => a-b
+   decending order: function(a, b){return b-a}, eg: (a, b) => b-a
    
    Sort an Array by Date:
    eg: 
