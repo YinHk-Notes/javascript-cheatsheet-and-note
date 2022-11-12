@@ -87,7 +87,7 @@ while (condition) {
   //code 
 }  
 
-//eg:
+// infinite loop
 while (true) {  
   //...
 }  
