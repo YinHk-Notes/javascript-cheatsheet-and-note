@@ -264,7 +264,7 @@ Array.from(arrayLikeObj, (element, index) => { /* ... */ } )
 // reverse the elements in array  
 arr.reverse() //The first array element becomes the last, and the last array element becomes the first. Change original array
                       
-//  returns the selected elements in an array, as a new array object. 
+// returns the selected elements in an array, as a new array object. 
 arr.slice(start, end)
 /*
   selects the elements starting at the given start argument,  and ends at, but does not include, the given end argument.
